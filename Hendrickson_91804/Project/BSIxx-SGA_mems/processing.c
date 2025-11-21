@@ -510,10 +510,19 @@ void TPMS_state_processing_end(void)
 #if 1
         			// default define report_period
         			if( SP_timer_wakeup_totalTime >= TPMS_STATE_PARAMETERS[m_state_index].report_period_spi ) {
-						bSendMsg = true;
-						SP_timer_wakeup_totalTime = 0;
-						measurements_valid=0;
-						Measure_PVT();
+						// Suppress periodic reports when counting down to Standby mode
+						// This prevents sending multiple Normal mode messages during the 10-min transition
+						if( (SP_state.as_field.tpms_state == STATE_STATIONARY) &&
+						    (GET_NORMAL_TO_STANDBY(SensorModeCounter) > 0) ) {
+							// Reset timer but don't send report during countdown
+							SP_timer_wakeup_totalTime = 0;
+						}
+						else {
+							bSendMsg = true;
+							SP_timer_wakeup_totalTime = 0;
+							measurements_valid=0;
+							Measure_PVT();
+						}
         			}
 #endif
 
