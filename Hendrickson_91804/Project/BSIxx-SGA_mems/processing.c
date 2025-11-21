@@ -1059,6 +1059,11 @@ void Check_Pressure_Absnormal(void)
        }
 
     }
+    else
+    {
+    	// Reset standby counter when P >= 3 PSI
+    	SET_NORMAL_TO_STANDBY(SensorModeCounter, 0);
+    }
 #if 1
 
 	//delta P
