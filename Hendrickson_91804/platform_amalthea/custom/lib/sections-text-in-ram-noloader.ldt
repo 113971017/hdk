@@ -1,0 +1,105 @@
+/*
+ * Copyright (C) 2017 Melexis N.V.
+ *
+ * Software Platform
+ *
+ */
+
+/* Sections definition:
+ 	- Application is linked to RAM
+ 	- OTA loader not used
+ */
+SECTIONS
+{
+    .vectors :
+    {
+        __vectors_start = . ;
+        KEEP(*(.vectors))
+        __vectors_end = . ;
+        __vectors_size = __vectors_end - __vectors_start ;
+    } > ram
+
+
+    .dp.data :
+    {
+        . = ALIGN (0x2);
+        __data_dp_start = . ;
+        *(.dp.data)
+        . = ALIGN (0x2);
+        __data_dp_end = . ;
+    } > ram
+    __data_dp_size = __data_dp_end - __data_dp_start;
+
+    .dp :
+    {
+        . = ALIGN (0x2);
+        __bss_dp_start = .;
+        *(.dp)
+        . = ALIGN (0x2);
+        __bss_dp_end = . ;
+    } > ram
+    __bss_dp_size = __bss_dp_end - __bss_dp_start;
+    
+    .data :
+    {
+        . = ALIGN (2);
+        __data_start = . ;
+        *(.ramfunc)
+        *(.data)
+        *(.data.*)
+        . = ALIGN (2);
+        __data_end = . ;
+    } > ram
+    __data_size = __data_end - __data_start ;
+    
+    .bss :
+    {
+        . = ALIGN (0x2);
+        __bss_start = .;
+        *(.bss)
+        *(.bss.*)
+        *(COMMON)
+        . = ALIGN (0x2);
+        __bss_end = . ;
+    } > ram
+    __bss_size = __bss_end - __bss_start;
+    
+
+    .noinit (NOLOAD) :
+    {
+        . = ALIGN (0x2);
+        __noinit_start = .;
+        *(.noinit)
+        . = ALIGN (0x2);
+        __noinit_end = .;
+    } > ram
+    __noinit_size = __noinit_end - __noinit_start;
+
+    .text :
+    {
+         _stext = .;
+   
+        . = ALIGN (2);
+                                         
+        *(.text)
+        *(.text.*)
+
+        *(.rodata)
+        *(.rodata.*)
+        . = ALIGN (0x2);
+        _etext = .;
+
+    } > ram
+
+
+    /* The stack starts immediately after the global variables */
+    PROVIDE (_stack = .);
+    
+    /* This is the starting address of the heap.
+     * It is located at the end of RAM and grows downward to the end of stack.
+     * In a typical embedded application the heap is not used, but this
+     * symbol has to be defined since some library functions need it.
+     */
+    PROVIDE (__end = ORIGIN(ram) + LENGTH(ram));  /* end of RAM */
+
+}

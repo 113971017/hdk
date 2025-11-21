@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['wakeup_5fdisable',['Wakeup_Disable',['../group___wake_up.html#ga41b59e02ba626fb909ece8ef3658e694',1,'wakeup_imp.h']]],
+  ['wakeup_5fenable',['Wakeup_Enable',['../group___wake_up.html#ga0771ba06f249658b1d5545c845ac0ab9',1,'wakeup_imp.h']]],
+  ['wakeuptimer_5finit',['WakeupTimer_Init',['../group___wakeup_timer.html#ga09f58b6fdb2ce9e36c80e65fe94220ed',1,'WakeupTimer_Init(uint16_t mant, uint16_t exponent):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#ga09f58b6fdb2ce9e36c80e65fe94220ed',1,'WakeupTimer_Init(uint16_t mant, uint16_t exponent):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#ga09f58b6fdb2ce9e36c80e65fe94220ed',1,'WakeupTimer_Init(uint16_t mant, uint16_t exponent):&#160;wakeup_timer_imp.h']]],
+  ['wakeuptimer_5fintclear',['WakeupTimer_IntClear',['../group___wakeup_timer.html#gad5cd44cbbe18bd88c4b211a1128ddf0e',1,'WakeupTimer_IntClear(void):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#gad5cd44cbbe18bd88c4b211a1128ddf0e',1,'WakeupTimer_IntClear(void):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#gad5cd44cbbe18bd88c4b211a1128ddf0e',1,'WakeupTimer_IntClear(void):&#160;wakeup_timer_imp.h']]],
+  ['wakeuptimer_5frestart',['WakeupTimer_Restart',['../group___wakeup_timer.html#ga5aaef4f128047751c984f632655527a9',1,'WakeupTimer_Restart(WakeupTimerPeriod_Type period):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#ga5aaef4f128047751c984f632655527a9',1,'WakeupTimer_Restart(WakeupTimerPeriod_Type period):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#ga5aaef4f128047751c984f632655527a9',1,'WakeupTimer_Restart(WakeupTimerPeriod_Type period):&#160;wakeup_timer_imp.h']]]
+];

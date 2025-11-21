@@ -1,0 +1,4883 @@
+mlx16-gcc (GCC) 3.4.3 / Melexis Mlx16-GCC v1.12.6
+Copyright (C) 2004 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Profile: 91804CA_14BAR_XZ
+
+BSIxx-SGA_mems.elf:     file format elf32-mlx16-ex
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00001dd4  00006c00  00006c00  000000d8  2**3
+                  CONTENTS, ALLOC, LOAD, CODE
+  1 .dp           0000000c  00002000  000089d4  00001eac  2**1
+                  ALLOC
+  2 .bss          00000022  0000200c  000089d4  00001eac  2**1
+                  ALLOC
+  3 .noinit       00000002  0000202e  000089d4  00001eac  2**0
+                  ALLOC
+  4 .scratchpad   00000020  00000170  00000170  000000d4  2**1
+                  ALLOC
+  5 .debug_abbrev 00002441  00000000  00000000  00001eac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000b43f  00000000  00000000  000042ed  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000059bd  00000000  00000000  0000f72c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00001968  00000000  00000000  000150ec  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_pubnames 0000242b  00000000  00000000  00016a54  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_aranges 00000788  00000000  00000000  00018e7f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    00004cd3  00000000  00000000  00019607  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .comment      00000011  00000000  00000000  0001e2da  2**0
+                  CONTENTS, READONLY
+
+Disassembly of section .text:
+
+00006c00 <__vectors>:
+    6c00:	54f0      	mov	UPr, #0
+    6c02:	76da 36a4 	jmpf	0x6d48 <_ISR_MLX16_RESET>
+    6c06:	0000      	nop
+    6c08:	54f0      	mov	UPr, #0
+    6c0a:	76da 36a0 	jmpf	0x6d40 <__vectors_end>
+    6c0e:	0000      	nop
+    6c10:	54f0      	mov	UPr, #0
+    6c12:	76da 36a0 	jmpf	0x6d40 <__vectors_end>
+    6c16:	0000      	nop
+    6c18:	54f0      	mov	UPr, #0
+    6c1a:	76da 36a0 	jmpf	0x6d40 <__vectors_end>
+    6c1e:	0000      	nop
+    6c20:	54f0      	mov	UPr, #0
+    6c22:	76da 36a0 	jmpf	0x6d40 <__vectors_end>
+    6c26:	0000      	nop
+    6c28:	923c      	adc	AL, [S-61]
+    6c2a:	733c      	lod	A, ep:0x3c <__bss_size+0x1a>
+    6c2c:	0a01      	setb	dp:0x00.1
+    6c2e:	0109      	jmp	0x6e42 <_init_default_value+0x10>
+    6c30:	54d0      	psup	#0
+    6c32:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c36:	0000      	nop
+    6c38:	54d0      	psup	#0
+    6c3a:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c3e:	0000      	nop
+    6c40:	54d0      	psup	#0
+    6c42:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c46:	0000      	nop
+    6c48:	54d2      	psup	#2
+    6c4a:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c4e:	0000      	nop
+    6c50:	54d2      	psup	#2
+    6c52:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c56:	0000      	nop
+    6c58:	54d2      	psup	#2
+    6c5a:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c5e:	0000      	nop
+    6c60:	54d2      	psup	#2
+    6c62:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c66:	0000      	nop
+    6c68:	54d2      	psup	#2
+    6c6a:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c6e:	0000      	nop
+    6c70:	54d2      	psup	#2
+    6c72:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c76:	0000      	nop
+    6c78:	54d2      	psup	#2
+    6c7a:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c7e:	0000      	nop
+    6c80:	54d2      	psup	#2
+    6c82:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c86:	0000      	nop
+    6c88:	54d2      	psup	#2
+    6c8a:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c8e:	0000      	nop
+    6c90:	54d2      	psup	#2
+    6c92:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c96:	0000      	nop
+    6c98:	54d2      	psup	#2
+    6c9a:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6c9e:	0000      	nop
+    6ca0:	54d2      	psup	#2
+    6ca2:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6ca6:	0000      	nop
+    6ca8:	54d2      	psup	#2
+    6caa:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6cae:	0000      	nop
+    6cb0:	54d2      	psup	#2
+    6cb2:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6cb6:	0000      	nop
+    6cb8:	54d2      	psup	#2
+    6cba:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6cbe:	0000      	nop
+    6cc0:	54d2      	psup	#2
+    6cc2:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6cc6:	0000      	nop
+    6cc8:	54d2      	psup	#2
+    6cca:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6cce:	0000      	nop
+    6cd0:	54d2      	psup	#2
+    6cd2:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6cd6:	0000      	nop
+    6cd8:	54d2      	psup	#2
+    6cda:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6cde:	0000      	nop
+    6ce0:	54d2      	psup	#2
+    6ce2:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6ce6:	0000      	nop
+    6ce8:	54d2      	psup	#2
+    6cea:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6cee:	0000      	nop
+    6cf0:	54d2      	psup	#2
+    6cf2:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6cf6:	0000      	nop
+    6cf8:	54d2      	psup	#2
+    6cfa:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6cfe:	0000      	nop
+    6d00:	54d2      	psup	#2
+    6d02:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6d06:	0000      	nop
+    6d08:	54d2      	psup	#2
+    6d0a:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6d0e:	0000      	nop
+    6d10:	54d2      	psup	#2
+    6d12:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6d16:	0000      	nop
+    6d18:	54d2      	psup	#2
+    6d1a:	76da 3836 	jmpf	0x706c <_ISR_LFRX_DONE>
+    6d1e:	0000      	nop
+    6d20:	54d2      	psup	#2
+    6d22:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6d26:	0000      	nop
+    6d28:	54d6      	psup	#6
+    6d2a:	76da 36a2 	jmpf	0x6d44 <_ISR_ADC_XH018>
+    6d2e:	0000      	nop
+
+00006d30 <enter_system_mode_keep_prio>:
+    6d30:	08b3      	clrb	MH.3
+    6d32:	5401      	ret
+    6d34:	0000      	nop
+    6d36:	0000      	nop
+
+00006d38 <enter_system_mode_prio_0>:
+    6d38:	54f0      	mov	UPr, #0
+    6d3a:	5401      	ret
+    6d3c:	0000      	nop
+    6d3e:	0000      	nop
+
+00006d40 <__vectors_end>:
+    6d40:	76da 3fdf 	jmpf	0x7fbe <_mlx16_fatal>
+
+00006d44 <_ISR_ADC_XH018>:
+    6d44:	72cb      	pop	M
+    6d46:	5401      	ret
+
+00006d48 <_ISR_MLX16_RESET>:
+    6d48:	72da 2030 	lod	A, #8240
+    6d4c:	52ef      	mov	S, A
+    6d4e:	7000      	lod	A, #0
+    6d50:	52e3      	mov	M, A
+    6d52:	82db 4296 	callf	0x852c <_mlx16_low_level_init>
+    6d56:	108a      	call	0x6e6c <_main>
+    6d58:	76da 3fdf 	jmpf	0x7fbe <_mlx16_fatal>
+
+00006d5c <_mulI32_I32byI16>:
+    6d5c:	52df      	push	A
+    6d5e:	7205      	lod	A, [S-6]
+    6d60:	1d8b      	jnn	0x6d78 <_mulI32_I32byU16+0x4>
+    6d62:	4811      	muls	D, A, Y
+    6d64:	48cf      	asl	D, #16
+    6d66:	7acf      	pop	Y
+    6d68:	5cc2      	neg	A
+    6d6a:	4821      	mulu	YA, A, Y
+    6d6c:	4cf0      	neg	YA
+    6d6e:	4c00      	add	D, YA
+    6d70:	4c80      	mov	YA, D
+    6d72:	5401      	ret
+
+00006d74 <_mulI32_I32byU16>:
+    6d74:	52df      	push	A
+    6d76:	7205      	lod	A, [S-6]
+    6d78:	e000      	add	Y, #0
+    6d7a:	1d8a      	jnn	0x6d90 <_mulU32_U32byU16+0x4>
+    6d7c:	5cc6      	neg	Y
+    6d7e:	4801      	mulu	D, A, Y
+    6d80:	4cd0      	neg	D
+    6d82:	48cf      	asl	D, #16
+    6d84:	7acf      	pop	Y
+    6d86:	4841      	macu	D, A, Y
+    6d88:	4c80      	mov	YA, D
+    6d8a:	5401      	ret
+
+00006d8c <_mulU32_U32byU16>:
+    6d8c:	52df      	push	A
+    6d8e:	7205      	lod	A, [S-6]
+    6d90:	4801      	mulu	D, A, Y
+    6d92:	48cf      	asl	D, #16
+    6d94:	7acf      	pop	Y
+    6d96:	4841      	macu	D, A, Y
+    6d98:	4c80      	mov	YA, D
+    6d9a:	5401      	ret
+
+00006d9c <___udivmodqi4>:
+    6d9c:	5cf2      	usex	A
+    6d9e:	5cf6      	usex	Y
+    6da0:	0017      	jmp	0x6dd0 <___divmodhelper>
+
+00006da2 <___mulsi3>:
+    6da2:	5edf      	push	X
+    6da4:	7eef      	lod	X, S
+    6da6:	2808      	sub	X, #8
+    6da8:	1002      	call	0x6dae <___mulsi3_1>
+    6daa:	7ecf      	pop	X
+    6dac:	5401      	ret
+
+00006dae <___mulsi3_1>:
+    6dae:	4c83      	push	D
+    6db0:	4cf3      	swap	YA
+    6db2:	4806      	mulu	D, A, [X++]
+    6db4:	4cf3      	swap	YA
+    6db6:	4847      	macu	D, A, [X]
+    6db8:	2802      	sub	X, #2
+    6dba:	48cf      	asl	D, #16
+    6dbc:	4847      	macu	D, A, [X]
+    6dbe:	4c80      	mov	YA, D
+    6dc0:	4cc3      	pop	D
+    6dc2:	5401      	ret
+
+00006dc4 <___mulsi3_D>:
+    6dc4:	5edf      	push	X
+    6dc6:	7eef      	lod	X, S
+    6dc8:	2002      	add	X, #2
+    6dca:	17f1      	call	0x6dae <___mulsi3_1>
+    6dcc:	7ecf      	pop	X
+    6dce:	5401      	ret
+
+00006dd0 <___divmodhelper>:
+    6dd0:	ac00      	cmp	A, #0
+    6dd2:	1d02      	jne	0x6dd8 <___divmodhelper+0x8>
+    6dd4:	7800      	lod	Y, #0
+    6dd6:	5401      	ret
+    6dd8:	5edf      	push	X
+    6dda:	7ee6      	lod	X, Y
+    6ddc:	7800      	lod	Y, #0
+    6dde:	4c63      	divu	YA, X
+    6de0:	4c63      	divu	YA, X
+    6de2:	7ecf      	pop	X
+    6de4:	5401      	ret
+
+00006de6 <_memcpy>:
+    6de6:	52df      	push	A
+    6de8:	7207      	lod	A, [S-8]
+    6dea:	1913      	je	0x6e12 <_memcpy+0x2c>
+    6dec:	7e01      	lod	X, [S-2]
+    6dee:	7a05      	lod	Y, [S-6]
+    6df0:	44f2      	asr	A, #2
+    6df2:	1906      	je	0x6e00 <_memcpy+0x1a>
+    6df4:	54c4      	movsb	[X++], [Y++]
+    6df6:	54c4      	movsb	[X++], [Y++]
+    6df8:	54c4      	movsb	[X++], [Y++]
+    6dfa:	54c4      	movsb	[X++], [Y++]
+    6dfc:	a801      	sub	A, #1
+    6dfe:	1f7a      	jsg	0x6df4 <_memcpy+0xe>
+    6e00:	7207      	lod	A, [S-8]
+    6e02:	b402      	and	A, #2
+    6e04:	1902      	je	0x6e0a <_memcpy+0x24>
+    6e06:	54c4      	movsb	[X++], [Y++]
+    6e08:	54c4      	movsb	[X++], [Y++]
+    6e0a:	7207      	lod	A, [S-8]
+    6e0c:	b401      	and	A, #1
+    6e0e:	1901      	je	0x6e12 <_memcpy+0x2c>
+    6e10:	54c4      	movsb	[X++], [Y++]
+    6e12:	72cf      	pop	A
+    6e14:	5401      	ret
+
+00006e16 <_memcmp>:
+    6e16:	7ee2      	lod	X, A
+    6e18:	7205      	lod	A, [S-6]
+    6e1a:	1908      	je	0x6e2c <_memcmp+0x16>
+    6e1c:	7a03      	lod	Y, [S-4]
+    6e1e:	52df      	push	A
+    6e20:	6ade      	lod	AH, [X++]
+    6e22:	cad6      	sub	AH, [Y++]
+    6e24:	1d04      	jne	0x6e2e <_memcmp+0x18>
+    6e26:	72cf      	pop	A
+    6e28:	a801      	sub	A, #1
+    6e2a:	1d79      	jne	0x6e1e <_memcmp+0x8>
+    6e2c:	5401      	ret
+    6e2e:	4412      	rrc	A
+    6e30:	5403      	ret	#4
+
+00006e32 <_init_default_value>:
+
+
+extern void Hendrickson_Init(void);
+ void init_default_value(void)
+{
+	TPMS_state_Init(DEFAULT_TPMS_STATE);
+    6e32:	7000      	lod	A, #0
+    6e34:	82db 3f4a 	callf	0x7e94 <_TPMS_state_Init>
+	Hendrickson_Init();
+    6e38:	82db 3bde 	callf	0x77bc <_Hendrickson_Init>
+
+	SP_lfrx_rec.rx_times = 0;
+    6e3c:	62d8 017e 	lod	AL, 0x17e <_SP_lfrx_rec>
+    6e40:	94f0      	and	AL, #-16
+    6e42:	42d8 017e 	mov	0x17e <_SP_lfrx_rec>, AL
+	//SP_WAL_Result = 0;
+	//SP_state.as_field.pressure_range = get_pressgre_range();
+
+    //PAL_LR_flag =0;
+	SP_lf_count = 0;
+    6e46:	6000      	lod	AL, #0
+    6e48:	42d8 0170 	mov	0x170 <_SP_lf_count>, AL
+    SP_timer_wakeup_time = 0;
+    6e4c:	42d8 0184 	mov	0x184 <_SP_timer_wakeup_time>, AL
+    SP_timer_wakeup_totalTime = 0;
+    6e50:	7000      	lod	A, #0
+    6e52:	52d8 0186 	mov	0x186 <_SP_timer_wakeup_totalTime>, A
+    SP_state_keep_time = 0;
+    6e56:	52d8 0176 	mov	0x176 <_SP_state_keep_time>, A
+	get_pressgre_range();
+    6e5a:	82db 3fcb 	callf	0x7f96 <_get_pressgre_range>
+/* Inline version of the memset function
+ */
+ 
+extern __inline void *memset (void *buf, int c, size_t n)
+{
+  char *p = buf;
+    6e5e:	7ada 0178 	lod	Y, #376
+    6e62:	7c06      	lod	X, #6
+  
+  while( n-- )
+	*p++ = (char)c;
+    6e64:	6000      	lod	AL, #0
+    6e66:	42d6      	mov	[Y++], AL
+    6e68:	1bfd      	djnz	X, 0x6e64 <_init_default_value+0x32>
+
+/* Inline version of the memset function
+ */
+ 
+extern __inline void *memset (void *buf, int c, size_t n)
+{
+    6e6a:	5401      	ret
+
+00006e6c <_main>:
+static INLINE void init_io_ports(void);
+static INLINE void reset_io_ports(void);
+
+// MAIN function
+int main ( void )
+{
+    6e6c:	5813      	inc	S, #20
+	if (Sys_IsColdBoot()) {
+    6e6e:	82db 423c 	callf	0x8478 <_Sys_IsColdBoot>
+    6e72:	8c00      	cmp	AL, #0
+    6e74:	190f      	je	0x6e94 <_main+0x28>
+        .GPIO3_CH_SEL = GPIO_DISABLED   /* Note: GPIO3 is not available */
+#else
+		.GPIO3_CH_SEL = GPIO_DIG_INPUT_WITH_PULLDOWN,
+#endif
+    }};
+    Gpio_Init(&cfg_io);
+    6e76:	72da 8848 	lod	A, #34888
+    6e7a:	82db 40b8 	callf	0x8170 <_Gpio_Init>
+#if defined(SG_ENABLE_SPI)
+    Wakeup_Enable(WAKEUP_GPIO0_HIGH);
+    6e7e:	82db 4269 	callf	0x84d2 <_Wakeup_Enable_WAKEUP_GPIO0_HIGH>
+    Itc_Enable(ITC_GPIO0);
+    6e82:	82db 40ff 	callf	0x81fe <_Itc_Enable_ITC_GPIO0>
+// MAIN function
+int main ( void )
+{
+	if (Sys_IsColdBoot()) {
+		init_io_ports();
+		init_lf();
+    6e86:	82db 3fd7 	callf	0x7fae <_init_lf>
+
+		// Add by Ian @20230330 (5D_CRC-66806_2023-03-29.pdf)
+		IO_BYTE_HOST(CUSTOM_91804, VDIG_SHORT) = 0x0Cu;
+    6e8a:	600c      	lod	AL, #12
+    6e8c:	42d8 0224 	mov	0x224 <__scratchpad_end+0x94>, AL
+
+		init_default_value();
+    6e90:	17d0      	call	0x6e32 <_init_default_value>
+    6e92:	00da      	jmp	0x7048 <_main+0x1dc>
+	}
+	else if (Itc_IsPending(ITC_WUPTMR)) { // Wake up By Wake-up-Timer
+    6e94:	82db 4118 	callf	0x8230 <_Itc_IsPending_ITC_WUPTMR>
+    6e98:	ac00      	cmp	A, #0
+    6e9a:	192a      	je	0x6ef0 <_main+0x84>
+		WakeupTimer_IntClear();
+    6e9c:	82db 4289 	callf	0x8512 <_WakeupTimer_IntClear>
+		NvRam_Recall();  //added to ensure nvRAM is always recalled
+    6ea0:	82db 419d 	callf	0x833a <_NvRam_Recall>
+
+		if( SP_state.as_field.action_state == AS_TRIGGER_MANCHESTER ){
+    6ea4:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    6ea8:	8c0b      	cmp	AL, #11
+    6eaa:	1d03      	jne	0x6eb2 <_main+0x46>
+			Itc_Disable(ITC_GPIO0);
+    6eac:	82db 4105 	callf	0x820a <_Itc_Disable_ITC_GPIO0>
+    6eb0:	0019      	jmp	0x6ee4 <_main+0x78>
+		}
+		else if( SP_lf_count > THRESHOLD_LF_COUNT_MAX ) {
+    6eb2:	62d8 0170 	lod	AL, 0x170 <_SP_lf_count>
+    6eb6:	8c0f      	cmp	AL, #15
+    6eb8:	1a04      	jule	0x6ec2 <_main+0x56>
+			//SP_lf_count = 0;
+			Itc_Disable(ITC_GPIO0);
+    6eba:	82db 4105 	callf	0x820a <_Itc_Disable_ITC_GPIO0>
+			SP_state.as_field.action_state = AS_TRIGGER;
+    6ebe:	600a      	lod	AL, #10
+    6ec0:	000f      	jmp	0x6ee0 <_main+0x74>
+			SP_state.as_field.dir = DIR_UNKNOWN;
+			SP_lfrx_rec.rx_times = 0;
+#endif
+		}
+		else {
+			SP_timer_wakeup_totalTime += SP_timer_wakeup_time;
+    6ec2:	62d8 0184 	lod	AL, 0x184 <_SP_timer_wakeup_time>
+    6ec6:	66e0      	lod	YL, AL
+    6ec8:	5cf6      	usex	Y
+    6eca:	72d8 0186 	lod	A, 0x186 <_SP_timer_wakeup_totalTime>
+    6ece:	a2e6      	add	A, Y
+    6ed0:	52d8 0186 	mov	0x186 <_SP_timer_wakeup_totalTime>, A
+			SP_state_keep_time += SP_timer_wakeup_time;
+    6ed4:	72d8 0176 	lod	A, 0x176 <_SP_state_keep_time>
+    6ed8:	a2e6      	add	A, Y
+    6eda:	52d8 0176 	mov	0x176 <_SP_state_keep_time>, A
+			SP_state.as_field.action_state = AS_NONE;
+    6ede:	6000      	lod	AL, #0
+    6ee0:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+		}
+		SP_lf_count = 0;
+    6ee4:	6400      	lod	YL, #0
+    6ee6:	46d8 0170 	mov	0x170 <_SP_lf_count>, YL
+		measurements_valid = ( DET_PVT|DET_ACC|DET_G );
+	}
+	else
+#endif
+	{
+		measurements_valid = DET_NONE;
+    6eea:	7000      	lod	A, #0
+    6eec:	5100      	mov	dp:0x0 <__data_dp_size>, A
+    6eee:	00ac      	jmp	0x7048 <_main+0x1dc>
+			SP_state.as_field.action_state = AS_NONE;
+		}
+		SP_lf_count = 0;
+		update_measurements();
+	}
+	else if (Itc_IsPending(ITC_GPIO0)){ // Wake up By SPI MISO
+    6ef0:	82db 410b 	callf	0x8216 <_Itc_IsPending_ITC_GPIO0>
+    6ef4:	ac00      	cmp	A, #0
+    6ef6:	190e      	je	0x6f14 <_main+0xa8>
+		Itc_ClearPending(ITC_GPIO0);
+    6ef8:	82db 4114 	callf	0x8228 <_Itc_ClearPending_ITC_GPIO0>
+
+		Itc_Disable(ITC_GPIO0);
+    6efc:	82db 4105 	callf	0x820a <_Itc_Disable_ITC_GPIO0>
+		measurements_valid = ( DET_PVT|DET_ACC|DET_G );
+	}
+	else
+#endif
+	{
+		measurements_valid = DET_NONE;
+    6f00:	7800      	lod	Y, #0
+    6f02:	5900      	mov	dp:0x0 <__data_dp_size>, Y
+		Itc_Disable(ITC_GPIO0);
+		//dbg("WU.SPI");
+		update_measurements();
+
+	  #if defined(SG_ENABLE_SPI)
+		if( SPI_READ() ){
+    6f04:	122e      	call	0x7362 <_SPI_READ>
+    6f06:	8c00      	cmp	AL, #0
+    6f08:	1d01      	jne	0x6f0c <_main+0xa0>
+    6f0a:	009e      	jmp	0x7048 <_main+0x1dc>
+			NvRam_Recall();
+    6f0c:	82db 419d 	callf	0x833a <_NvRam_Recall>
+			Process_spi_buf_rx();
+    6f10:	137f      	call	0x7610 <_Process_spi_buf_rx>
+    6f12:	009a      	jmp	0x7048 <_main+0x1dc>
+		}
+	  #endif
+	}
+#ifdef SG_ENABLE_LFRX_MANCHESTER
+	else if (Itc_IsPending(ITC_LFRX_DONE)) {	// Wake up By LF
+    6f14:	82db 4142 	callf	0x8284 <_Itc_IsPending_ITC_LFRX_DONE>
+    6f18:	ac00      	cmp	A, #0
+    6f1a:	1d01      	jne	0x6f1e <_main+0xb2>
+    6f1c:	0074      	jmp	0x7006 <_main+0x19a>
+static INLINE void Process_LF_Message(void) {
+	uint8_t m_buf[8];
+	uint8_t LfRx_size = 0;
+	uint8_t i;
+
+	LfRx_size = LfRx_FifoCount();
+    6f1e:	82db 416a 	callf	0x82d4 <_LfRx_FifoCount>
+    6f22:	5cf2      	usex	A
+    6f24:	520b      	mov	[S-12], A
+
+	if ((LfRx_size >= 4) && (!LfRx_IsFifoOverrun())) {
+    6f26:	8c03      	cmp	AL, #3
+    6f28:	1e01      	jug	0x6f2c <_main+0xc0>
+    6f2a:	006a      	jmp	0x7000 <_main+0x194>
+    6f2c:	82db 416e 	callf	0x82dc <_LfRx_IsFifoOverrun>
+    6f30:	8c00      	cmp	AL, #0
+    6f32:	1901      	je	0x6f36 <_main+0xca>
+    6f34:	0065      	jmp	0x7000 <_main+0x194>
+		for ( i = 0; i < LfRx_size; i++) {
+    6f36:	7000      	lod	A, #0
+    6f38:	5209      	mov	[S-10], A
+    6f3a:	8e0b      	cmp	AL, [S-12]
+    6f3c:	1c0c      	jnc	0x6f56 <_main+0xea>
+			m_buf[i] = LfRx_FifoReadByte();
+    6f3e:	7aef      	lod	Y, S
+    6f40:	e0ec      	add	Y, #-20
+    6f42:	e209      	add	Y, [S-10]
+    6f44:	5a07      	mov	[S-8], Y
+    6f46:	82db 4160 	callf	0x82c0 <_LfRx_FifoReadByte>
+    6f4a:	7a07      	lod	Y, [S-8]
+    6f4c:	42f0      	mov	[Y], AL
+	uint8_t i;
+
+	LfRx_size = LfRx_FifoCount();
+
+	if ((LfRx_size >= 4) && (!LfRx_IsFifoOverrun())) {
+		for ( i = 0; i < LfRx_size; i++) {
+    6f4e:	6209      	lod	AL, [S-10]
+    6f50:	8001      	add	AL, #1
+    6f52:	5cf2      	usex	A
+    6f54:	07f1      	jmp	0x6f38 <_main+0xcc>
+			m_buf[i] = LfRx_FifoReadByte();
+		}
+
+		if( SP_lfrx_rec.rx_times == 0 ){
+    6f56:	62d8 017e 	lod	AL, 0x17e <_SP_lfrx_rec>
+    6f5a:	4205      	mov	[S-6], AL
+    6f5c:	940f      	and	AL, #15
+    6f5e:	4204      	mov	[S-5], AL
+    6f60:	1d24      	jne	0x6faa <_main+0x13e>
+			if(LfRx_size <= 4){
+    6f62:	620b      	lod	AL, [S-12]
+    6f64:	8c04      	cmp	AL, #4
+    6f66:	1a01      	jule	0x6f6a <_main+0xfe>
+    6f68:	004b      	jmp	0x7000 <_main+0x194>
+				SP_lfrx_rec.data_len = LfRx_size;
+    6f6a:	44a0      	asl	AL, #2
+    6f6c:	44a0      	asl	AL, #2
+    6f6e:	42d8 017e 	mov	0x17e <_SP_lfrx_rec>, AL
+  char *p = buf;
+    6f72:	7ada 017f 	lod	Y, #383
+    6f76:	7c04      	lod	X, #4
+  
+  while( n-- )
+	*p++ = (char)c;
+    6f78:	6000      	lod	AL, #0
+    6f7a:	42d6      	mov	[Y++], AL
+    6f7c:	1bfd      	djnz	X, 0x6f78 <_main+0x10c>
+				memset(SP_lfrx_rec.data, 0x00, sizeof(SP_lfrx_rec.data));
+				memcpy(SP_lfrx_rec.data, m_buf, LfRx_size);
+    6f7e:	7a0b      	lod	Y, [S-12]
+    6f80:	5adf      	push	Y
+    6f82:	72ef      	lod	A, S
+    6f84:	a0ea      	add	A, #-22
+    6f86:	52df      	push	A
+    6f88:	72da 017f 	lod	A, #383
+    6f8c:	172c      	call	0x6de6 <_memcpy>
+    6f8e:	5c03      	dec	S, #4
+
+				SP_lfrx_rec.rx_times++;
+    6f90:	62d8 017e 	lod	AL, 0x17e <_SP_lfrx_rec>
+    6f94:	4203      	mov	[S-4], AL
+    6f96:	940f      	and	AL, #15
+    6f98:	8001      	add	AL, #1
+    6f9a:	940f      	and	AL, #15
+    6f9c:	4202      	mov	[S-3], AL
+    6f9e:	6203      	lod	AL, [S-4]
+    6fa0:	94f0      	and	AL, #-16
+    6fa2:	8602      	or	AL, [S-3]
+    6fa4:	42d8 017e 	mov	0x17e <_SP_lfrx_rec>, AL
+    6fa8:	002b      	jmp	0x7000 <_main+0x194>
+			}
+		}
+		else{
+			if( SP_lfrx_rec.data_len == LfRx_size &&
+    6faa:	6205      	lod	AL, [S-6]
+    6fac:	44b0      	lsr	AL, #2
+    6fae:	44b0      	lsr	AL, #2
+    6fb0:	8e0b      	cmp	AL, [S-12]
+    6fb2:	1d26      	jne	0x7000 <_main+0x194>
+    6fb4:	7a0b      	lod	Y, [S-12]
+    6fb6:	5adf      	push	Y
+    6fb8:	72ef      	lod	A, S
+    6fba:	a0ea      	add	A, #-22
+    6fbc:	52df      	push	A
+    6fbe:	72da 017f 	lod	A, #383
+    6fc2:	1729      	call	0x6e16 <_memcmp>
+    6fc4:	5c03      	dec	S, #4
+    6fc6:	ac00      	cmp	A, #0
+    6fc8:	1d1b      	jne	0x7000 <_main+0x194>
+				memcmp(SP_lfrx_rec.data, m_buf, LfRx_size) == 0	){
+				SP_lfrx_rec.rx_times++;
+    6fca:	6204      	lod	AL, [S-5]
+    6fcc:	8001      	add	AL, #1
+    6fce:	940f      	and	AL, #15
+    6fd0:	4201      	mov	[S-2], AL
+    6fd2:	6205      	lod	AL, [S-6]
+    6fd4:	94f0      	and	AL, #-16
+    6fd6:	8601      	or	AL, [S-2]
+    6fd8:	42d8 017e 	mov	0x17e <_SP_lfrx_rec>, AL
+
+				if( SP_lfrx_rec.rx_times >= THRESHOLD_LFRX_COUNT_MAX ){
+    6fdc:	940f      	and	AL, #15
+    6fde:	8c09      	cmp	AL, #9
+    6fe0:	1a0f      	jule	0x7000 <_main+0x194>
+					NvRam_Recall();
+    6fe2:	82db 419d 	callf	0x833a <_NvRam_Recall>
+					SP_lfrx_rec.rx_times = 0;
+    6fe6:	62d8 017e 	lod	AL, 0x17e <_SP_lfrx_rec>
+    6fea:	94f0      	and	AL, #-16
+    6fec:	42d8 017e 	mov	0x17e <_SP_lfrx_rec>, AL
+					SP_state.as_field.action_state = AS_TRIGGER_MANCHESTER;
+    6ff0:	600b      	lod	AL, #11
+    6ff2:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+#if 1
+					#if 1
+					WakeupTimer_Restart(WT_PERIOD_2_MS);	// example
+    6ff6:	7001      	lod	A, #1
+    6ff8:	82db 426f 	callf	0x84de <_WakeupTimer_Restart>
+					Sys_DeepSleepWith(LF_DISABLED);
+    6ffc:	7000      	lod	A, #0
+    6ffe:	001c      	jmp	0x7038 <_main+0x1cc>
+		SP_state.as_field.action_state = AS_TRIGGER_MANCHESTER;
+	}
+  #endif
+
+	/* Invalid LF command */
+	LfRx_FifoFlush(); /* Clean RFTx FIFO in case of an invalid payload */
+    7000:	82db 4166 	callf	0x82cc <_LfRx_FifoFlush>
+    7004:	0018      	jmp	0x7036 <_main+0x1ca>
+	else if (Itc_IsPending(ITC_LFRX_DONE)) {	// Wake up By LF
+		Process_LF_Message();
+
+	}
+#endif
+	else if (Itc_IsPending(ITC_LFRX_TIMEOUT)) { // Wake up By LF timeout
+    7006:	82db 4129 	callf	0x8252 <_Itc_IsPending_ITC_LFRX_TIMEOUT>
+    700a:	ac00      	cmp	A, #0
+    700c:	1917      	je	0x703c <_main+0x1d0>
+		Itc_ClearPending(ITC_LFRX_TIMEOUT);
+    700e:	82db 4132 	callf	0x8264 <_Itc_ClearPending_ITC_LFRX_TIMEOUT>
+
+		Itc_Disable(ITC_LFRX_TIMEOUT);
+    7012:	82db 4123 	callf	0x8246 <_Itc_Disable_ITC_LFRX_TIMEOUT>
+		Itc_Disable(ITC_GPIO0);
+    7016:	82db 4105 	callf	0x820a <_Itc_Disable_ITC_GPIO0>
+		//Wakeup_Disable(WAKEUP_GPIO0_HIGH);
+
+		SP_lf_count++;
+    701a:	62d8 0170 	lod	AL, 0x170 <_SP_lf_count>
+    701e:	8001      	add	AL, #1
+    7020:	42d8 0170 	mov	0x170 <_SP_lf_count>, AL
+		if(SP_lf_count > THRESHOLD_LF_COUNT_MAX ) {
+    7024:	8c0f      	cmp	AL, #15
+    7026:	1a03      	jule	0x702e <_main+0x1c2>
+			WakeupTimer_Restart(WT_PERIOD_50_MS);
+    7028:	7031      	lod	A, #49
+    702a:	82db 426f 	callf	0x84de <_WakeupTimer_Restart>
+		}
+
+		LfRx_FifoFlush();
+    702e:	82db 4166 	callf	0x82cc <_LfRx_FifoFlush>
+		Itc_Enable(ITC_LFRX_TIMEOUT);
+    7032:	82db 411d 	callf	0x823a <_Itc_Enable_ITC_LFRX_TIMEOUT>
+		Sys_DeepSleepWith(LF_RECEIVE);
+    7036:	7003      	lod	A, #3
+    7038:	82db 422c 	callf	0x8458 <_Sys_DeepSleepWith>
+		#if defined(TEST_ENABLE_RESET_GPIO)
+		reset_io_ports();
+		#endif
+	}
+	else { // unexpected wrong wake-up
+		if(SP_state.as_field.action_state != AS_REQUEST_INFO) {
+    703c:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7040:	8c04      	cmp	AL, #4
+    7042:	1902      	je	0x7048 <_main+0x1dc>
+			//dbg("WU.Others");
+			//dbg_string("WU.Others");
+			Sys_ResetCpu();
+    7044:	82db 4293 	callf	0x8526 <_Sys_ResetCpu>
+		}
+	}
+
+
+#if defined(SG_ENABLE_SPI)
+  Itc_Disable(ITC_GPIO0);
+    7048:	82db 4105 	callf	0x820a <_Itc_Disable_ITC_GPIO0>
+#endif
+
+  if(SP_state.as_field.action_state != AS_REQUEST_INFO) {
+    704c:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7050:	8c04      	cmp	AL, #4
+    7052:	1905      	je	0x705e <_main+0x1f2>
+	  TPMS_state_Measurements();
+    7054:	13f9      	call	0x7848 <_TPMS_state_Measurements>
+
+	  TPMS_state_Motion_Detection();
+    7056:	82db 3c66 	callf	0x78cc <_TPMS_state_Motion_Detection>
+
+	  TPMS_state_processing_and_update();
+    705a:	82db 3edf 	callf	0x7dbe <_TPMS_state_processing_and_update>
+  }
+  //2024/01/04
+  SP_lf_count = 0;
+    705e:	6400      	lod	YL, #0
+    7060:	46d8 0170 	mov	0x170 <_SP_lf_count>, YL
+  TPMS_state_processing_end();
+    7064:	82db 3d00 	callf	0x7a00 <_TPMS_state_processing_end>
+  return 0;
+}
+    7068:	7000      	lod	A, #0
+    706a:	5415      	ret	#22
+
+0000706c <_ISR_LFRX_DONE>:
+ * Arguments:   none
+ * Returns:     none
+ * Notes:       LFTx DONE Interrupt handler
+ */
+__attribute__((interrupt))
+void ISR_LFRX_DONE(void) {
+    706c:	52df      	push	A
+    706e:	5edf      	push	X
+    7070:	5adf      	push	Y
+    7072:	4c83      	push	D
+//	Gpio_SetPinMode(SPI_CLK, GPIO_DIG_OUTPUT_1);
+	Lf_Disable();
+    7074:	82db 415c 	callf	0x82b8 <_Lf_Disable>
+	Itc_Disable(ITC_LFRX_DONE);
+    7078:	82db 413c 	callf	0x8278 <_Itc_Disable_ITC_LFRX_DONE>
+	Itc_ClearPending(ITC_LFRX_DONE);
+    707c:	82db 414a 	callf	0x8294 <_Itc_ClearPending_ITC_LFRX_DONE>
+    7080:	4cc3      	pop	D
+    7082:	7acf      	pop	Y
+    7084:	7ecf      	pop	X
+    7086:	72cf      	pop	A
+    7088:	72cb      	pop	M
+    708a:	5401      	ret
+
+0000708c <_SPI_OUT_ENABLE>:
+
+
+
+
+bool SPI_OUT_ENABLE(void)
+{
+    708c:	5803      	inc	S, #4
+	uint16_t waitack_count = 0;
+    708e:	7000      	lod	A, #0
+    7090:	5203      	mov	[S-4], A
+	uint8_t	ackcalc_count = 0;
+    7092:	5201      	mov	[S-2], A
+
+	WAKEUP_BLE();
+    7094:	54ca 0005 	pushw	#5
+    7098:	7001      	lod	A, #1
+    709a:	82db 40c2 	callf	0x8184 <_Gpio_SetPinMode>
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    709e:	5c01      	dec	S, #2
+    70a0:	7c04      	lod	X, #4
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    70a2:	20fe      	add	X, #-2
+    70a4:	1bff      	djnz	X, 0x70a4 <_SPI_OUT_ENABLE+0x18>
+    70a6:	54ca 0001 	pushw	#1
+    70aa:	7001      	lod	A, #1
+    70ac:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    70b0:	5c01      	dec	S, #2
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    70b2:	7eda 07d0 	lod	X, #2000
+    70b6:	20fe      	add	X, #-2
+    70b8:	1bff      	djnz	X, 0x70b8 <_SPI_OUT_ENABLE+0x2c>
+    70ba:	54ca 0000 	pushw	#0
+    70be:	7001      	lod	A, #1
+    70c0:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    70c4:	5c01      	dec	S, #2
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    70c6:	7eda 07d0 	lod	X, #2000
+    70ca:	20fe      	add	X, #-2
+    70cc:	1bff      	djnz	X, 0x70cc <_SPI_OUT_ENABLE+0x40>
+
+
+    Gpio_WritePin(SPI_MOSI, 1);
+    70ce:	54ca 0001 	pushw	#1
+    70d2:	7001      	lod	A, #1
+    70d4:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+	for(waitack_count=0; waitack_count<SPI_TIMEOUT_MS_MOSI; waitack_count++){
+    70d8:	5c01      	dec	S, #2
+
+		if(Gpio_ReadPin(SPI_MISO)){
+    70da:	7000      	lod	A, #0
+    70dc:	82db 40cd 	callf	0x819a <_Gpio_ReadPin>
+    70e0:	8c00      	cmp	AL, #0
+    70e2:	192b      	je	0x713a <_SPI_OUT_ENABLE+0xae>
+			ackcalc_count++;
+    70e4:	6201      	lod	AL, [S-2]
+    70e6:	8001      	add	AL, #1
+    70e8:	5cf2      	usex	A
+    70ea:	5201      	mov	[S-2], A
+			if(ackcalc_count > 3)
+    70ec:	8c03      	cmp	AL, #3
+    70ee:	1a2d      	jule	0x714a <_SPI_OUT_ENABLE+0xbe>
+			{
+				ackcalc_count = 0;
+    70f0:	7000      	lod	A, #0
+    70f2:	5201      	mov	[S-2], A
+				Gpio_WritePin(SPI_MOSI, 0);
+    70f4:	54ca 0000 	pushw	#0
+    70f8:	7001      	lod	A, #1
+    70fa:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+				while(Gpio_ReadPin(SPI_MISO)){
+    70fe:	5c01      	dec	S, #2
+    7100:	0012      	jmp	0x7126 <_SPI_OUT_ENABLE+0x9a>
+					if (AbsWatchdog_IsWindowOpen()){
+    7102:	82db 3fe2 	callf	0x7fc4 <_AbsWatchdog_IsWindowOpen>
+    7106:	8c00      	cmp	AL, #0
+    7108:	1902      	je	0x710e <_SPI_OUT_ENABLE+0x82>
+						AbsWatchdog_Restart();
+    710a:	82db 3fe0 	callf	0x7fc0 <_AbsWatchdog_Restart>
+					}
+					ackcalc_count++;
+    710e:	6201      	lod	AL, [S-2]
+    7110:	8001      	add	AL, #1
+    7112:	5cf2      	usex	A
+    7114:	5201      	mov	[S-2], A
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    7116:	7eda 07d0 	lod	X, #2000
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    711a:	20fe      	add	X, #-2
+    711c:	1bff      	djnz	X, 0x711c <_SPI_OUT_ENABLE+0x90>
+					DELAY_US(DEFAULT_MOSI_WAKEUP_TIME_US);
+
+					if(ackcalc_count > 20)
+    711e:	8c14      	cmp	AL, #20
+    7120:	1a02      	jule	0x7126 <_SPI_OUT_ENABLE+0x9a>
+					{
+						return 0;
+    7122:	7000      	lod	A, #0
+    7124:	5405      	ret	#6
+    7126:	7000      	lod	A, #0
+    7128:	82db 40cd 	callf	0x819a <_Gpio_ReadPin>
+    712c:	8c00      	cmp	AL, #0
+    712e:	1d69      	jne	0x7102 <_SPI_OUT_ENABLE+0x76>
+					}
+				}
+
+				delay_ms(1u);
+    7130:	7001      	lod	A, #1
+    7132:	82db 3f70 	callf	0x7ee0 <_delay_ms>
+				return 1;
+    7136:	7001      	lod	A, #1
+    7138:	5405      	ret	#6
+			}
+		}
+		else {
+			if (AbsWatchdog_IsWindowOpen()){
+    713a:	82db 3fe2 	callf	0x7fc4 <_AbsWatchdog_IsWindowOpen>
+    713e:	8c00      	cmp	AL, #0
+    7140:	1902      	je	0x7146 <_SPI_OUT_ENABLE+0xba>
+				AbsWatchdog_Restart();
+    7142:	82db 3fe0 	callf	0x7fc0 <_AbsWatchdog_Restart>
+			}
+
+			ackcalc_count = 0;
+    7146:	7000      	lod	A, #0
+    7148:	5201      	mov	[S-2], A
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    714a:	7eda 07d0 	lod	X, #2000
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    714e:	20fe      	add	X, #-2
+    7150:	1bff      	djnz	X, 0x7150 <_SPI_OUT_ENABLE+0xc4>
+
+	WAKEUP_BLE();
+
+
+    Gpio_WritePin(SPI_MOSI, 1);
+	for(waitack_count=0; waitack_count<SPI_TIMEOUT_MS_MOSI; waitack_count++){
+    7152:	7e03      	lod	X, [S-4]
+    7154:	2001      	add	X, #1
+    7156:	5e03      	mov	[S-4], X
+    7158:	2eda 0095 	cmp	X, #149
+    715c:	1e01      	jug	0x7160 <_SPI_OUT_ENABLE+0xd4>
+    715e:	07bd      	jmp	0x70da <_SPI_OUT_ENABLE+0x4e>
+
+		DELAY_US(DEFAULT_MOSI_WAKEUP_TIME_US);
+
+
+	}
+    Gpio_WritePin(SPI_MOSI, 0);
+    7160:	54ca 0000 	pushw	#0
+    7164:	7001      	lod	A, #1
+    7166:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+
+	return 0;
+    716a:	7000      	lod	A, #0
+    716c:	5c01      	dec	S, #2
+}
+    716e:	5405      	ret	#6
+
+00007170 <_SPI_WRITE_BYTES>:
+
+void SPI_WRITE_BYTES(uint8_t b)
+{
+    7170:	5803      	inc	S, #4
+    7172:	5203      	mov	[S-4], A
+	int8_t i;
+	for(i=7;i>=0;i--){
+    7174:	7007      	lod	A, #7
+    7176:	5201      	mov	[S-2], A
+		Gpio_WritePin(SPI_CLK, 0);
+    7178:	54ca 0000 	pushw	#0
+    717c:	7002      	lod	A, #2
+    717e:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+		Gpio_WritePin(SPI_MOSI, b&(1<<i)?1:0);
+    7182:	7205      	lod	A, [S-6]
+    7184:	7a03      	lod	Y, [S-4]
+    7186:	ec00      	cmp	Y, #0
+    7188:	1b03      	jsle	0x7190 <_SPI_WRITE_BYTES+0x20>
+    718a:	46e9      	mov	Cx, YL
+    718c:	4472      	asr	A
+    718e:	1ffe      	djnz	Cx, 0x718c <_SPI_WRITE_BYTES+0x1c>
+    7190:	b401      	and	A, #1
+    7192:	52df      	push	A
+    7194:	7001      	lod	A, #1
+    7196:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+		//delay_nops(SG_SPI_CLK_DELAY_CHG_GPIO_FRQ_CLK);
+		Gpio_WritePin(SPI_CLK, 1);
+    719a:	54ca 0001 	pushw	#1
+    719e:	7002      	lod	A, #2
+    71a0:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    71a4:	5c05      	dec	S, #6
+    71a6:	7c28      	lod	X, #40
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    71a8:	20fe      	add	X, #-2
+    71aa:	1bff      	djnz	X, 0x71aa <_SPI_WRITE_BYTES+0x3a>
+}
+
+void SPI_WRITE_BYTES(uint8_t b)
+{
+	int8_t i;
+	for(i=7;i>=0;i--){
+    71ac:	6201      	lod	AL, [S-2]
+    71ae:	80ff      	add	AL, #-1
+    71b0:	5ce2      	ssex	A
+    71b2:	5201      	mov	[S-2], A
+    71b4:	8c00      	cmp	AL, #0
+    71b6:	1ee0      	jsge	0x7178 <_SPI_WRITE_BYTES+0x8>
+    71b8:	5405      	ret	#6
+
+000071ba <_SPI_WRITE>:
+		delay_nops(SG_SPI_CLK_DELAY_FRQ_CLK);
+	}
+}
+
+void SPI_WRITE(uint8_t *buf, uint8_t len)
+{
+    71ba:	5805      	inc	S, #6
+    71bc:	5205      	mov	[S-6], A
+    71be:	6209      	lod	AL, [S-10]
+    71c0:	5cf2      	usex	A
+    71c2:	5203      	mov	[S-4], A
+	uint8_t i;
+
+	if(!buf){
+    71c4:	7205      	lod	A, [S-6]
+    71c6:	1929      	je	0x721a <_SPI_WRITE+0x60>
+		return;
+	}
+
+	if(SPI_OUT_ENABLE()){
+    71c8:	1761      	call	0x708c <_SPI_OUT_ENABLE>
+    71ca:	8c00      	cmp	AL, #0
+    71cc:	191b      	je	0x7204 <_SPI_WRITE+0x4a>
+		for(i=0;i<len;i++){
+    71ce:	7000      	lod	A, #0
+    71d0:	5201      	mov	[S-2], A
+    71d2:	8e03      	cmp	AL, [S-4]
+    71d4:	1c09      	jnc	0x71e8 <_SPI_WRITE+0x2e>
+			SPI_WRITE_BYTES(buf[i]);
+    71d6:	7a05      	lod	Y, [S-6]
+    71d8:	e201      	add	Y, [S-2]
+    71da:	62f0      	lod	AL, [Y]
+    71dc:	5cf2      	usex	A
+    71de:	17c8      	call	0x7170 <_SPI_WRITE_BYTES>
+	if(!buf){
+		return;
+	}
+
+	if(SPI_OUT_ENABLE()){
+		for(i=0;i<len;i++){
+    71e0:	6201      	lod	AL, [S-2]
+    71e2:	8001      	add	AL, #1
+    71e4:	5cf2      	usex	A
+    71e6:	07f4      	jmp	0x71d0 <_SPI_WRITE+0x16>
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    71e8:	7c28      	lod	X, #40
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    71ea:	20fe      	add	X, #-2
+    71ec:	1bff      	djnz	X, 0x71ec <_SPI_WRITE+0x32>
+		}
+
+		//DELAY_US(DEFAULT_MOSI_WAKEUP_TIME_US);
+		delay_nops(SG_SPI_CLK_DELAY_FRQ_CLK);
+
+		Gpio_WritePin(SPI_CLK, 0);
+    71ee:	54ca 0000 	pushw	#0
+    71f2:	7002      	lod	A, #2
+    71f4:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+		Gpio_WritePin(SPI_MOSI, 0);
+    71f8:	54ca 0000 	pushw	#0
+    71fc:	7001      	lod	A, #1
+    71fe:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+    7202:	5c03      	dec	S, #4
+	}
+	Gpio_SetPinMode(SPI_MOSI, GPIO_DIG_INPUT_WITH_PULLDOWN);
+    7204:	54ca 0001 	pushw	#1
+    7208:	7001      	lod	A, #1
+    720a:	82db 40c2 	callf	0x8184 <_Gpio_SetPinMode>
+	Gpio_SetPinMode(SPI_CLK, GPIO_DIG_INPUT_WITH_PULLDOWN);
+    720e:	54ca 0001 	pushw	#1
+    7212:	7002      	lod	A, #2
+    7214:	82db 40c2 	callf	0x8184 <_Gpio_SetPinMode>
+    7218:	5c03      	dec	S, #4
+    721a:	5407      	ret	#8
+
+0000721c <_SPI_R_CHECK>:
+}
+
+bool SPI_R_CHECK(void)
+{
+    721c:	5803      	inc	S, #4
+	uint16_t count = 0;
+    721e:	7000      	lod	A, #0
+    7220:	5203      	mov	[S-4], A
+	uint8_t	fail_count = 0;
+    7222:	5201      	mov	[S-2], A
+
+	Gpio_SetPinMode(SPI_MOSI, GPIO_DIG_OUTPUT_0);
+    7224:	54ca 0005 	pushw	#5
+    7228:	7001      	lod	A, #1
+    722a:	82db 40c2 	callf	0x8184 <_Gpio_SetPinMode>
+	Gpio_SetPinMode(SPI_CLK, GPIO_DIG_OUTPUT_0);
+    722e:	54ca 0005 	pushw	#5
+    7232:	7002      	lod	A, #2
+    7234:	82db 40c2 	callf	0x8184 <_Gpio_SetPinMode>
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    7238:	5c03      	dec	S, #4
+    723a:	7eda 07d0 	lod	X, #2000
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    723e:	20fe      	add	X, #-2
+    7240:	1bff      	djnz	X, 0x7240 <_SPI_R_CHECK+0x24>
+
+	DELAY_US(DEFAULT_MOSI_WAKEUP_TIME_US);
+	while(Gpio_ReadPin(SPI_MISO)){
+    7242:	003d      	jmp	0x72be <_SPI_R_CHECK+0xa2>
+		count++;
+    7244:	7203      	lod	A, [S-4]
+    7246:	a001      	add	A, #1
+    7248:	5203      	mov	[S-4], A
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    724a:	7eda 07d0 	lod	X, #2000
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    724e:	20fe      	add	X, #-2
+    7250:	1bff      	djnz	X, 0x7250 <_SPI_R_CHECK+0x34>
+		DELAY_US(DEFAULT_MOSI_WAKEUP_TIME_US);
+
+    	if (AbsWatchdog_IsWindowOpen()){
+    7252:	82db 3fe2 	callf	0x7fc4 <_AbsWatchdog_IsWindowOpen>
+    7256:	8c00      	cmp	AL, #0
+    7258:	1902      	je	0x725e <_SPI_R_CHECK+0x42>
+    		AbsWatchdog_Restart();
+    725a:	82db 3fe0 	callf	0x7fc0 <_AbsWatchdog_Restart>
+    	}
+		if(count > SPI_TIMEOUT_MS_MISO){
+    725e:	7203      	lod	A, [S-4]
+    7260:	ac50      	cmp	A, #80
+    7262:	1a02      	jule	0x7268 <_SPI_R_CHECK+0x4c>
+			return 0;
+    7264:	7000      	lod	A, #0
+    7266:	5405      	ret	#6
+		}else if(count > 50){
+    7268:	7203      	lod	A, [S-4]
+    726a:	ac32      	cmp	A, #50
+    726c:	1a28      	jule	0x72be <_SPI_R_CHECK+0xa2>
+			Gpio_WritePin(SPI_MOSI, 1);
+    726e:	54ca 0001 	pushw	#1
+    7272:	7001      	lod	A, #1
+    7274:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+			while(Gpio_ReadPin(SPI_MISO)){
+    7278:	5c01      	dec	S, #2
+    727a:	0011      	jmp	0x729e <_SPI_R_CHECK+0x82>
+				fail_count++;
+    727c:	6201      	lod	AL, [S-2]
+    727e:	8001      	add	AL, #1
+    7280:	5cf2      	usex	A
+    7282:	5201      	mov	[S-2], A
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    7284:	7eda 07d0 	lod	X, #2000
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    7288:	20fe      	add	X, #-2
+    728a:	1bff      	djnz	X, 0x728a <_SPI_R_CHECK+0x6e>
+
+				DELAY_US(DEFAULT_MOSI_WAKEUP_TIME_US);
+
+
+				if(fail_count > 50){
+    728c:	8c32      	cmp	AL, #50
+    728e:	1a07      	jule	0x729e <_SPI_R_CHECK+0x82>
+					Gpio_WritePin(SPI_MOSI, 0);
+    7290:	54ca 0000 	pushw	#0
+    7294:	7001      	lod	A, #1
+    7296:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+					return 0;
+    729a:	7000      	lod	A, #0
+    729c:	000e      	jmp	0x72ba <_SPI_R_CHECK+0x9e>
+    729e:	7000      	lod	A, #0
+    72a0:	82db 40cd 	callf	0x819a <_Gpio_ReadPin>
+    72a4:	8c00      	cmp	AL, #0
+    72a6:	1d6a      	jne	0x727c <_SPI_R_CHECK+0x60>
+				}
+			}
+			Gpio_WritePin(SPI_MOSI, 0);
+    72a8:	54ca 0000 	pushw	#0
+    72ac:	7001      	lod	A, #1
+    72ae:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+			//delay_ms(6u);
+			delay_ms(1u);
+    72b2:	7001      	lod	A, #1
+    72b4:	82db 3f70 	callf	0x7ee0 <_delay_ms>
+			return 1;
+    72b8:	7001      	lod	A, #1
+    72ba:	5c01      	dec	S, #2
+    72bc:	5405      	ret	#6
+    72be:	7000      	lod	A, #0
+    72c0:	82db 40cd 	callf	0x819a <_Gpio_ReadPin>
+    72c4:	8c00      	cmp	AL, #0
+    72c6:	1901      	je	0x72ca <_SPI_R_CHECK+0xae>
+    72c8:	07bd      	jmp	0x7244 <_SPI_R_CHECK+0x28>
+		}
+	}
+	return 0;
+    72ca:	7000      	lod	A, #0
+}
+    72cc:	5405      	ret	#6
+
+000072ce <_SPI_READ_BYTES_verify>:
+#if defined(SG_ENABLE_SPI_RX_VERIFY)
+uint8_t SPI_READ_BYTES_verify(uint8_t tx)
+#else
+uint8_t SPI_READ_BYTES(void)
+#endif
+{
+    72ce:	5805      	inc	S, #6
+    72d0:	5205      	mov	[S-6], A
+	uint8_t b;
+	int8_t i;
+	b = 0;
+    72d2:	7000      	lod	A, #0
+    72d4:	5203      	mov	[S-4], A
+	for(i=0;i<8;i++){
+    72d6:	5201      	mov	[S-2], A
+		Gpio_WritePin(SPI_CLK, 0);
+    72d8:	54ca 0000 	pushw	#0
+    72dc:	7002      	lod	A, #2
+    72de:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+#if defined(SG_ENABLE_SPI_RX_VERIFY)
+		Gpio_WritePin(SPI_MOSI, (tx>>(7-i))&0x01 );
+    72e2:	7007      	lod	A, #7
+    72e4:	aa03      	sub	A, [S-4]
+    72e6:	7a07      	lod	Y, [S-8]
+    72e8:	ac00      	cmp	A, #0
+    72ea:	1b03      	jsle	0x72f2 <_SPI_READ_BYTES_verify+0x24>
+    72ec:	42e9      	mov	Cx, AL
+    72ee:	4476      	asr	Y
+    72f0:	1ffe      	djnz	Cx, 0x72ee <_SPI_READ_BYTES_verify+0x20>
+    72f2:	72e6      	lod	A, Y
+    72f4:	b401      	and	A, #1
+    72f6:	52df      	push	A
+    72f8:	7001      	lod	A, #1
+    72fa:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+		//delay_nops(SG_SPI_CLK_DELAY_CHG_GPIO_FRQ_CLK);
+#else
+		delay_nops(SG_SPI_CLK_DELAY_FRQ_CLK);
+#endif
+		Gpio_WritePin(SPI_CLK, 1);
+    72fe:	54ca 0001 	pushw	#1
+    7302:	7002      	lod	A, #2
+    7304:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+		b = (b<<1) | Gpio_ReadPin(SPI_MISO);
+    7308:	7209      	lod	A, [S-10]
+    730a:	4422      	asl	A
+    730c:	5209      	mov	[S-10], A
+    730e:	7000      	lod	A, #0
+    7310:	82db 40cd 	callf	0x819a <_Gpio_ReadPin>
+    7314:	8609      	or	AL, [S-10]
+    7316:	5cf2      	usex	A
+    7318:	5209      	mov	[S-10], A
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    731a:	5c05      	dec	S, #6
+    731c:	7c05      	lod	X, #5
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    731e:	20fe      	add	X, #-2
+    7320:	1bff      	djnz	X, 0x7320 <_SPI_READ_BYTES_verify+0x52>
+#endif
+{
+	uint8_t b;
+	int8_t i;
+	b = 0;
+	for(i=0;i<8;i++){
+    7322:	6201      	lod	AL, [S-2]
+    7324:	8001      	add	AL, #1
+    7326:	5ce2      	ssex	A
+    7328:	5201      	mov	[S-2], A
+    732a:	8c07      	cmp	AL, #7
+    732c:	1b55      	jsle	0x72d8 <_SPI_READ_BYTES_verify+0xa>
+		Gpio_WritePin(SPI_CLK, 1);
+		b = (b<<1) | Gpio_ReadPin(SPI_MISO);
+		delay_nops(SG_SPI_CLK_DELAY_CHG_GPIO_FRQ_CLK);
+	}
+	return (b);
+}
+    732e:	7203      	lod	A, [S-4]
+    7330:	5407      	ret	#8
+
+00007332 <_CalcCRC8>:
+    0xAE,0xA9,0xA0,0xA7,0xB2,0xB5,0xBC,0xBB,0x96,0x91,0x98,0x9F,0x8A,0x8D,0x84,0x83,
+    0xDE,0xD9,0xD0,0xD7,0xC2,0xC5,0xCC,0xCB,0xE6,0xE1,0xE8,0xEF,0xFA,0xFD,0xF4,0xF3
+};
+
+
+uint8_t CalcCRC8(uint8_t *ptr, uint8_t size){
+    7332:	5803      	inc	S, #4
+    7334:	7ee2      	lod	X, A
+    7336:	6207      	lod	AL, [S-8]
+    uint8_t crc = 0x00;
+    7338:	7800      	lod	Y, #0
+
+    while (size--) {
+        crc = crc_table[crc ^ *ptr++];
+    733a:	80ff      	add	AL, #-1
+    733c:	4201      	mov	[S-2], AL
+    733e:	5cf2      	usex	A
+    7340:	5203      	mov	[S-4], A
+    7342:	6201      	lod	AL, [S-2]
+    7344:	8cff      	cmp	AL, #-1
+    7346:	190b      	je	0x735e <_CalcCRC8+0x2c>
+    7348:	62de      	lod	AL, [X++]
+    734a:	9ee8      	xor	AL, YL
+    734c:	5cf2      	usex	A
+    734e:	7ae2      	lod	Y, A
+    7350:	e2da 884e 	add	Y, #34894
+    7354:	62f0      	lod	AL, [Y]
+    7356:	66e0      	lod	YL, AL
+    7358:	5cf6      	usex	Y
+    735a:	6203      	lod	AL, [S-4]
+    735c:	07ee      	jmp	0x733a <_CalcCRC8+0x8>
+    }
+    return crc;
+}
+    735e:	72e6      	lod	A, Y
+    7360:	5405      	ret	#6
+
+00007362 <_SPI_READ>:
+	return (b);
+}
+
+//void SPI_READ(uint8_t *buf, uint8_t len)
+bool SPI_READ(void)
+{
+    7362:	5803      	inc	S, #4
+/* Inline version of the memset function
+ */
+ 
+extern __inline void *memset (void *buf, int c, size_t n)
+{
+  char *p = buf;
+    7364:	7ada 200c 	lod	Y, #8204
+    7368:	7c07      	lod	X, #7
+  
+  while( n-- )
+	*p++ = (char)c;
+    736a:	6000      	lod	AL, #0
+    736c:	42d6      	mov	[Y++], AL
+    736e:	1bfd      	djnz	X, 0x736a <_SPI_READ+0x8>
+	memset(buffer_rx, 0x00, SPI_BUFFER_MAX_SIZE_RX);
+	if(!SPI_R_CHECK()){
+    7370:	1755      	call	0x721c <_SPI_R_CHECK>
+    7372:	8c00      	cmp	AL, #0
+    7374:	1d0d      	jne	0x7390 <_SPI_READ+0x2e>
+		Gpio_SetPinMode(SPI_MOSI, GPIO_DIG_INPUT_WITH_PULLDOWN);
+    7376:	54ca 0001 	pushw	#1
+    737a:	7001      	lod	A, #1
+    737c:	82db 40c2 	callf	0x8184 <_Gpio_SetPinMode>
+		Gpio_SetPinMode(SPI_CLK, GPIO_DIG_INPUT_WITH_PULLDOWN);
+    7380:	54ca 0001 	pushw	#1
+    7384:	7002      	lod	A, #2
+    7386:	82db 40c2 	callf	0x8184 <_Gpio_SetPinMode>
+
+		return false;
+    738a:	7000      	lod	A, #0
+    738c:	5c03      	dec	S, #4
+    738e:	5405      	ret	#6
+	}
+
+	for(uint8_t i=0; i<SPI_BUFFER_MAX_SIZE_RX; i++){
+    7390:	7800      	lod	Y, #0
+    7392:	5a03      	mov	[S-4], Y
+#if defined(SG_ENABLE_SPI_RX_VERIFY)
+		buffer_rx[i] = SPI_READ_BYTES_verify( (i>0)? buffer_rx[i-1]:0 );
+    7394:	7a03      	lod	Y, [S-4]
+    7396:	e2da 200c 	add	Y, #8204
+    739a:	5a01      	mov	[S-2], Y
+    739c:	7203      	lod	A, [S-4]
+    739e:	1903      	je	0x73a6 <_SPI_READ+0x44>
+    73a0:	e0ff      	add	Y, #-1
+    73a2:	62f0      	lod	AL, [Y]
+    73a4:	0001      	jmp	0x73a8 <_SPI_READ+0x46>
+    73a6:	6000      	lod	AL, #0
+    73a8:	5cf2      	usex	A
+    73aa:	1791      	call	0x72ce <_SPI_READ_BYTES_verify>
+    73ac:	7a01      	lod	Y, [S-2]
+    73ae:	42f0      	mov	[Y], AL
+		Gpio_SetPinMode(SPI_CLK, GPIO_DIG_INPUT_WITH_PULLDOWN);
+
+		return false;
+	}
+
+	for(uint8_t i=0; i<SPI_BUFFER_MAX_SIZE_RX; i++){
+    73b0:	6203      	lod	AL, [S-4]
+    73b2:	8001      	add	AL, #1
+    73b4:	5cf2      	usex	A
+    73b6:	5203      	mov	[S-4], A
+    73b8:	8c06      	cmp	AL, #6
+    73ba:	1a6c      	jule	0x7394 <_SPI_READ+0x32>
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    73bc:	7c28      	lod	X, #40
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    73be:	20fe      	add	X, #-2
+    73c0:	1bff      	djnz	X, 0x73c0 <_SPI_READ+0x5e>
+		buffer_rx[i] = SPI_READ_BYTES();
+#endif
+	}
+
+	delay_nops(SG_SPI_CLK_DELAY_FRQ_CLK);
+	Gpio_WritePin(SPI_CLK, 0);
+    73c2:	54ca 0000 	pushw	#0
+    73c6:	7002      	lod	A, #2
+    73c8:	82db 40ee 	callf	0x81dc <_Gpio_WritePin>
+
+
+	Gpio_SetPinMode(SPI_MOSI, GPIO_DIG_INPUT_WITH_PULLDOWN);
+    73cc:	54ca 0001 	pushw	#1
+    73d0:	7001      	lod	A, #1
+    73d2:	82db 40c2 	callf	0x8184 <_Gpio_SetPinMode>
+	Gpio_SetPinMode(SPI_CLK, GPIO_DIG_INPUT_WITH_PULLDOWN);
+    73d6:	54ca 0001 	pushw	#1
+    73da:	7002      	lod	A, #2
+    73dc:	82db 40c2 	callf	0x8184 <_Gpio_SetPinMode>
+
+	if((buffer_rx[5] == CalcCRC8(buffer_rx, SPI_BUFFER_MAX_SIZE_RX-2)) )
+    73e0:	54ca 0005 	pushw	#5
+    73e4:	72da 200c 	lod	A, #8204
+    73e8:	17a4      	call	0x7332 <_CalcCRC8>
+    73ea:	66e0      	lod	YL, AL
+    73ec:	62d8 2011 	lod	AL, 0x2011 <__bss_dp_end+0x5>
+    73f0:	5c07      	dec	S, #8
+    73f2:	8ee8      	cmp	AL, YL
+    73f4:	1d02      	jne	0x73fa <_SPI_READ+0x98>
+	  return true;
+    73f6:	7001      	lod	A, #1
+    73f8:	5405      	ret	#6
+	else
+	  return false;
+    73fa:	7000      	lod	A, #0
+}
+    73fc:	5405      	ret	#6
+
+000073fe <_Process_spi_buf_tx>:
+	dbg_spi(pBuf, strlen(pBuf));
+}
+
+
+void Process_spi_buf_tx(action_state_t action)
+{
+    73fe:	5811      	inc	S, #18
+    7400:	5211      	mov	[S-18], A
+/* Inline version of the memset function
+ */
+ 
+extern __inline void *memset (void *buf, int c, size_t n)
+{
+  char *p = buf;
+    7402:	7ada 2013 	lod	Y, #8211
+    7406:	7c12      	lod	X, #18
+  
+  while( n-- )
+	*p++ = (char)c;
+    7408:	6000      	lod	AL, #0
+    740a:	42d6      	mov	[Y++], AL
+    740c:	1bfd      	djnz	X, 0x7408 <_Process_spi_buf_tx+0xa>
+	memset(buffer_tx, 0x00, SPI_BUFFER_MAX_SIZE_TX);
+
+	if(action == AS_REQUEST_INFO) {
+    740e:	7a11      	lod	Y, [S-18]
+    7410:	ec04      	cmp	Y, #4
+    7412:	1d32      	jne	0x7478 <_Process_spi_buf_tx+0x7a>
+		T_TPMS_DATA_TX_INFO *pBuf = (T_TPMS_DATA_TX_INFO*) buffer_tx;
+
+		pBuf->length = 0x11;
+    7414:	6011      	lod	AL, #17
+    7416:	42d8 2013 	mov	0x2013 <__bss_dp_end+0x7>, AL
+		pBuf->type  = TPMS_TYPE_SENSOR_TO_BLE_INFO;
+    741a:	46d8 2014 	mov	0x2014 <__bss_dp_end+0x8>, YL
+		pBuf->state = SP_state.as_field.tpms_state;
+    741e:	62d8 0172 	lod	AL, 0x172 <_SP_state>
+    7422:	42d8 2015 	mov	0x2015 <__bss_dp_end+0x9>, AL
+		pBuf->ID[0] = Sys_GetChipId().as_byte[3];
+    7426:	82db 4244 	callf	0x8488 <_Sys_GetChipId>
+    742a:	4ed8 1620 	mov	0x2016 <__bss_dp_end+0xa>, YH
+		pBuf->ID[1] = Sys_GetChipId().as_byte[2];
+    742e:	82db 4244 	callf	0x8488 <_Sys_GetChipId>
+    7432:	46d8 2017 	mov	0x2017 <__bss_dp_end+0xb>, YL
+		pBuf->ID[2] = Sys_GetChipId().as_byte[1];
+    7436:	82db 4244 	callf	0x8488 <_Sys_GetChipId>
+    743a:	4ad8 1820 	mov	0x2018 <__bss_dp_end+0xc>, AH
+		pBuf->ID[3] = Sys_GetChipId().as_byte[0];
+    743e:	82db 4244 	callf	0x8488 <_Sys_GetChipId>
+    7442:	42d8 2019 	mov	0x2019 <__bss_dp_end+0xd>, AL
+
+		pBuf->version_sw[0] = APP_VERSION_MAJOR;
+    7446:	6000      	lod	AL, #0
+    7448:	42d8 201a 	mov	0x201a <__bss_dp_end+0xe>, AL
+		pBuf->version_sw[1] = APP_VERSION_MINOR;
+    744c:	6003      	lod	AL, #3
+    744e:	42d8 201b 	mov	0x201b <__bss_dp_end+0xf>, AL
+		//pBuf->pressure_range = SP_state.as_field.pressure_range;
+		pBuf->pressure_range = get_pressgre_range();
+    7452:	82db 3fcb 	callf	0x7f96 <_get_pressgre_range>
+    7456:	42d8 201c 	mov	0x201c <__bss_dp_end+0x10>, AL
+
+		pBuf->lfrx_hdr_len = SG_LFRX_PAYLOAD_LEN;
+    745a:	6002      	lod	AL, #2
+    745c:	42d8 201d 	mov	0x201d <__bss_dp_end+0x11>, AL
+		pBuf->lfrx_hdr[0] = SG_LFRX_HDR_L;
+    7460:	607f      	lod	AL, #127
+    7462:	42d8 201e 	mov	0x201e <__bss_dp_end+0x12>, AL
+    7466:	6025      	lod	AL, #37
+    7468:	42d8 201f 	mov	0x201f <__bss_dp_end+0x13>, AL
+		pBuf->lfrx_hdr[1] = SG_LFRX_HDR_H;
+    746c:	6400      	lod	YL, #0
+    746e:	46d8 2020 	mov	0x2020 <__bss_dp_end+0x14>, YL
+    7472:	46d8 2021 	mov	0x2021 <__bss_dp_end+0x15>, YL
+    7476:	00b8      	jmp	0x75e8 <_Process_spi_buf_tx+0x1ea>
+		pBuf->crc = CalcCRC8((uint8_t*)pBuf, pBuf->length);
+	}
+	else if(action == AS_TRIGGER ||	action == AS_TRIGGER_MANCHESTER) {
+    7478:	7e11      	lod	X, [S-18]
+    747a:	20f6      	add	X, #-10
+    747c:	66d8 0172 	lod	YL, 0x172 <_SP_state>
+    7480:	6102      	lod	AL, dp:0x2 <__noinit_size>
+    7482:	420f      	mov	[S-16], AL
+    7484:	6103      	lod	AL, dp:0x3 <__noinit_size+0x1>
+    7486:	420d      	mov	[S-14], AL
+    7488:	6104      	lod	AL, dp:0x4 <__noinit_size+0x2>
+    748a:	420b      	mov	[S-12], AL
+    748c:	6105      	lod	AL, dp:0x5 <__noinit_size+0x3>
+    748e:	4209      	mov	[S-10], AL
+    7490:	6106      	lod	AL, dp:0x6 <__noinit_size+0x4>
+    7492:	4207      	mov	[S-8], AL
+    7494:	6107      	lod	AL, dp:0x7 <__noinit_size+0x5>
+    7496:	4206      	mov	[S-7], AL
+    7498:	6108      	lod	AL, dp:0x8 <__noinit_size+0x6>
+    749a:	4205      	mov	[S-6], AL
+    749c:	6109      	lod	AL, dp:0x9 <__noinit_size+0x7>
+    749e:	4203      	mov	[S-4], AL
+    74a0:	610a      	lod	AL, dp:0xa <__noinit_size+0x8>
+    74a2:	4201      	mov	[S-2], AL
+    74a4:	2c01      	cmp	X, #1
+    74a6:	1a01      	jule	0x74aa <_Process_spi_buf_tx+0xac>
+    74a8:	005e      	jmp	0x7566 <_Process_spi_buf_tx+0x168>
+		T_TPMS_DATA_TX_TRIGGER *pBuf = (T_TPMS_DATA_TX_TRIGGER*) buffer_tx;
+
+		pBuf->length = 0x11;
+    74aa:	6011      	lod	AL, #17
+    74ac:	42d8 2013 	mov	0x2013 <__bss_dp_end+0x7>, AL
+		pBuf->type  = TPMS_TYPE_SENSOR_TO_BLE_NEW;
+    74b0:	6003      	lod	AL, #3
+    74b2:	42d8 2014 	mov	0x2014 <__bss_dp_end+0x8>, AL
+		pBuf->action = SP_state.as_field.action_state;
+    74b6:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    74ba:	42d8 2015 	mov	0x2015 <__bss_dp_end+0x9>, AL
+		pBuf->state = SP_state.as_field.tpms_state;
+    74be:	46d8 2016 	mov	0x2016 <__bss_dp_end+0xa>, YL
+
+		pBuf->pressure = measured.pvt.pressure;
+    74c2:	660f      	lod	YL, [S-16]
+    74c4:	5cf6      	usex	Y
+    74c6:	7ee6      	lod	X, Y
+    74c8:	660d      	lod	YL, [S-14]
+    74ca:	72e6      	lod	A, Y
+    74cc:	6800      	lod	AH, #0
+    74ce:	72e4      	swap	A
+    74d0:	a6ee      	or	A, X
+    74d2:	42d8 2017 	mov	0x2017 <__bss_dp_end+0xb>, AL
+    74d6:	4ad8 1820 	mov	0x2018 <__bss_dp_end+0xc>, AH
+		pBuf->voltage = measured.pvt.voltage;
+    74da:	620b      	lod	AL, [S-12]
+    74dc:	5cf2      	usex	A
+    74de:	7ee2      	lod	X, A
+    74e0:	6609      	lod	YL, [S-10]
+    74e2:	72e6      	lod	A, Y
+    74e4:	6800      	lod	AH, #0
+    74e6:	72e4      	swap	A
+    74e8:	a6ee      	or	A, X
+    74ea:	42d8 2019 	mov	0x2019 <__bss_dp_end+0xd>, AL
+    74ee:	4ad8 1a20 	mov	0x201a <__bss_dp_end+0xe>, AH
+		pBuf->temperature = measured.pvt.temperature;
+    74f2:	6207      	lod	AL, [S-8]
+    74f4:	42d8 201b 	mov	0x201b <__bss_dp_end+0xf>, AL
+		pBuf->accel_x = measured.acceleration_x;
+    74f8:	6606      	lod	YL, [S-7]
+    74fa:	5cf6      	usex	Y
+    74fc:	7ee6      	lod	X, Y
+    74fe:	6605      	lod	YL, [S-6]
+    7500:	72e6      	lod	A, Y
+    7502:	6800      	lod	AH, #0
+    7504:	72e4      	swap	A
+    7506:	a6ee      	or	A, X
+    7508:	42d8 201c 	mov	0x201c <__bss_dp_end+0x10>, AL
+    750c:	4ad8 1d20 	mov	0x201d <__bss_dp_end+0x11>, AH
+		pBuf->accel_z = measured.acceleration_z;
+    7510:	6203      	lod	AL, [S-4]
+    7512:	5cf2      	usex	A
+    7514:	7ee2      	lod	X, A
+    7516:	6601      	lod	YL, [S-2]
+    7518:	72e6      	lod	A, Y
+    751a:	6800      	lod	AH, #0
+    751c:	72e4      	swap	A
+    751e:	a6ee      	or	A, X
+    7520:	42d8 201e 	mov	0x201e <__bss_dp_end+0x12>, AL
+    7524:	4ad8 1f20 	mov	0x201f <__bss_dp_end+0x13>, AH
+
+		if( action == AS_TRIGGER_MANCHESTER ){
+    7528:	7e11      	lod	X, [S-18]
+    752a:	2c0b      	cmp	X, #11
+    752c:	1d09      	jne	0x7540 <_Process_spi_buf_tx+0x142>
+			memcpy(pBuf->manchester_cmd ,SP_lfrx_rec.data, 4);
+    752e:	72da 017f 	lod	A, #383
+    7532:	7eda 2020 	lod	X, #8224
+    7536:	7ae2      	lod	Y, A
+    7538:	54e4      	mov	Cx, #4
+    753a:	54c4      	movsb	[X++], [Y++]
+    753c:	1ffe      	djnz	Cx, 0x753a <_Process_spi_buf_tx+0x13c>
+    753e:	0006      	jmp	0x754c <_Process_spi_buf_tx+0x14e>
+/* Inline version of the memset function
+ */
+ 
+extern __inline void *memset (void *buf, int c, size_t n)
+{
+  char *p = buf;
+    7540:	7ada 2020 	lod	Y, #8224
+    7544:	7c04      	lod	X, #4
+  
+  while( n-- )
+	*p++ = (char)c;
+    7546:	6000      	lod	AL, #0
+    7548:	42d6      	mov	[Y++], AL
+    754a:	1bfd      	djnz	X, 0x7546 <_Process_spi_buf_tx+0x148>
+		}
+		else{
+			memset(pBuf->manchester_cmd ,0x00, 4);
+		}
+
+		pBuf->crc = CalcCRC8((uint8_t*)pBuf, pBuf->length);
+    754c:	62d8 2013 	lod	AL, 0x2013 <__bss_dp_end+0x7>
+    7550:	5cf2      	usex	A
+    7552:	52df      	push	A
+    7554:	72da 2013 	lod	A, #8211
+    7558:	16ec      	call	0x7332 <_CalcCRC8>
+    755a:	42d8 2024 	mov	0x2024 <__bss_dp_end+0x18>, AL
+			pBuf->state = STATE_STORAGE;
+			SP_state.as_field.tpms_state = STATE_STORAGE;
+		}
+#endif
+
+		SP_timer_wakeup_totalTime = 0;
+    755e:	7800      	lod	Y, #0
+    7560:	5ad8 0186 	mov	0x186 <_SP_timer_wakeup_totalTime>, Y
+    7564:	004a      	jmp	0x75fa <_Process_spi_buf_tx+0x1fc>
+	}
+	else {
+		T_TPMS_DATA_TX *pBuf = (T_TPMS_DATA_TX*) buffer_tx;
+    7566:	7eda 2013 	lod	X, #8211
+
+		pBuf->length = 0x11;
+    756a:	6011      	lod	AL, #17
+    756c:	42d8 2013 	mov	0x2013 <__bss_dp_end+0x7>, AL
+		pBuf->type  = TPMS_TYPE_SENSOR_TO_BLE_NEW;
+    7570:	6003      	lod	AL, #3
+    7572:	42d8 2014 	mov	0x2014 <__bss_dp_end+0x8>, AL
+		if(action == AS_REQUEST_MEASURE) {
+    7576:	7211      	lod	A, [S-18]
+    7578:	ac08      	cmp	A, #8
+    757a:	1902      	je	0x7580 <_Process_spi_buf_tx+0x182>
+			pBuf->action = AS_REQUEST_MEASURE;
+		}
+		else {
+			pBuf->action = SP_state.as_field.action_state;
+    757c:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7580:	42d8 2015 	mov	0x2015 <__bss_dp_end+0x9>, AL
+		}
+		pBuf->state = SP_state.as_field.tpms_state;
+    7584:	62d8 0172 	lod	AL, 0x172 <_SP_state>
+    7588:	42fb      	mov	[X+3], AL
+		//pBuf->pressure = (measured.pvt.pressure<PRESSURE_RANGE_LOW)? 0:(measured.pvt.pressure-PRESSURE_RANGE_LOW);
+		//pBuf->pressure = get_cmd_pressure( measured.pvt.pressure );
+		pBuf->pressure = measured.pvt.pressure;
+    758a:	6102      	lod	AL, dp:0x2 <__noinit_size>
+    758c:	66e0      	lod	YL, AL
+    758e:	5cf6      	usex	Y
+    7590:	6903      	lod	AH, dp:0x3 <__noinit_size+0x1>
+    7592:	6000      	lod	AL, #0
+    7594:	a6e6      	or	A, Y
+    7596:	42fc      	mov	[X+4], AL
+    7598:	4afd      	mov	[X+5], AH
+		pBuf->voltage = measured.pvt.voltage;
+    759a:	6104      	lod	AL, dp:0x4 <__noinit_size+0x2>
+    759c:	66e0      	lod	YL, AL
+    759e:	5cf6      	usex	Y
+    75a0:	6905      	lod	AH, dp:0x5 <__noinit_size+0x3>
+    75a2:	6000      	lod	AL, #0
+    75a4:	a6e6      	or	A, Y
+    75a6:	42fe      	mov	[X+6], AL
+    75a8:	4aff      	mov	[X+7], AH
+		pBuf->temperature = measured.pvt.temperature;
+    75aa:	6106      	lod	AL, dp:0x6 <__noinit_size+0x4>
+    75ac:	42d8 201b 	mov	0x201b <__bss_dp_end+0xf>, AL
+		pBuf->accel_x = measured.acceleration_x;
+    75b0:	6107      	lod	AL, dp:0x7 <__noinit_size+0x5>
+    75b2:	66e0      	lod	YL, AL
+    75b4:	5cf6      	usex	Y
+    75b6:	6908      	lod	AH, dp:0x8 <__noinit_size+0x6>
+    75b8:	6000      	lod	AL, #0
+    75ba:	a6e6      	or	A, Y
+    75bc:	42d8 201c 	mov	0x201c <__bss_dp_end+0x10>, AL
+    75c0:	4ad8 1d20 	mov	0x201d <__bss_dp_end+0x11>, AH
+		pBuf->accel_z = measured.acceleration_z;
+    75c4:	6109      	lod	AL, dp:0x9 <__noinit_size+0x7>
+    75c6:	66e0      	lod	YL, AL
+    75c8:	5cf6      	usex	Y
+    75ca:	690a      	lod	AH, dp:0xa <__noinit_size+0x8>
+    75cc:	6000      	lod	AL, #0
+    75ce:	a6e6      	or	A, Y
+    75d0:	42d8 201e 	mov	0x201e <__bss_dp_end+0x12>, AL
+    75d4:	4ad8 1f20 	mov	0x201f <__bss_dp_end+0x13>, AH
+#else
+		SPEED_t m_tmp;
+
+		m_tmp.speed		= 0;	// clean
+
+		m_tmp.rotation 	= SP_state.as_field.rotation;
+    75d8:	62d8 0174 	lod	AL, 0x174 <_SP_state+0x2>
+    75dc:	b401      	and	A, #1
+
+		pBuf->speed 	= m_tmp.speed;
+    75de:	6400      	lod	YL, #0
+    75e0:	46d8 2020 	mov	0x2020 <__bss_dp_end+0x14>, YL
+    75e4:	42d8 2021 	mov	0x2021 <__bss_dp_end+0x15>, AL
+		//pBuf->speed = ((uint16_t)SP_state.as_field.dir <<13) | (SP_state.as_field.rotation<<4) | SP_state.as_field.leftright;
+#endif
+		pBuf->crc = CalcCRC8((uint8_t*)pBuf, pBuf->length);
+    75e8:	62d8 2013 	lod	AL, 0x2013 <__bss_dp_end+0x7>
+    75ec:	5cf2      	usex	A
+    75ee:	52df      	push	A
+    75f0:	72da 2013 	lod	A, #8211
+    75f4:	169e      	call	0x7332 <_CalcCRC8>
+    75f6:	42d8 2024 	mov	0x2024 <__bss_dp_end+0x18>, AL
+    75fa:	5c01      	dec	S, #2
+	}
+	delay_ms(5);
+    75fc:	7005      	lod	A, #5
+    75fe:	82db 3f70 	callf	0x7ee0 <_delay_ms>
+
+	SPI_WRITE(buffer_tx, SPI_BUFFER_MAX_SIZE_TX);
+    7602:	54ca 0012 	pushw	#18
+    7606:	72da 2013 	lod	A, #8211
+    760a:	15d7      	call	0x71ba <_SPI_WRITE>
+    760c:	5c01      	dec	S, #2
+    760e:	5413      	ret	#20
+
+00007610 <_Process_spi_buf_rx>:
+}
+
+
+void Process_spi_buf_rx(void)
+{
+    7610:	5805      	inc	S, #6
+	T_TPMS_DATA_RX *pBuf = (T_TPMS_DATA_RX*) buffer_rx;
+
+	if( pBuf->type == TPMS_TYPE_EXT ){ // BSI-15-BC
+    7612:	62d8 200d 	lod	AL, 0x200d <__bss_dp_end+0x1>
+    7616:	8c10      	cmp	AL, #16
+    7618:	1901      	je	0x761c <_Process_spi_buf_rx+0xc>
+    761a:	0035      	jmp	0x7686 <_Process_spi_buf_rx+0x76>
+		switch( pBuf->mode&0x7F ) {
+    761c:	62d8 200e 	lod	AL, 0x200e <__bss_dp_end+0x2>
+    7620:	b47f      	and	A, #127
+    7622:	ac02      	cmp	A, #2
+    7624:	190e      	je	0x7642 <_Process_spi_buf_rx+0x32>
+    7626:	1f03      	jsg	0x762e <_Process_spi_buf_rx+0x1e>
+    7628:	ac01      	cmp	A, #1
+    762a:	1925      	je	0x7676 <_Process_spi_buf_rx+0x66>
+    762c:	5407      	ret	#8
+    762e:	ac03      	cmp	A, #3
+    7630:	1903      	je	0x7638 <_Process_spi_buf_rx+0x28>
+    7632:	ac31      	cmp	A, #49
+    7634:	1924      	je	0x767e <_Process_spi_buf_rx+0x6e>
+    7636:	5407      	ret	#8
+		case EXT_CMD_STATE:
+			SP_state.as_field.tpms_state = pBuf->data[0];
+    7638:	62d8 200f 	lod	AL, 0x200f <__bss_dp_end+0x3>
+    763c:	42d8 0172 	mov	0x172 <_SP_state>, AL
+			break;
+    7640:	5407      	ret	#8
+		case EXT_CMD_MEASURE:
+			//if(pBuf->mode&0x80) // 'W'
+			//else				  // 'R'
+			if( pBuf->data[0] == STATE_STORAGE ) {
+    7642:	62d8 200f 	lod	AL, 0x200f <__bss_dp_end+0x3>
+    7646:	1d02      	jne	0x764c <_Process_spi_buf_rx+0x3c>
+				SP_state.as_field.action_state = AS_REQUEST_MEASURE;
+    7648:	6008      	lod	AL, #8
+    764a:	0001      	jmp	0x764e <_Process_spi_buf_rx+0x3e>
+			}
+			else {
+				SP_state.as_field.action_state = AS_TRIGGER;
+    764c:	600a      	lod	AL, #10
+    764e:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+			}
+
+			if( pBuf->data[1] != 0 )
+    7652:	62d8 2010 	lod	AL, 0x2010 <__bss_dp_end+0x4>
+    7656:	4205      	mov	[S-6], AL
+    7658:	1916      	je	0x7686 <_Process_spi_buf_rx+0x76>
+			{
+//				SP_drive_mode_report_period_spi = (pBuf->data[1]*DEFAULT_DRIVE_MODE_REPORT_PERIOD_STEP_SEC);
+#if defined(SG_DEFAULT_CUST) && (SG_DEFAULT_CUST == SG_CUST_ARVENTO)
+				SP_drive_mode_report_period_spi = DEFAULT_DRIVE_MODE_REPORT_PERIOD_STEP_SEC/DEFAULT_REPORT_PERIOD_STEP_SEC;
+#else
+				SP_drive_mode_report_period_spi = ((uint16_t)pBuf->data[1]*DEFAULT_DRIVE_MODE_REPORT_PERIOD_STEP_SEC)/DEFAULT_REPORT_PERIOD_STEP_SEC;
+    765a:	6405      	lod	YL, #5
+    765c:	4829      	mulu	Y, AL, YL
+    765e:	72e6      	lod	A, Y
+    7660:	4802 cccd 	mulu	D, A, #52429
+    7664:	72ef      	lod	A, S
+    7666:	a0fc      	add	A, #-4
+    7668:	4cf3      	swap	YA
+    766a:	4c85      	mov	[Y], D
+    766c:	7201      	lod	A, [S-2]
+    766e:	44b2      	lsr	A, #2
+    7670:	52d8 0188 	mov	0x188 <_SP_drive_mode_report_period_spi>, A
+#endif
+			}
+
+			break;
+    7674:	5407      	ret	#8
+		case EXT_CMD_INFO:
+			//if(pBuf->mode&0x80) // 'W'
+			//else				  // 'R'
+			SP_state.as_field.action_state = AS_REQUEST_INFO;
+    7676:	6004      	lod	AL, #4
+    7678:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+			//Sys_ResetCpu();
+			break;
+    767c:	5407      	ret	#8
+		case EXT_CMD_DBG_FLAG:
+			SP_dummy_enabled_flag = pBuf->data[0];
+			break;
+#endif
+		case EXT_CMD_RESET:
+			init_default_value();
+    767e:	82db 3719 	callf	0x6e32 <_init_default_value>
+			Sys_ResetCpu();
+    7682:	82db 4293 	callf	0x8526 <_Sys_ResetCpu>
+    7686:	5407      	ret	#8
+
+00007688 <_Compensated_Acceleration_Measurement_X>:
+ * Arguments:   none
+ * Returns:     16-bit signed result with acceleration expressed in [g*10]
+ * Notes:
+ */
+int16_t Compensated_Acceleration_Measurement_X(void)
+{   /* for X sensitive axis of X / XZ accelerometer */
+    7688:	5801      	inc	S, #2
+    #if defined(HAS_ACCEL_X_SENSOR)
+
+    /* Perform compensated acceleration measurements (cast to fit into container type) */
+    int16_t acceleration_result = (uint16_t)Phys_AccelerationX();
+    768a:	82db 4217 	callf	0x842e <_Phys_AccelerationX>
+    768e:	5201      	mov	[S-2], A
+    if (!Adc_IsError())     /* if no error  .. */
+    7690:	82db 400f 	callf	0x801e <_Adc_IsError>
+    7694:	8c00      	cmp	AL, #0
+    7696:	1905      	je	0x76a2 <_Compensated_Acceleration_Measurement_X+0x1a>
+    {   /* Convert to physical units if no error happened: */
+    }
+    else
+    {   /* some conversion error happened */
+        acceleration_result = ACCELERATION_INVALID;
+    7698:	72da 8000 	lod	A, #32768
+    769c:	5201      	mov	[S-2], A
+        Adc_ClearAllErrors();      /* Clear all possible ADC errors */
+    769e:	82db 4018 	callf	0x8030 <_Adc_ClearAllErrors>
+    #else
+
+    return ACCELERATION_INVALID;
+
+    #endif /* HAS_ACCEL_X_SENSOR */
+}   /* Compensated_Acceleration_Measurement_X */
+    76a2:	7201      	lod	A, [S-2]
+    76a4:	5403      	ret	#4
+
+000076a6 <_Compensated_Acceleration_Measurement_Z>:
+ * Arguments:   none
+ * Returns:     16-bit signed result with acceleration expressed in [g*10]
+ * Notes:
+ */
+int16_t Compensated_Acceleration_Measurement_Z(void)
+{   /* for Z sensitive axis of Z / XZ accelerometer */
+    76a6:	5801      	inc	S, #2
+    #if defined(HAS_ACCEL_Z_SENSOR)
+
+    /* Perform compensated acceleration measurements (cast to fit into container type) */
+    int16_t acceleration_result = (uint16_t)Phys_AccelerationZ();
+    76a8:	82db 4205 	callf	0x840a <_Phys_AccelerationZ>
+    76ac:	5201      	mov	[S-2], A
+    if (!Adc_IsError())     /* if no error  .. */
+    76ae:	82db 400f 	callf	0x801e <_Adc_IsError>
+    76b2:	8c00      	cmp	AL, #0
+    76b4:	1905      	je	0x76c0 <_Compensated_Acceleration_Measurement_Z+0x1a>
+    {   /* Convert to physical units if no error happened: */
+    }
+    else
+    {   /* some conversion error happened */
+        acceleration_result = ACCELERATION_INVALID;
+    76b6:	72da 8000 	lod	A, #32768
+    76ba:	5201      	mov	[S-2], A
+        Adc_ClearAllErrors();      /* Clear all possible ADC errors */
+    76bc:	82db 4018 	callf	0x8030 <_Adc_ClearAllErrors>
+    #else
+
+    return ACCELERATION_INVALID;
+
+    #endif /* HAS_ACCEL_Z_SENSOR */
+}   /* Compensated_Acceleration_Measurement_Z */
+    76c0:	7201      	lod	A, [S-2]
+    76c2:	5403      	ret	#4
+
+000076c4 <_Measure_PVT>:
+ * Arguments:	none
+ * Returns:     none
+ * Notes:       Can be executed after NvRam_Recall only!
+ */
+void Measure_PVT(void)
+{
+    76c4:	5809      	inc	S, #10
+    Adc_RawPvt_Type raw_pvt;
+
+    if(measurements_valid & DET_PVT)
+    76c6:	7100      	lod	A, dp:0x0 <__data_dp_size>
+    76c8:	b401      	and	A, #1
+    76ca:	1901      	je	0x76ce <_Measure_PVT+0xa>
+    76cc:	0069      	jmp	0x77a0 <_Measure_PVT+0xdc>
+    	return;
+
+	Adc_ReadPVT(&raw_pvt);
+    76ce:	72ef      	lod	A, S
+    76d0:	a0f6      	add	A, #-10
+    76d2:	82db 3fe9 	callf	0x7fd2 <_Adc_ReadPVT>
+
+	if (!Adc_IsError()) {
+    76d6:	82db 400f 	callf	0x801e <_Adc_IsError>
+    76da:	8c00      	cmp	AL, #0
+    76dc:	1901      	je	0x76e0 <_Measure_PVT+0x1c>
+    76de:	0053      	jmp	0x7786 <_Measure_PVT+0xc2>
+		// Pressure in [kPa] equals to high word of "Calc_Pressure_32b"
+		measured.pvt.pressure    = (uint16_t)(Calc_Pressure(raw_pvt.pressure, raw_pvt.temperature, raw_pvt.voltage) >> 16);
+    76e0:	7207      	lod	A, [S-8]
+    76e2:	52df      	push	A
+    76e4:	7a07      	lod	Y, [S-8]
+    76e6:	5adf      	push	Y
+    76e8:	720d      	lod	A, [S-14]
+    76ea:	82db 401c 	callf	0x8038 <_Calc_Pressure>
+    76ee:	48af      	lsr	YA, #16
+    76f0:	4102      	mov	dp:0x2 <__noinit_size>, AL
+    76f2:	4903      	mov	dp:0x3 <__noinit_size+0x1>, AH
+		// Battery voltage in [V] equals to tmp16 divided by 100
+		measured.pvt.voltage     = Calc_Voltage(raw_pvt.voltage);
+    76f4:	720b      	lod	A, [S-12]
+    76f6:	82db 40b1 	callf	0x8162 <_Calc_Voltage>
+    76fa:	4104      	mov	dp:0x4 <__noinit_size+0x2>, AL
+    76fc:	4905      	mov	dp:0x5 <__noinit_size+0x3>, AH
+
+		// Temperature in [degC] equals to high byte of "Calc_Temperature_16b" - 52degC
+		measured.pvt.temperature = (uint8_t)(Calc_Temperature(raw_pvt.temperature) >> 8);
+    76fe:	7209      	lod	A, [S-10]
+    7700:	82db 4092 	callf	0x8124 <_Calc_Temperature>
+    7704:	6000      	lod	AL, #0
+    7706:	72e4      	swap	A
+    7708:	4106      	mov	dp:0x6 <__noinit_size+0x4>, AL
+
+		measurements_valid |= DET_PVT;
+    770a:	7900      	lod	Y, dp:0x0 <__data_dp_size>
+    770c:	e401      	or	Y, #1
+    770e:	5900      	mov	dp:0x0 <__data_dp_size>, Y
+
+		// Check limit
+		//measured.pvt.temperature = (-42+PKG_TEMPERATURE_OFFSET); // -40 degC;
+		if( measured.pvt.temperature < (TEMPERATURE_RANGE_LOW+PKG_TEMPERATURE_OFFSET) ){
+    7710:	5c03      	dec	S, #4
+    7712:	8c0b      	cmp	AL, #11
+    7714:	1e02      	jug	0x771a <_Measure_PVT+0x56>
+			measured.pvt.temperature = (TEMPERATURE_RANGE_LOW+PKG_TEMPERATURE_OFFSET);
+    7716:	600c      	lod	AL, #12
+    7718:	0003      	jmp	0x7720 <_Measure_PVT+0x5c>
+		}
+		else if( measured.pvt.temperature > (TEMPERATURE_RANGE_HIGH+PKG_TEMPERATURE_OFFSET) ){
+    771a:	8cb1      	cmp	AL, #-79
+    771c:	1a02      	jule	0x7722 <_Measure_PVT+0x5e>
+			measured.pvt.temperature = (TEMPERATURE_RANGE_HIGH+PKG_TEMPERATURE_OFFSET);
+    771e:	60b1      	lod	AL, #-79
+    7720:	4106      	mov	dp:0x6 <__noinit_size+0x4>, AL
+		}
+
+		if(measured.pvt.pressure < PRESSURE_RANGE_LOW) {
+    7722:	6102      	lod	AL, dp:0x2 <__noinit_size>
+    7724:	5cf2      	usex	A
+    7726:	6d03      	lod	YH, dp:0x3 <__noinit_size+0x1>
+    7728:	6400      	lod	YL, #0
+    772a:	e6e2      	or	Y, A
+    772c:	ec63      	cmp	Y, #99
+    772e:	1e03      	jug	0x7736 <_Measure_PVT+0x72>
+			measured.pvt.pressure = 0;
+    7730:	6000      	lod	AL, #0
+    7732:	4102      	mov	dp:0x2 <__noinit_size>, AL
+    7734:	0005      	jmp	0x7740 <_Measure_PVT+0x7c>
+		}
+		else{
+			measured.pvt.pressure -= PRESSURE_RANGE_LOW;
+    7736:	72e6      	lod	A, Y
+    7738:	a09c      	add	A, #-100
+    773a:	4102      	mov	dp:0x2 <__noinit_size>, AL
+    773c:	6000      	lod	AL, #0
+    773e:	72e4      	swap	A
+    7740:	4103      	mov	dp:0x3 <__noinit_size+0x1>, AL
+		}
+#if defined( SG_ENABLE_MEASURE_CHK_LIMIT_P )
+		if( get_pressgre_range() == PRESSURE_RANGE_100_1400_KPA ) {
+    7742:	82db 3fcb 	callf	0x7f96 <_get_pressgre_range>
+    7746:	4201      	mov	[S-2], AL
+    7748:	6502      	lod	YL, dp:0x2 <__noinit_size>
+    774a:	6103      	lod	AL, dp:0x3 <__noinit_size+0x1>
+    774c:	4203      	mov	[S-4], AL
+    774e:	6201      	lod	AL, [S-2]
+    7750:	8c03      	cmp	AL, #3
+    7752:	1d0b      	jne	0x776a <_Measure_PVT+0xa6>
+			if( measured.pvt.pressure > (PRESSURE_RANGE_HIGH_TRUCK-PRESSURE_RANGE_LOW) ) {
+    7754:	5cf6      	usex	Y
+    7756:	7ee6      	lod	X, Y
+    7758:	6603      	lod	YL, [S-4]
+    775a:	72e6      	lod	A, Y
+    775c:	6800      	lod	AH, #0
+    775e:	72e4      	swap	A
+    7760:	a6ee      	or	A, X
+    7762:	aeda 0514 	cmp	A, #1300
+    7766:	1a1c      	jule	0x77a0 <_Measure_PVT+0xdc>
+    7768:	000a      	jmp	0x777e <_Measure_PVT+0xba>
+				measured.pvt.pressure = PKG_PRESSURE_OVERFLOW;
+			}
+		}
+		else {
+			if( measured.pvt.pressure > (PRESSURE_RANGE_HIGH-PRESSURE_RANGE_LOW) ) {
+    776a:	5cf6      	usex	Y
+    776c:	7ee6      	lod	X, Y
+    776e:	6603      	lod	YL, [S-4]
+    7770:	72e6      	lod	A, Y
+    7772:	6800      	lod	AH, #0
+    7774:	72e4      	swap	A
+    7776:	a6ee      	or	A, X
+    7778:	aeda 0320 	cmp	A, #800
+    777c:	1a11      	jule	0x77a0 <_Measure_PVT+0xdc>
+				measured.pvt.pressure = PKG_PRESSURE_OVERFLOW;
+    777e:	60ff      	lod	AL, #-1
+    7780:	4102      	mov	dp:0x2 <__noinit_size>, AL
+    7782:	4103      	mov	dp:0x3 <__noinit_size+0x1>, AL
+    7784:	540b      	ret	#12
+			}
+		}
+#endif	// defined( SG_ENABLE_MEASURE_CHK_LIMIT_P )
+	}
+	else {   /* some conversion error happened */
+		Adc_ClearAllErrors();      /* Clear all possible ADC errors */
+    7786:	82db 4018 	callf	0x8030 <_Adc_ClearAllErrors>
+		measurements_valid &= ~DET_PVT;
+    778a:	7100      	lod	A, dp:0x0 <__data_dp_size>
+    778c:	b4fe      	and	A, #-2
+    778e:	5100      	mov	dp:0x0 <__data_dp_size>, A
+		SP_measured_rec.pressure = measured.pvt.pressure;
+	#else
+		memcpy(&measured.pvt, &SP_measured_rec.pvt, sizeof(T_TPMS_DATA_PVT));
+	#endif
+#else
+		measured.pvt.pressure = PKG_PRESSURE_INVALID;
+    7790:	64fd      	lod	YL, #-3
+    7792:	4502      	mov	dp:0x2 <__noinit_size>, YL
+    7794:	60ff      	lod	AL, #-1
+    7796:	4103      	mov	dp:0x3 <__noinit_size+0x1>, AL
+		measured.pvt.voltage = PKG_VOLTAGE_INVALID;
+    7798:	4504      	mov	dp:0x4 <__noinit_size+0x2>, YL
+    779a:	6000      	lod	AL, #0
+    779c:	4105      	mov	dp:0x5 <__noinit_size+0x3>, AL
+		measured.pvt.temperature = PKG_TEMPERATURE_INVALID;
+    779e:	4506      	mov	dp:0x6 <__noinit_size+0x4>, YL
+    77a0:	540b      	ret	#12
+
+000077a2 <_Measure_ACC>:
+
+
+
+void Measure_ACC(void){
+
+    if(measurements_valid & DET_ACC)
+    77a2:	7100      	lod	A, dp:0x0 <__data_dp_size>
+    77a4:	b404      	and	A, #4
+    77a6:	1d09      	jne	0x77ba <_Measure_ACC+0x18>
+    	return;
+
+	measured.acceleration_x = Compensated_Acceleration_Measurement_X();
+    77a8:	176f      	call	0x7688 <_Compensated_Acceleration_Measurement_X>
+    77aa:	4107      	mov	dp:0x7 <__noinit_size+0x5>, AL
+    77ac:	4908      	mov	dp:0x8 <__noinit_size+0x6>, AH
+	measured.acceleration_z = Compensated_Acceleration_Measurement_Z();
+    77ae:	177b      	call	0x76a6 <_Compensated_Acceleration_Measurement_Z>
+    77b0:	4109      	mov	dp:0x9 <__noinit_size+0x7>, AL
+    77b2:	490a      	mov	dp:0xa <__noinit_size+0x8>, AH
+#if 0
+	if( measured.acceleration_z < 0 )
+		measured.acceleration_z = 0 - measured.acceleration_z;
+#endif
+    measurements_valid |= DET_ACC;
+    77b4:	7100      	lod	A, dp:0x0 <__data_dp_size>
+    77b6:	a404      	or	A, #4
+    77b8:	5100      	mov	dp:0x0 <__data_dp_size>, A
+    77ba:	5401      	ret
+
+000077bc <_Hendrickson_Init>:
+SP_MEM unsigned short DP1;
+SP_MEM unsigned short DP2;
+
+void Hendrickson_Init(void){
+// add by sihan ...
+  TmpSt = STATE_STORAGE;
+    77bc:	7000      	lod	A, #0
+    77be:	52d8 018a 	mov	0x18a <_TmpSt>, A
+  DP1 =0; DP2 =0;
+    77c2:	52d8 018c 	mov	0x18c <_DP1>, A
+    77c6:	52d8 018e 	mov	0x18e <_DP2>, A
+    77ca:	5401      	ret
+
+000077cc <_update_measured_rec>:
+#endif
+};
+
+void update_measured_rec(void)
+{
+	if( measurements_valid & DET_PVT ) {
+    77cc:	7100      	lod	A, dp:0x0 <__data_dp_size>
+    77ce:	b401      	and	A, #1
+    77d0:	190a      	je	0x77e6 <_update_measured_rec+0x1a>
+	#ifdef SG_ENABLE_NEW_MEASURE_REC
+		SP_measured_rec.pressure	   = measured.pvt.pressure;
+    77d2:	6102      	lod	AL, dp:0x2 <__noinit_size>
+    77d4:	66e0      	lod	YL, AL
+    77d6:	5cf6      	usex	Y
+    77d8:	6903      	lod	AH, dp:0x3 <__noinit_size+0x1>
+    77da:	6000      	lod	AL, #0
+    77dc:	a6e6      	or	A, Y
+    77de:	42d8 0178 	mov	0x178 <_SP_measured_rec>, AL
+    77e2:	4ad8 7901 	mov	0x179 <_SP_measured_rec+0x1>, AH
+	#else
+		memcpy(&SP_measured_rec.pvt, &measured.pvt, sizeof(T_TPMS_DATA_PVT));
+	#endif
+	}
+	if( measurements_valid & DET_ACC ) {
+    77e6:	7900      	lod	Y, dp:0x0 <__data_dp_size>
+    77e8:	72e6      	lod	A, Y
+    77ea:	b404      	and	A, #4
+    77ec:	1915      	je	0x7818 <_update_measured_rec+0x4c>
+		SP_measured_rec.acceleration_x = measured.acceleration_x;
+    77ee:	6107      	lod	AL, dp:0x7 <__noinit_size+0x5>
+    77f0:	66e0      	lod	YL, AL
+    77f2:	5cf6      	usex	Y
+    77f4:	6908      	lod	AH, dp:0x8 <__noinit_size+0x6>
+    77f6:	6000      	lod	AL, #0
+    77f8:	a6e6      	or	A, Y
+    77fa:	42d8 017a 	mov	0x17a <_SP_measured_rec+0x2>, AL
+    77fe:	4ad8 7b01 	mov	0x17b <_SP_measured_rec+0x3>, AH
+		SP_measured_rec.acceleration_z = measured.acceleration_z;
+    7802:	6109      	lod	AL, dp:0x9 <__noinit_size+0x7>
+    7804:	66e0      	lod	YL, AL
+    7806:	5cf6      	usex	Y
+    7808:	690a      	lod	AH, dp:0xa <__noinit_size+0x8>
+    780a:	6000      	lod	AL, #0
+    780c:	a6e6      	or	A, Y
+    780e:	42d8 017c 	mov	0x17c <_SP_measured_rec+0x4>, AL
+    7812:	4ad8 7d01 	mov	0x17d <_SP_measured_rec+0x5>, AH
+    7816:	5401      	ret
+	}
+	else if( measurements_valid & DET_G ) {
+    7818:	72e6      	lod	A, Y
+    781a:	b402      	and	A, #2
+    781c:	1914      	je	0x7846 <_update_measured_rec+0x7a>
+		SP_measured_rec.acceleration_z = measured.acceleration_z;
+    781e:	6109      	lod	AL, dp:0x9 <__noinit_size+0x7>
+    7820:	66e0      	lod	YL, AL
+    7822:	5cf6      	usex	Y
+    7824:	690a      	lod	AH, dp:0xa <__noinit_size+0x8>
+    7826:	6000      	lod	AL, #0
+    7828:	a6e6      	or	A, Y
+    782a:	42d8 017c 	mov	0x17c <_SP_measured_rec+0x4>, AL
+    782e:	4ad8 7d01 	mov	0x17d <_SP_measured_rec+0x5>, AH
+#ifdef SG_ENABLE_MOTION_DET_XZ
+		SP_measured_rec.acceleration_x = measured.acceleration_x;
+    7832:	6107      	lod	AL, dp:0x7 <__noinit_size+0x5>
+    7834:	66e0      	lod	YL, AL
+    7836:	5cf6      	usex	Y
+    7838:	6908      	lod	AH, dp:0x8 <__noinit_size+0x6>
+    783a:	6000      	lod	AL, #0
+    783c:	a6e6      	or	A, Y
+    783e:	42d8 017a 	mov	0x17a <_SP_measured_rec+0x2>, AL
+    7842:	4ad8 7b01 	mov	0x17b <_SP_measured_rec+0x3>, AH
+    7846:	5401      	ret
+
+00007848 <_TPMS_state_Measurements>:
+ * Arguments:   none
+ * Returns:     none
+ * Notes:
+ */
+void TPMS_state_Measurements(void)
+{
+    7848:	5805      	inc	S, #6
+
+		return;
+	}
+#endif
+
+	if( (SP_state.as_field.action_state&AS_FLAG_MASK) == AS_TRIGGER ||
+    784a:	66d8 0173 	lod	YL, 0x173 <_SP_state+0x1>
+    784e:	f47f      	and	Y, #127
+    7850:	72e6      	lod	A, Y
+    7852:	a0f6      	add	A, #-10
+    7854:	ac01      	cmp	A, #1
+    7856:	1e01      	jug	0x785a <_TPMS_state_Measurements+0x12>
+    7858:	002e      	jmp	0x78b6 <_TPMS_state_Measurements+0x6e>
+		(SP_state.as_field.action_state&AS_FLAG_MASK) == AS_TRIGGER_MANCHESTER	) {
+		bRun_pvt = true;
+		//bRun_acc = true;
+	}
+	else if( (SP_state.as_field.action_state&AS_FLAG_MASK) == AS_REQUEST_PVT ||
+    785a:	ec05      	cmp	Y, #5
+    785c:	192c      	je	0x78b6 <_TPMS_state_Measurements+0x6e>
+    785e:	ec08      	cmp	Y, #8
+    7860:	192a      	je	0x78b6 <_TPMS_state_Measurements+0x6e>
+			 (SP_state.as_field.action_state&AS_FLAG_MASK) == AS_REQUEST_MEASURE) {
+		bRun_pvt = true;
+	}
+	else if( (SP_state.as_field.action_state&AS_FLAG_MASK) == AS_REQUEST_ACC ) {
+    7862:	ec06      	cmp	Y, #6
+    7864:	192b      	je	0x78bc <_TPMS_state_Measurements+0x74>
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    7866:	62d8 0172 	lod	AL, 0x172 <_SP_state>
+    786a:	4205      	mov	[S-6], AL
+    786c:	8c09      	cmp	AL, #9
+    786e:	1e02      	jug	0x7874 <_TPMS_state_Measurements+0x2c>
+    7870:	5cf2      	usex	A
+    7872:	0001      	jmp	0x7876 <_TPMS_state_Measurements+0x2e>
+    7874:	7000      	lod	A, #0
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7876:	44a2      	asl	A, #2
+    7878:	4422      	asl	A
+    787a:	7ae2      	lod	Y, A
+    787c:	e2da 894f 	add	Y, #35151
+    7880:	62f0      	lod	AL, [Y]
+    7882:	191e      	je	0x78c0 <_TPMS_state_Measurements+0x78>
+	else if( (SP_state.as_field.action_state&AS_FLAG_MASK) == AS_REQUEST_ACC ) {
+		bRun_acc = true;
+	}
+	else {
+		if(TPMS_STATE_PARAMETERS[get_tpms_state_index()].det_period_PVT) {
+			if( SP_timer_wakeup_totalTime > 0 &&
+    7884:	72d8 0186 	lod	A, 0x186 <_SP_timer_wakeup_totalTime>
+    7888:	191b      	je	0x78c0 <_TPMS_state_Measurements+0x78>
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    788a:	6205      	lod	AL, [S-6]
+    788c:	8c09      	cmp	AL, #9
+    788e:	1e02      	jug	0x7894 <_TPMS_state_Measurements+0x4c>
+    7890:	5cf2      	usex	A
+    7892:	0001      	jmp	0x7896 <_TPMS_state_Measurements+0x4e>
+    7894:	7000      	lod	A, #0
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7896:	44a2      	asl	A, #2
+    7898:	4422      	asl	A
+    789a:	7ae2      	lod	Y, A
+    789c:	e2da 894f 	add	Y, #35151
+    78a0:	62f0      	lod	AL, [Y]
+    78a2:	5cf2      	usex	A
+    78a4:	5203      	mov	[S-4], A
+    78a6:	72d8 0186 	lod	A, 0x186 <_SP_timer_wakeup_totalTime>
+    78aa:	7e03      	lod	X, [S-4]
+    78ac:	4cf2      	usex	YA
+    78ae:	4c63      	divu	YA, X
+    78b0:	4c63      	divu	YA, X
+    78b2:	ec00      	cmp	Y, #0
+    78b4:	1d05      	jne	0x78c0 <_TPMS_state_Measurements+0x78>
+#endif
+
+	}
+
+	if(bRun_pvt) {
+		Measure_PVT();
+    78b6:	1706      	call	0x76c4 <_Measure_PVT>
+	}
+	if(bRun_acc) {
+    78b8:	7000      	lod	A, #0
+    78ba:	1902      	je	0x78c0 <_TPMS_state_Measurements+0x78>
+		Measure_ACC();
+    78bc:	1772      	call	0x77a2 <_Measure_ACC>
+    78be:	5407      	ret	#8
+	}
+	else{
+		measured.acceleration_x = 0;
+    78c0:	6400      	lod	YL, #0
+    78c2:	4507      	mov	dp:0x7 <__noinit_size+0x5>, YL
+    78c4:	4508      	mov	dp:0x8 <__noinit_size+0x6>, YL
+		measured.acceleration_z = 0;
+    78c6:	4509      	mov	dp:0x9 <__noinit_size+0x7>, YL
+    78c8:	450a      	mov	dp:0xa <__noinit_size+0x8>, YL
+    78ca:	5407      	ret	#8
+
+000078cc <_TPMS_state_Motion_Detection>:
+
+		}
+    }
+
+	if(bRun) {
+		Direct_Motion_Detection();
+    78cc:	5401      	ret
+
+000078ce <_get_wakeup_time>:
+    SP_timer_wakeup_totalTime = 0;
+
+} /* TPMS_state_Init */
+
+uint8_t get_wakeup_time(void)
+{
+    78ce:	5819      	inc	S, #26
+	uint8_t m_time[2];
+	uint16_t m_report_period;
+	uint8_t m_index = 0;
+    78d0:	7000      	lod	A, #0
+    78d2:	5217      	mov	[S-24], A
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    78d4:	62d8 0172 	lod	AL, 0x172 <_SP_state>
+    78d8:	4213      	mov	[S-20], AL
+    78da:	8c09      	cmp	AL, #9
+    78dc:	1e02      	jug	0x78e2 <_get_wakeup_time+0x14>
+    78de:	5cf2      	usex	A
+    78e0:	0001      	jmp	0x78e4 <_get_wakeup_time+0x16>
+    78e2:	7000      	lod	A, #0
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    78e4:	44a2      	asl	A, #2
+    78e6:	4422      	asl	A
+    78e8:	7ae2      	lod	Y, A
+    78ea:	e2da 894e 	add	Y, #35150
+    78ee:	5a15      	mov	[S-22], Y
+	uint16_t m_report_period;
+	uint8_t m_index = 0;
+	uint8_t m_remainder;
+	const tpms_state_property_t *pParm = &TPMS_STATE_PARAMETERS[get_tpms_state_index()];
+
+	if( !pParm ){
+    78f0:	1d03      	jne	0x78f8 <_get_wakeup_time+0x2a>
+		return TPMS_STATE_PARAMETERS[STATE_STORAGE].det_period_PVT;
+    78f2:	62d8 894f 	lod	AL, 0x894f <_TPMS_STATE_PARAMETERS+0x1>
+    78f6:	0041      	jmp	0x797a <_get_wakeup_time+0xac>
+	}
+
+	//clear
+	m_time[0] = m_time[1] = 0;
+    78f8:	6000      	lod	AL, #0
+    78fa:	4218      	mov	[S-25], AL
+    78fc:	4219      	mov	[S-26], AL
+
+	//check PVT
+	if( pParm->det_period_PVT > 0 ) {
+    78fe:	7a15      	lod	Y, [S-22]
+    7900:	62f1      	lod	AL, [Y+1]
+    7902:	1903      	je	0x790a <_get_wakeup_time+0x3c>
+		m_time[m_index] = pParm->det_period_PVT;
+    7904:	4219      	mov	[S-26], AL
+		m_index++;
+    7906:	7001      	lod	A, #1
+    7908:	5217      	mov	[S-24], A
+	}
+	//check G
+	if( pParm->det_period_G > 0) {
+    790a:	7a15      	lod	Y, [S-22]
+    790c:	62f2      	lod	AL, [Y+2]
+    790e:	4212      	mov	[S-19], AL
+    7910:	191a      	je	0x7946 <_get_wakeup_time+0x78>
+		//Check det_period_G time is multiple of det_period_PVT
+		if( m_index > 0  ) {
+    7912:	7e17      	lod	X, [S-24]
+    7914:	1914      	je	0x793e <_get_wakeup_time+0x70>
+			if( (pParm->det_period_G % m_time[m_index-1]) != 0 ) {
+    7916:	7eef      	lod	X, S
+    7918:	20e6      	add	X, #-26
+    791a:	2217      	add	X, [S-24]
+    791c:	7aee      	lod	Y, X
+    791e:	e0ff      	add	Y, #-1
+    7920:	62f0      	lod	AL, [Y]
+    7922:	4204      	mov	[S-5], AL
+    7924:	6212      	lod	AL, [S-19]
+    7926:	6604      	lod	YL, [S-5]
+    7928:	82db 36ce 	callf	0x6d9c <___udivmodqi4>
+    792c:	62e8      	lod	AL, YL
+    792e:	190b      	je	0x7946 <_get_wakeup_time+0x78>
+				m_time[m_index] = pParm->det_period_G;
+    7930:	6612      	lod	YL, [S-19]
+    7932:	46f8      	mov	[X], YL
+				m_index++;
+    7934:	6217      	lod	AL, [S-24]
+    7936:	8001      	add	AL, #1
+    7938:	5cf2      	usex	A
+    793a:	5217      	mov	[S-24], A
+    793c:	0004      	jmp	0x7946 <_get_wakeup_time+0x78>
+			}
+		}
+		else {
+			m_time[m_index] = pParm->det_period_G;
+    793e:	6212      	lod	AL, [S-19]
+    7940:	4219      	mov	[S-26], AL
+			m_index++;
+    7942:	7801      	lod	Y, #1
+    7944:	5a17      	mov	[S-24], Y
+		}
+	}
+
+	m_report_period = pParm->report_period_spi;
+    7946:	7e15      	lod	X, [S-22]
+    7948:	6afc      	lod	AH, [X+4]
+    794a:	62fb      	lod	AL, [X+3]
+    794c:	5207      	mov	[S-8], A
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    794e:	6213      	lod	AL, [S-20]
+    7950:	8c09      	cmp	AL, #9
+    7952:	1e0d      	jug	0x796e <_get_wakeup_time+0xa0>
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7954:	8c03      	cmp	AL, #3
+    7956:	1d0b      	jne	0x796e <_get_wakeup_time+0xa0>
+		}
+	}
+
+	m_report_period = pParm->report_period_spi;
+	if( get_tpms_state_index() == STATE_DRIVE ){
+		if(SP_drive_mode_report_period_spi > 0) {
+    7958:	72d8 0188 	lod	A, 0x188 <_SP_drive_mode_report_period_spi>
+    795c:	1903      	je	0x7964 <_get_wakeup_time+0x96>
+			m_report_period = (SP_drive_mode_report_period_spi*DEFAULT_REPORT_PERIOD_STEP_SEC);
+    795e:	4872 0005 	muls	A, A, #5
+    7962:	0004      	jmp	0x796c <_get_wakeup_time+0x9e>
+		}
+		else {
+			m_report_period = TPMS_STATE_PARAMETERS[STATE_DRIVE].report_period_spi ;
+    7964:	6ad8 896a 	lod	AH, 0x896a <_TPMS_STATE_PARAMETERS+0x1c>
+    7968:	62d8 8969 	lod	AL, 0x8969 <_TPMS_STATE_PARAMETERS+0x1b>
+    796c:	5207      	mov	[S-8], A
+    796e:	6219      	lod	AL, [S-26]
+    7970:	4203      	mov	[S-4], AL
+		}
+	}
+
+	// 預設m_report_period均被整除
+	if( m_index == 1 ){
+    7972:	6217      	lod	AL, [S-24]
+    7974:	8c01      	cmp	AL, #1
+    7976:	1d03      	jne	0x797e <_get_wakeup_time+0xb0>
+		return m_time[0];
+    7978:	6203      	lod	AL, [S-4]
+    797a:	5cf2      	usex	A
+    797c:	541b      	ret	#28
+	}
+	else {
+		// m_time[0] : MIN
+		// m_time[1] : MAX
+		if( m_time[0] > m_time[1] ){
+    797e:	6618      	lod	YL, [S-25]
+    7980:	6203      	lod	AL, [S-4]
+    7982:	8ee8      	cmp	AL, YL
+    7984:	1a02      	jule	0x798a <_get_wakeup_time+0xbc>
+			uint8_t m_max = m_time[0];
+			m_time[0] = m_time[1];
+    7986:	4619      	mov	[S-26], YL
+			m_time[1] = m_max;
+    7988:	4218      	mov	[S-25], AL
+		}
+
+		m_remainder = SP_timer_wakeup_totalTime % m_time[1];
+    798a:	6218      	lod	AL, [S-25]
+    798c:	420d      	mov	[S-14], AL
+    798e:	66e0      	lod	YL, AL
+    7990:	5cf6      	usex	Y
+    7992:	5a0f      	mov	[S-16], Y
+    7994:	72d8 0186 	lod	A, 0x186 <_SP_timer_wakeup_totalTime>
+    7998:	520b      	mov	[S-12], A
+    799a:	7ee6      	lod	X, Y
+    799c:	4cf2      	usex	YA
+    799e:	4c63      	divu	YA, X
+    79a0:	4c63      	divu	YA, X
+    79a2:	5a03      	mov	[S-4], Y
+    79a4:	6603      	lod	YL, [S-4]
+    79a6:	5cf6      	usex	Y
+
+		if( m_remainder == 0 ){
+    79a8:	1d1e      	jne	0x79e6 <_get_wakeup_time+0x118>
+
+			if( m_report_period == 0 &&
+    79aa:	7207      	lod	A, [S-8]
+    79ac:	1d0d      	jne	0x79c8 <_get_wakeup_time+0xfa>
+    79ae:	6219      	lod	AL, [S-26]
+    79b0:	5cf2      	usex	A
+    79b2:	7ee2      	lod	X, A
+    79b4:	720b      	lod	A, [S-12]
+    79b6:	4cf2      	usex	YA
+    79b8:	4c63      	divu	YA, X
+    79ba:	4c63      	divu	YA, X
+    79bc:	ec00      	cmp	Y, #0
+    79be:	1d04      	jne	0x79c8 <_get_wakeup_time+0xfa>
+					SP_timer_wakeup_totalTime % m_time[0] == 0 ) {
+				SP_timer_wakeup_totalTime = 0;
+    79c0:	7000      	lod	A, #0
+    79c2:	52d8 0186 	mov	0x186 <_SP_timer_wakeup_totalTime>, A
+    79c6:	0016      	jmp	0x79f4 <_get_wakeup_time+0x126>
+				return m_time[0];
+			}
+
+			return (m_time[0] - SP_timer_wakeup_totalTime%m_time[0]);
+    79c8:	6219      	lod	AL, [S-26]
+    79ca:	4209      	mov	[S-10], AL
+    79cc:	66e0      	lod	YL, AL
+    79ce:	5cf6      	usex	Y
+    79d0:	5a01      	mov	[S-2], Y
+    79d2:	72d8 0186 	lod	A, 0x186 <_SP_timer_wakeup_totalTime>
+    79d6:	7ee6      	lod	X, Y
+    79d8:	4cf2      	usex	YA
+    79da:	4c63      	divu	YA, X
+    79dc:	4c63      	divu	YA, X
+    79de:	5a03      	mov	[S-4], Y
+    79e0:	6209      	lod	AL, [S-10]
+    79e2:	8a03      	sub	AL, [S-4]
+    79e4:	07ca      	jmp	0x797a <_get_wakeup_time+0xac>
+		}
+		else if( (m_remainder + m_time[0]) <= m_time[1] ) {
+    79e6:	6219      	lod	AL, [S-26]
+    79e8:	5cf2      	usex	A
+    79ea:	7ee2      	lod	X, A
+    79ec:	72e6      	lod	A, Y
+    79ee:	a2ee      	add	A, X
+    79f0:	ae0f      	cmp	A, [S-16]
+    79f2:	1f02      	jsg	0x79f8 <_get_wakeup_time+0x12a>
+			return m_time[0];
+    79f4:	72ee      	lod	A, X
+    79f6:	541b      	ret	#28
+		}
+		else{
+			return (m_time[1] - m_remainder);
+    79f8:	620d      	lod	AL, [S-14]
+    79fa:	8ae8      	sub	AL, YL
+    79fc:	5cf2      	usex	A
+		}
+	}
+}
+    79fe:	541b      	ret	#28
+
+00007a00 <_TPMS_state_processing_end>:
+ * Arguments:   none
+ * Returns:     none
+ * Notes:
+ */
+void TPMS_state_processing_end(void)
+{
+    7a00:	580b      	inc	S, #12
+	bool bSendMsg = false;
+    7a02:	7000      	lod	A, #0
+    7a04:	520b      	mov	[S-12], A
+	bool bSendFinish = false;
+    7a06:	5209      	mov	[S-10], A
+	action_state_t action = (SP_state.as_field.action_state & AS_FLAG_MASK);
+    7a08:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7a0c:	7ae2      	lod	Y, A
+    7a0e:	f47f      	and	Y, #127
+    7a10:	5a07      	mov	[S-8], Y
+
+    // Action
+    if( SP_state.as_field.action_state & AS_STATE_CHANGE ) {
+    7a12:	8c00      	cmp	AL, #0
+    7a14:	1e8d      	jsge	0x7a30 <_TPMS_state_processing_end+0x30>
+    	//bSendMsg = true;
+
+		Process_spi_buf_tx( action );
+    7a16:	72e6      	lod	A, Y
+    7a18:	14f2      	call	0x73fe <_Process_spi_buf_tx>
+		bSendFinish = true;
+    7a1a:	7001      	lod	A, #1
+    7a1c:	5209      	mov	[S-10], A
+
+		SP_state.as_field.action_state = AS_NONE;
+    7a1e:	6400      	lod	YL, #0
+    7a20:	46d8 0173 	mov	0x173 <_SP_state+0x1>, YL
+		SP_timer_wakeup_totalTime = 0;
+    7a24:	7c00      	lod	X, #0
+    7a26:	5ed8 0186 	mov	0x186 <_SP_timer_wakeup_totalTime>, X
+		SP_state_keep_time = 0;
+    7a2a:	5ed8 0176 	mov	0x176 <_SP_state_keep_time>, X
+    7a2e:	0042      	jmp	0x7ab4 <_TPMS_state_processing_end+0xb4>
+		// Reset wakeup timer
+		SP_timer_wakeup_time = get_wakeup_time();
+		wtimer_restart_sec( SP_timer_wakeup_time );
+#endif
+    }
+    else if(action != AS_NONE ){
+    7a30:	7207      	lod	A, [S-8]
+    7a32:	190e      	je	0x7a50 <_TPMS_state_processing_end+0x50>
+
+		//switch( SP_state.as_field.action_state ){
+    	switch( action ){
+    7a34:	ac04      	cmp	A, #4
+    7a36:	1c01      	jnc	0x7a3a <_TPMS_state_processing_end+0x3a>
+    7a38:	003d      	jmp	0x7ab4 <_TPMS_state_processing_end+0xb4>
+    7a3a:	ac09      	cmp	A, #9
+    7a3c:	1a06      	jule	0x7a4a <_TPMS_state_processing_end+0x4a>
+    7a3e:	ac0b      	cmp	A, #11
+    7a40:	1a01      	jule	0x7a44 <_TPMS_state_processing_end+0x44>
+    7a42:	0038      	jmp	0x7ab4 <_TPMS_state_processing_end+0xb4>
+		case AS_TRIGGER:
+		case AS_TRIGGER_MANCHESTER:
+			bSendMsg = true;
+    7a44:	7801      	lod	Y, #1
+    7a46:	5a0b      	mov	[S-12], Y
+			break;
+    7a48:	0035      	jmp	0x7ab4 <_TPMS_state_processing_end+0xb4>
+		case AS_REQUEST_ACC:
+		case AS_REQUEST_G:
+		case AS_REQUEST_MEASURE:
+		case AS_REQUEST_INFO:
+		case AS_ENTRY_TFA:
+			bSendMsg = true;
+    7a4a:	7001      	lod	A, #1
+    7a4c:	520b      	mov	[S-12], A
+			break;
+    7a4e:	0032      	jmp	0x7ab4 <_TPMS_state_processing_end+0xb4>
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    7a50:	62d8 0172 	lod	AL, 0x172 <_SP_state>
+    7a54:	8c09      	cmp	AL, #9
+    7a56:	1e02      	jug	0x7a5c <_TPMS_state_processing_end+0x5c>
+    7a58:	5cf2      	usex	A
+    7a5a:	0001      	jmp	0x7a5e <_TPMS_state_processing_end+0x5e>
+    7a5c:	7000      	lod	A, #0
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7a5e:	5cf2      	usex	A
+    7a60:	5205      	mov	[S-6], A
+
+    }
+    else {
+    	uint8_t m_state_index = get_tpms_state_index();
+
+    	if( TPMS_STATE_PARAMETERS[m_state_index].report_period_spi > 0) {
+    7a62:	487a 0008 	muls	Y, A, #8
+    7a66:	e2da 8950 	add	Y, #35152
+    7a6a:	62f1      	lod	AL, [Y+1]
+    7a6c:	5cf2      	usex	A
+    7a6e:	6ef2      	lod	YH, [Y+2]
+    7a70:	6400      	lod	YL, #0
+    7a72:	e6e2      	or	Y, A
+    7a74:	191f      	je	0x7ab4 <_TPMS_state_processing_end+0xb4>
+
+    		if( STATE_DRIVE == m_state_index ) {
+    7a76:	6205      	lod	AL, [S-6]
+    7a78:	8c03      	cmp	AL, #3
+    7a7a:	1d13      	jne	0x7aa2 <_TPMS_state_processing_end+0xa2>
+
+        		if(	SP_drive_mode_report_period_spi > 0) {
+    7a7c:	72d8 0188 	lod	A, 0x188 <_SP_drive_mode_report_period_spi>
+    7a80:	7ed8 0186 	lod	X, 0x186 <_SP_timer_wakeup_totalTime>
+    7a84:	ac00      	cmp	A, #0
+    7a86:	190a      	je	0x7a9c <_TPMS_state_processing_end+0x9c>
+        			// user define report_period
+        			if( SP_timer_wakeup_totalTime >= ((uint16_t)SP_drive_mode_report_period_spi*DEFAULT_REPORT_PERIOD_STEP_SEC) ) {
+    7a88:	4872 0005 	muls	A, A, #5
+    7a8c:	2ee2      	cmp	X, A
+    7a8e:	1812      	jc	0x7ab4 <_TPMS_state_processing_end+0xb4>
+						bSendMsg = true;
+    7a90:	7801      	lod	Y, #1
+    7a92:	5a0b      	mov	[S-12], Y
+						SP_timer_wakeup_totalTime = 0;
+    7a94:	7c00      	lod	X, #0
+    7a96:	5ed8 0186 	mov	0x186 <_SP_timer_wakeup_totalTime>, X
+    7a9a:	000c      	jmp	0x7ab4 <_TPMS_state_processing_end+0xb4>
+        			}
+    			}
+        		else {
+        			// default define report_period
+        			if( SP_timer_wakeup_totalTime >= TPMS_STATE_PARAMETERS[m_state_index].report_period_spi ) {
+    7a9c:	2ee6      	cmp	X, Y
+    7a9e:	180a      	jc	0x7ab4 <_TPMS_state_processing_end+0xb4>
+    7aa0:	0004      	jmp	0x7aaa <_TPMS_state_processing_end+0xaa>
+        			}
+    			}
+
+    		}
+    		else {
+    			if( SP_timer_wakeup_totalTime >= TPMS_STATE_PARAMETERS[m_state_index].report_period_spi ) {
+    7aa2:	72d8 0186 	lod	A, 0x186 <_SP_timer_wakeup_totalTime>
+    7aa6:	aee6      	cmp	A, Y
+    7aa8:	1805      	jc	0x7ab4 <_TPMS_state_processing_end+0xb4>
+    				bSendMsg = true;
+    7aaa:	7001      	lod	A, #1
+    7aac:	520b      	mov	[S-12], A
+    				SP_timer_wakeup_totalTime = 0;
+    7aae:	7800      	lod	Y, #0
+    7ab0:	5ad8 0186 	mov	0x186 <_SP_timer_wakeup_totalTime>, Y
+    		}
+    	}
+    }
+
+	// Reset wakeup timer
+	SP_timer_wakeup_time = get_wakeup_time();
+    7ab4:	170c      	call	0x78ce <_get_wakeup_time>
+    7ab6:	42d8 0184 	mov	0x184 <_SP_timer_wakeup_time>, AL
+	wtimer_restart_sec( SP_timer_wakeup_time );
+    7aba:	5cf2      	usex	A
+    7abc:	121a      	call	0x7ef2 <_wtimer_restart_sec>
+
+
+    if(!bSendFinish){
+    7abe:	7e09      	lod	X, [S-10]
+    7ac0:	1d04      	jne	0x7aca <_TPMS_state_processing_end+0xca>
+		if( bSendMsg ){
+    7ac2:	720b      	lod	A, [S-12]
+    7ac4:	1902      	je	0x7aca <_TPMS_state_processing_end+0xca>
+			Process_spi_buf_tx( action );
+    7ac6:	7207      	lod	A, [S-8]
+    7ac8:	149a      	call	0x73fe <_Process_spi_buf_tx>
+#endif
+    }
+
+    // reset SP_timer_wakeup_totalTime
+#if defined (SG_DEFAULT_CUST) && SG_DEFAULT_CUST == SG_CUST_HENDRICKSON
+	if((STATE_STORAGE == SP_state.as_field.tpms_state ) &&
+    7aca:	62d8 0172 	lod	AL, 0x172 <_SP_state>
+    7ace:	1d14      	jne	0x7af8 <_TPMS_state_processing_end+0xf8>
+    7ad0:	7ad8 0186 	lod	Y, 0x186 <_SP_timer_wakeup_totalTime>
+    7ad4:	5a03      	mov	[S-4], Y
+    7ad6:	1910      	je	0x7af8 <_TPMS_state_processing_end+0xf8>
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7ad8:	62d8 894f 	lod	AL, 0x894f <_TPMS_STATE_PARAMETERS+0x1>
+    7adc:	5cf2      	usex	A
+    7ade:	5201      	mov	[S-2], A
+    7ae0:	7203      	lod	A, [S-4]
+    7ae2:	7e01      	lod	X, [S-2]
+    7ae4:	4cf2      	usex	YA
+    7ae6:	4c63      	divu	YA, X
+    7ae8:	4c63      	divu	YA, X
+    7aea:	ec00      	cmp	Y, #0
+    7aec:	1d05      	jne	0x7af8 <_TPMS_state_processing_end+0xf8>
+#else
+	if((STATE_STATIONARY == SP_state.as_field.tpms_state) &&
+#endif
+		SP_timer_wakeup_totalTime > 0 ){
+		if( SP_timer_wakeup_totalTime % TPMS_STATE_PARAMETERS[get_tpms_state_index()].det_period_PVT == 0 ){
+			SP_timer_wakeup_totalTime = 0;
+    7aee:	7000      	lod	A, #0
+    7af0:	52d8 0186 	mov	0x186 <_SP_timer_wakeup_totalTime>, A
+			SP_state_keep_time = 0;
+    7af4:	52d8 0176 	mov	0x176 <_SP_state_keep_time>, A
+			//SP_drive_mode_report_period_spi = 0;
+		}
+	}
+    // Clear action flag
+    if( SP_state.as_field.action_state != AS_NONE ){
+    7af8:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7afc:	1903      	je	0x7b04 <_TPMS_state_processing_end+0x104>
+    	SP_state.as_field.action_state = AS_NONE;
+    7afe:	6400      	lod	YL, #0
+    7b00:	46d8 0173 	mov	0x173 <_SP_state+0x1>, YL
+    }
+
+    update_measured_rec();
+    7b04:	1663      	call	0x77cc <_update_measured_rec>
+
+    // Wakeup enable : SPI
+#if defined(SG_ENABLE_SPI)
+	Wakeup_Enable(WAKEUP_GPIO0_HIGH);
+    7b06:	82db 4269 	callf	0x84d2 <_Wakeup_Enable_WAKEUP_GPIO0_HIGH>
+	Itc_Enable(ITC_GPIO0);
+    7b0a:	1379      	call	0x81fe <_Itc_Enable_ITC_GPIO0>
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    7b0c:	62d8 0172 	lod	AL, 0x172 <_SP_state>
+    7b10:	8c09      	cmp	AL, #9
+    7b12:	1e02      	jug	0x7b18 <_TPMS_state_processing_end+0x118>
+    7b14:	5cf2      	usex	A
+    7b16:	0001      	jmp	0x7b1a <_TPMS_state_processing_end+0x11a>
+    7b18:	7000      	lod	A, #0
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7b1a:	44a2      	asl	A, #2
+    7b1c:	4422      	asl	A
+    7b1e:	7ee2      	lod	X, A
+    7b20:	22da 894e 	add	X, #35150
+    7b24:	66f8      	lod	YL, [X]
+    7b26:	72e6      	lod	A, Y
+    7b28:	4432      	lsr	A
+    7b2a:	b401      	and	A, #1
+    7b2c:	8c00      	cmp	AL, #0
+    7b2e:	1909      	je	0x7b42 <_TPMS_state_processing_end+0x142>
+
+
+    // Wakeup enable : LF
+    if (TPMS_STATE_PARAMETERS[get_tpms_state_index()].enabled_rx_lf) {
+        //dbg("DSleepLF ");
+        Itc_Enable(ITC_LFRX_TIMEOUT);
+    7b30:	1384      	call	0x823a <_Itc_Enable_ITC_LFRX_TIMEOUT>
+        Wakeup_Enable(WAKEUP_LFRX_TIMEOUT);
+    7b32:	82db 4257 	callf	0x84ae <_Wakeup_Enable_WAKEUP_LFRX_TIMEOUT>
+        Itc_Enable(ITC_LFRX_DONE);
+    7b36:	139a      	call	0x826c <_Itc_Enable_ITC_LFRX_DONE>
+        Wakeup_Enable(WAKEUP_LF_DONE);
+    7b38:	82db 4263 	callf	0x84c6 <_Wakeup_Enable_WAKEUP_LF_DONE>
+
+        LfRx_FifoFlush();
+    7b3c:	13c7      	call	0x82cc <_LfRx_FifoFlush>
+        Sys_DeepSleepWith(LF_RECEIVE);
+    7b3e:	7003      	lod	A, #3
+    7b40:	0004      	jmp	0x7b4a <_TPMS_state_processing_end+0x14a>
+    }
+    else {
+        //dbg("DSleep ");
+        Itc_Disable(ITC_LFRX_TIMEOUT);
+    7b42:	1381      	call	0x8246 <_Itc_Disable_ITC_LFRX_TIMEOUT>
+        Wakeup_Disable(WAKEUP_LFRX_TIMEOUT);
+    7b44:	82db 425d 	callf	0x84ba <_Wakeup_Disable_WAKEUP_LFRX_TIMEOUT>
+
+        Sys_DeepSleepWith(LF_DISABLED);
+    7b48:	7000      	lod	A, #0
+    7b4a:	82db 422c 	callf	0x8458 <_Sys_DeepSleepWith>
+
+00007b4e <_Check_Pressure_Absnormal>:
+	}
+}
+
+
+void Check_Pressure_Absnormal(void)
+{
+    7b4e:	5807      	inc	S, #8
+
+#if defined (SG_DEFAULT_CUST) && SG_DEFAULT_CUST != SG_CUST_HENDRICKSON
+  return;
+#endif
+
+  if(!(measurements_valid & DET_PVT)){  return;  }
+    7b50:	7100      	lod	A, dp:0x0 <__data_dp_size>
+    7b52:	b401      	and	A, #1
+    7b54:	1d01      	jne	0x7b58 <_Check_Pressure_Absnormal+0xa>
+    7b56:	0132      	jmp	0x7dbc <_Check_Pressure_Absnormal+0x26e>
+
+#ifdef SG_ENABLE_NEW_MEASURE_REC
+  if(measured.pvt.pressure > SP_measured_rec.pressure) {
+    7b58:	6102      	lod	AL, dp:0x2 <__noinit_size>
+    7b5a:	4207      	mov	[S-8], AL
+    7b5c:	66e0      	lod	YL, AL
+    7b5e:	5cf6      	usex	Y
+    7b60:	7ee6      	lod	X, Y
+    7b62:	6103      	lod	AL, dp:0x3 <__noinit_size+0x1>
+    7b64:	4205      	mov	[S-6], AL
+    7b66:	7ae2      	lod	Y, A
+    7b68:	6c00      	lod	YH, #0
+    7b6a:	7ae8      	swap	Y
+    7b6c:	e6ee      	or	Y, X
+    7b6e:	62d8 0178 	lod	AL, 0x178 <_SP_measured_rec>
+    7b72:	5cf2      	usex	A
+    7b74:	5201      	mov	[S-2], A
+    7b76:	6ad8 0179 	lod	AH, 0x179 <_SP_measured_rec+0x1>
+    7b7a:	6000      	lod	AL, #0
+    7b7c:	7ee2      	lod	X, A
+    7b7e:	2601      	or	X, [S-2]
+    7b80:	eeee      	cmp	Y, X
+    7b82:	1a03      	jule	0x7b8a <_Check_Pressure_Absnormal+0x3c>
+    delta_p = measured.pvt.pressure - SP_measured_rec.pressure;
+    7b84:	eaee      	sub	Y, X
+    7b86:	7ee6      	lod	X, Y
+    7b88:	0001      	jmp	0x7b8c <_Check_Pressure_Absnormal+0x3e>
+  }
+  else {
+    delta_p = SP_measured_rec.pressure - measured.pvt.pressure;
+    7b8a:	2ae6      	sub	X, Y
+  else {
+    delta_p = SP_measured_rec.pvt.pressure - measured.pvt.pressure;
+  }
+#endif
+
+  switch(SP_state.as_field.tpms_state) {
+    7b8c:	62d8 0172 	lod	AL, 0x172 <_SP_state>
+    7b90:	4203      	mov	[S-4], AL
+    7b92:	5cf2      	usex	A
+    7b94:	ac05      	cmp	A, #5
+    7b96:	1d01      	jne	0x7b9a <_Check_Pressure_Absnormal+0x4c>
+    7b98:	00ba      	jmp	0x7d0e <_Check_Pressure_Absnormal+0x1c0>
+    7b9a:	1e10      	jug	0x7bbc <_Check_Pressure_Absnormal+0x6e>
+    7b9c:	ac02      	cmp	A, #2
+    7b9e:	1d01      	jne	0x7ba2 <_Check_Pressure_Absnormal+0x54>
+    7ba0:	0087      	jmp	0x7cb0 <_Check_Pressure_Absnormal+0x162>
+    7ba2:	1e05      	jug	0x7bae <_Check_Pressure_Absnormal+0x60>
+    7ba4:	ac00      	cmp	A, #0
+    7ba6:	191d      	je	0x7be2 <_Check_Pressure_Absnormal+0x94>
+    7ba8:	ac01      	cmp	A, #1
+    7baa:	1925      	je	0x7bf6 <_Check_Pressure_Absnormal+0xa8>
+    7bac:	5409      	ret	#10
+    7bae:	ac03      	cmp	A, #3
+    7bb0:	1d01      	jne	0x7bb4 <_Check_Pressure_Absnormal+0x66>
+    7bb2:	006f      	jmp	0x7c92 <_Check_Pressure_Absnormal+0x144>
+    7bb4:	ac04      	cmp	A, #4
+    7bb6:	1d01      	jne	0x7bba <_Check_Pressure_Absnormal+0x6c>
+    7bb8:	00b0      	jmp	0x7d1a <_Check_Pressure_Absnormal+0x1cc>
+    7bba:	5409      	ret	#10
+    7bbc:	ac08      	cmp	A, #8
+    7bbe:	1d01      	jne	0x7bc2 <_Check_Pressure_Absnormal+0x74>
+    7bc0:	00a6      	jmp	0x7d0e <_Check_Pressure_Absnormal+0x1c0>
+    7bc2:	1e07      	jug	0x7bd2 <_Check_Pressure_Absnormal+0x84>
+    7bc4:	ac06      	cmp	A, #6
+    7bc6:	1d01      	jne	0x7bca <_Check_Pressure_Absnormal+0x7c>
+    7bc8:	006b      	jmp	0x7ca0 <_Check_Pressure_Absnormal+0x152>
+    7bca:	ac07      	cmp	A, #7
+    7bcc:	1d01      	jne	0x7bd0 <_Check_Pressure_Absnormal+0x82>
+    7bce:	0061      	jmp	0x7c92 <_Check_Pressure_Absnormal+0x144>
+    7bd0:	5409      	ret	#10
+    7bd2:	ac09      	cmp	A, #9
+    7bd4:	1d01      	jne	0x7bd8 <_Check_Pressure_Absnormal+0x8a>
+    7bd6:	0064      	jmp	0x7ca0 <_Check_Pressure_Absnormal+0x152>
+    7bd8:	aeda 0080 	cmp	A, #128
+    7bdc:	1d01      	jne	0x7be0 <_Check_Pressure_Absnormal+0x92>
+    7bde:	00da      	jmp	0x7d94 <_Check_Pressure_Absnormal+0x246>
+    7be0:	5409      	ret	#10
+  case STATE_STORAGE:
+    if(SP_state.as_field.action_state == AS_TRIGGER){
+    7be2:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7be6:	8c0a      	cmp	AL, #10
+    7be8:	1d02      	jne	0x7bee <_Check_Pressure_Absnormal+0xa0>
+      TmpSt = SP_state.as_field.tpms_state;
+    7bea:	7800      	lod	Y, #0
+    7bec:	009b      	jmp	0x7d24 <_Check_Pressure_Absnormal+0x1d6>
+      SP_state.as_field.tpms_state = STATE_TRIGGER;
+      bChangeMode = true;
+    }else if(delta_p >= THRESHOLD_P_STORAGE_LOW){
+    7bee:	2c13      	cmp	X, #19
+    7bf0:	1e01      	jug	0x7bf4 <_Check_Pressure_Absnormal+0xa6>
+    7bf2:	00e4      	jmp	0x7dbc <_Check_Pressure_Absnormal+0x26e>
+    7bf4:	00c6      	jmp	0x7d82 <_Check_Pressure_Absnormal+0x234>
+      DP1 =0; DP2 =0;
+    }
+  break;
+
+  case STATE_STATIONARY:
+    if(delta_p >= RANGE_DELTA_P_STATIONARY) {
+    7bf6:	2eda 00cf 	cmp	X, #207
+    7bfa:	1a04      	jule	0x7c04 <_Check_Pressure_Absnormal+0xb6>
+      TmpSt = SP_state.as_field.tpms_state;
+    7bfc:	7801      	lod	Y, #1
+    7bfe:	5ad8 018a 	mov	0x18a <_TmpSt>, Y
+    7c02:	009a      	jmp	0x7d38 <_Check_Pressure_Absnormal+0x1ea>
+    }
+  #endif
+#endif
+#endif
+    else{
+        if(delta_p <= THRESHOLD_P_STORAGE_LOW){
+    7c04:	2c14      	cmp	X, #20
+    7c06:	1e1b      	jug	0x7c3e <_Check_Pressure_Absnormal+0xf0>
+            if(SP_state.as_field.action_state == AS_TRIGGER){
+    7c08:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7c0c:	8c0a      	cmp	AL, #10
+    7c0e:	1d09      	jne	0x7c22 <_Check_Pressure_Absnormal+0xd4>
+               SP_state.as_field.action_state = AS_NONE;
+    7c10:	6000      	lod	AL, #0
+    7c12:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+               SP_state.as_field.tpms_state = STATE_STORAGE;
+    7c16:	42d8 0172 	mov	0x172 <_SP_state>, AL
+               TmpSt = SP_state.as_field.tpms_state;
+    7c1a:	7800      	lod	Y, #0
+    7c1c:	5ad8 018a 	mov	0x18a <_TmpSt>, Y
+               bChangeMode = true; break; }
+    7c20:	00c3      	jmp	0x7da8 <_Check_Pressure_Absnormal+0x25a>
+            DP1 ++; DP2 =0;
+    7c22:	72d8 018c 	lod	A, 0x18c <_DP1>
+    7c26:	a001      	add	A, #1
+    7c28:	52d8 018c 	mov	0x18c <_DP1>, A
+    7c2c:	7800      	lod	Y, #0
+    7c2e:	5ad8 018e 	mov	0x18e <_DP2>, Y
+            if(DP1 >= (120u))
+    7c32:	ac77      	cmp	A, #119
+    7c34:	1a17      	jule	0x7c64 <_Check_Pressure_Absnormal+0x116>
+            { SP_state.as_field.tpms_state = STATE_STORAGE;
+    7c36:	6000      	lod	AL, #0
+    7c38:	42d8 0172 	mov	0x172 <_SP_state>, AL
+              bChangeMode = true; break; }
+    7c3c:	00b5      	jmp	0x7da8 <_Check_Pressure_Absnormal+0x25a>
+        }else if(delta_p <= THRESHOLD_5_PSIG){
+    7c3e:	2c22      	cmp	X, #34
+    7c40:	1e0c      	jug	0x7c5a <_Check_Pressure_Absnormal+0x10c>
+            DP1 =0; DP2 ++;
+    7c42:	7800      	lod	Y, #0
+    7c44:	5ad8 018c 	mov	0x18c <_DP1>, Y
+    7c48:	72d8 018e 	lod	A, 0x18e <_DP2>
+    7c4c:	a001      	add	A, #1
+    7c4e:	52d8 018e 	mov	0x18e <_DP2>, A
+            if(DP2 >= (180u))
+    7c52:	aeda 00b3 	cmp	A, #179
+    7c56:	1a06      	jule	0x7c64 <_Check_Pressure_Absnormal+0x116>
+    7c58:	001a      	jmp	0x7c8e <_Check_Pressure_Absnormal+0x140>
+            { SP_state.as_field.tpms_state = STATE_MONITORING;
+              bChangeMode = true; break; }
+        }else{ DP1 =0; DP2 =0; }
+    7c5a:	7000      	lod	A, #0
+    7c5c:	52d8 018c 	mov	0x18c <_DP1>, A
+    7c60:	52d8 018e 	mov	0x18e <_DP2>, A
+        if(bChangeMode){ break; }
+        if(SP_state.as_field.action_state == AS_TRIGGER){
+    7c64:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7c68:	8c0a      	cmp	AL, #10
+    7c6a:	1d05      	jne	0x7c76 <_Check_Pressure_Absnormal+0x128>
+           TmpSt = SP_state.as_field.tpms_state;
+    7c6c:	6203      	lod	AL, [S-4]
+    7c6e:	5cf2      	usex	A
+    7c70:	52d8 018a 	mov	0x18a <_TmpSt>, A
+    7c74:	0059      	jmp	0x7d28 <_Check_Pressure_Absnormal+0x1da>
+           bChangeMode = true; break;
+        }//if
+   }//if
+   if(bChangeMode){ break; }
+
+   if( measured.pvt.pressure >= THRESHOLD_80_PSIG ){
+    7c76:	6607      	lod	YL, [S-8]
+    7c78:	5cf6      	usex	Y
+    7c7a:	7ee6      	lod	X, Y
+    7c7c:	6605      	lod	YL, [S-6]
+    7c7e:	72e6      	lod	A, Y
+    7c80:	6800      	lod	AH, #0
+    7c82:	72e4      	swap	A
+    7c84:	a6ee      	or	A, X
+    7c86:	aeda 022b 	cmp	A, #555
+    7c8a:	1e01      	jug	0x7c8e <_Check_Pressure_Absnormal+0x140>
+    7c8c:	0097      	jmp	0x7dbc <_Check_Pressure_Absnormal+0x26e>
+     SP_state.as_field.tpms_state = STATE_MONITORING;
+    7c8e:	6004      	lod	AL, #4
+    7c90:	07d3      	jmp	0x7c38 <_Check_Pressure_Absnormal+0xea>
+     bChangeMode = true;
+   }
+    break;
+  case STATE_LEARN:
+  case STATE_DRIVE:
+    if(delta_p >= RANGE_DELTA_P_MOTION) {
+    7c92:	2eda 00cf 	cmp	X, #207
+    7c96:	1e01      	jug	0x7c9a <_Check_Pressure_Absnormal+0x14c>
+    7c98:	0091      	jmp	0x7dbc <_Check_Pressure_Absnormal+0x26e>
+      SP_state.as_field.tpms_state += 1;
+    7c9a:	6203      	lod	AL, [S-4]
+    7c9c:	8001      	add	AL, #1
+    7c9e:	004d      	jmp	0x7d3a <_Check_Pressure_Absnormal+0x1ec>
+      bChangeMode = true;
+    }
+    break;
+  case STATE_LEARN_INTERIM:
+  case STATE_DRIVE_INTERIM:
+    if(delta_p >= RANGE_DELTA_P_MOTION) {
+    7ca0:	2eda 00cf 	cmp	X, #207
+    7ca4:	1e01      	jug	0x7ca8 <_Check_Pressure_Absnormal+0x15a>
+    7ca6:	008a      	jmp	0x7dbc <_Check_Pressure_Absnormal+0x26e>
+#if 0 // disable:2024/02/17
+      SP_state.as_field.tpms_state -= 1;
+      bChangeMode = true;
+#endif
+      SP_state.as_field.action_state = AS_ENTRY_TFA;
+    7ca8:	6009      	lod	AL, #9
+    7caa:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+    }
+    break;
+    7cae:	5409      	ret	#10
+  case STATE_STATIONARY_TFA:
+    if(delta_p >= RANGE_DELTA_P_MOTION) { ; }else
+    7cb0:	2eda 00cf 	cmp	X, #207
+    7cb4:	1a01      	jule	0x7cb8 <_Check_Pressure_Absnormal+0x16a>
+    7cb6:	0082      	jmp	0x7dbc <_Check_Pressure_Absnormal+0x26e>
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    7cb8:	6203      	lod	AL, [S-4]
+    7cba:	8c09      	cmp	AL, #9
+    7cbc:	1e02      	jug	0x7cc2 <_Check_Pressure_Absnormal+0x174>
+    7cbe:	7002      	lod	A, #2
+    7cc0:	0001      	jmp	0x7cc4 <_Check_Pressure_Absnormal+0x176>
+    7cc2:	7000      	lod	A, #0
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7cc4:	44a2      	asl	A, #2
+    7cc6:	4422      	asl	A
+    7cc8:	7ae2      	lod	Y, A
+    7cca:	e2da 8954 	add	Y, #35156
+    7cce:	62f0      	lod	AL, [Y]
+    7cd0:	5cf2      	usex	A
+    7cd2:	7ee2      	lod	X, A
+    7cd4:	6af1      	lod	AH, [Y+1]
+    7cd6:	6000      	lod	AL, #0
+    7cd8:	a6ee      	or	A, X
+    7cda:	1d01      	jne	0x7cde <_Check_Pressure_Absnormal+0x190>
+    7cdc:	006f      	jmp	0x7dbc <_Check_Pressure_Absnormal+0x26e>
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    7cde:	6203      	lod	AL, [S-4]
+    7ce0:	8c09      	cmp	AL, #9
+    7ce2:	1e02      	jug	0x7ce8 <_Check_Pressure_Absnormal+0x19a>
+    7ce4:	5cf2      	usex	A
+    7ce6:	0001      	jmp	0x7cea <_Check_Pressure_Absnormal+0x19c>
+    7ce8:	7000      	lod	A, #0
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7cea:	44a2      	asl	A, #2
+    7cec:	4422      	asl	A
+    7cee:	7ae2      	lod	Y, A
+    7cf0:	e2da 8954 	add	Y, #35156
+    7cf4:	62f0      	lod	AL, [Y]
+    7cf6:	5cf2      	usex	A
+    7cf8:	7ee2      	lod	X, A
+    7cfa:	6af1      	lod	AH, [Y+1]
+    7cfc:	6000      	lod	AL, #0
+    7cfe:	a6ee      	or	A, X
+    7d00:	aed8 0176 	cmp	A, 0x176 <_SP_state_keep_time>
+    7d04:	1a01      	jule	0x7d08 <_Check_Pressure_Absnormal+0x1ba>
+    7d06:	005a      	jmp	0x7dbc <_Check_Pressure_Absnormal+0x26e>
+      SP_state.as_field.tpms_state = STATE_STATIONARY;
+      bChangeMode = true;
+#else
+      if( TPMS_STATE_PARAMETERS[get_tpms_state_index()].state_keep_timeout ){
+        if(SP_state_keep_time >= TPMS_STATE_PARAMETERS[get_tpms_state_index()].state_keep_timeout) {
+          SP_state.as_field.tpms_state = TmpSt;
+    7d08:	72d8 018a 	lod	A, 0x18a <_TmpSt>
+    7d0c:	0795      	jmp	0x7c38 <_Check_Pressure_Absnormal+0xea>
+#endif
+    }
+    break;
+  case STATE_LEARN_TFA:
+  case STATE_DRIVE_TFA:
+    if(delta_p >= RANGE_DELTA_P_MOTION) {
+    7d0e:	2eda 00cf 	cmp	X, #207
+    7d12:	1e15      	jug	0x7d3e <_Check_Pressure_Absnormal+0x1f0>
+      SP_state.as_field.action_state = AS_ENTRY_TFA;
+      bChangeMode = true;
+    }
+    else {
+#if 1
+      SP_state.as_field.tpms_state -= 1;
+    7d14:	6203      	lod	AL, [S-4]
+    7d16:	80ff      	add	AL, #-1
+    7d18:	078f      	jmp	0x7c38 <_Check_Pressure_Absnormal+0xea>
+#endif
+
+    }
+    break;
+  case STATE_MONITORING:
+    if(SP_state.as_field.action_state == AS_TRIGGER){
+    7d1a:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7d1e:	8c0a      	cmp	AL, #10
+    7d20:	1d05      	jne	0x7d2c <_Check_Pressure_Absnormal+0x1de>
+      TmpSt = SP_state.as_field.tpms_state;
+    7d22:	7804      	lod	Y, #4
+    7d24:	5ad8 018a 	mov	0x18a <_TmpSt>, Y
+      SP_state.as_field.tpms_state = STATE_TRIGGER;
+    7d28:	6080      	lod	AL, #-128
+    7d2a:	0786      	jmp	0x7c38 <_Check_Pressure_Absnormal+0xea>
+      bChangeMode = true; break;
+    }//if
+    if(delta_p >= RANGE_DELTA_P_STATIONARY){
+    7d2c:	2eda 00cf 	cmp	X, #207
+    7d30:	1a0a      	jule	0x7d46 <_Check_Pressure_Absnormal+0x1f8>
+      TmpSt = SP_state.as_field.tpms_state;
+    7d32:	7004      	lod	A, #4
+    7d34:	52d8 018a 	mov	0x18a <_TmpSt>, A
+      SP_state.as_field.tpms_state = STATE_STATIONARY_TFA;
+    7d38:	6002      	lod	AL, #2
+    7d3a:	42d8 0172 	mov	0x172 <_SP_state>, AL
+      SP_state.as_field.action_state = AS_ENTRY_TFA;
+    7d3e:	6009      	lod	AL, #9
+    7d40:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+      bChangeMode = true; break;
+    7d44:	0031      	jmp	0x7da8 <_Check_Pressure_Absnormal+0x25a>
+    }else{
+      if(delta_p <= THRESHOLD_5_PSIG){
+    7d46:	2c22      	cmp	X, #34
+    7d48:	1e0e      	jug	0x7d66 <_Check_Pressure_Absnormal+0x218>
+        if(SP_state_keep_time >= (895u))
+    7d4a:	72d8 0176 	lod	A, 0x176 <_SP_state_keep_time>
+    7d4e:	aeda 037e 	cmp	A, #894
+    7d52:	1a0c      	jule	0x7d6c <_Check_Pressure_Absnormal+0x21e>
+        { SP_state.as_field.tpms_state = STATE_STATIONARY;
+    7d54:	6001      	lod	AL, #1
+    7d56:	42d8 0172 	mov	0x172 <_SP_state>, AL
+          bChangeMode = true;
+          DP1 =0; DP2 =0;
+    7d5a:	7800      	lod	Y, #0
+    7d5c:	5ad8 018c 	mov	0x18c <_DP1>, Y
+    7d60:	5ad8 018e 	mov	0x18e <_DP2>, Y
+    7d64:	0021      	jmp	0x7da8 <_Check_Pressure_Absnormal+0x25a>
+        }
+      }else{ SP_state_keep_time =0; }
+    7d66:	7000      	lod	A, #0
+    7d68:	52d8 0176 	mov	0x176 <_SP_state_keep_time>, A
+    }//if
+    if(bChangeMode){ break; }
+    if( measured.pvt.pressure < THRESHOLD_80_PSIG ){
+    7d6c:	6607      	lod	YL, [S-8]
+    7d6e:	5cf6      	usex	Y
+    7d70:	7ee6      	lod	X, Y
+    7d72:	6605      	lod	YL, [S-6]
+    7d74:	72e6      	lod	A, Y
+    7d76:	6800      	lod	AH, #0
+    7d78:	72e4      	swap	A
+    7d7a:	a6ee      	or	A, X
+    7d7c:	aeda 022b 	cmp	A, #555
+    7d80:	1e1d      	jug	0x7dbc <_Check_Pressure_Absnormal+0x26e>
+      SP_state.as_field.tpms_state = STATE_STATIONARY;
+    7d82:	6001      	lod	AL, #1
+    7d84:	42d8 0172 	mov	0x172 <_SP_state>, AL
+      bChangeMode = true;
+      DP1 =0; DP2 =0;
+    7d88:	7000      	lod	A, #0
+    7d8a:	52d8 018c 	mov	0x18c <_DP1>, A
+    7d8e:	52d8 018e 	mov	0x18e <_DP2>, A
+    }//if
+    break;
+    7d92:	000a      	jmp	0x7da8 <_Check_Pressure_Absnormal+0x25a>
+
+  case STATE_TRIGGER:
+      if((SP_state.as_field.action_state&AS_FLAG_MASK) != AS_TRIGGER){
+    7d94:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7d98:	b47f      	and	A, #127
+    7d9a:	ac0a      	cmp	A, #10
+    7d9c:	190f      	je	0x7dbc <_Check_Pressure_Absnormal+0x26e>
+        SP_state.as_field.tpms_state = TmpSt;
+    7d9e:	72d8 018a 	lod	A, 0x18a <_TmpSt>
+    7da2:	42d8 0172 	mov	0x172 <_SP_state>, AL
+    7da6:	5409      	ret	#10
+
+  default :
+    break;
+  }
+  if( bChangeMode ){
+    SP_state.as_field.action_state |= AS_STATE_CHANGE;
+    7da8:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7dac:	8480      	or	AL, #-128
+    7dae:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+
+#if defined(SG_ENABLE_AUTO_ENTRY_STORAGE_MODE)
+    SP_state.as_field.Reserved_spmem_bits = 0;
+    7db2:	62d8 0174 	lod	AL, 0x174 <_SP_state+0x2>
+    7db6:	94fd      	and	AL, #-3
+    7db8:	42d8 0174 	mov	0x174 <_SP_state+0x2>, AL
+    7dbc:	5409      	ret	#10
+
+00007dbe <_TPMS_state_processing_and_update>:
+ * Arguments:   none
+ * Returns:     none
+ * Notes:
+ */
+void TPMS_state_processing_and_update(void)
+{
+    7dbe:	5803      	inc	S, #4
+		return;
+#endif
+	}
+#endif
+
+  if( (SP_state.as_field.action_state&AS_FLAG_MASK) != AS_REQUEST_MEASURE ) {
+    7dc0:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7dc4:	b47f      	and	A, #127
+    7dc6:	ac08      	cmp	A, #8
+    7dc8:	1904      	je	0x7dd2 <_TPMS_state_processing_and_update+0x14>
+    if(measurements_valid & DET_PVT) {
+    7dca:	7100      	lod	A, dp:0x0 <__data_dp_size>
+    7dcc:	b401      	and	A, #1
+    7dce:	1901      	je	0x7dd2 <_TPMS_state_processing_and_update+0x14>
+      Check_Pressure_Absnormal();
+    7dd0:	16be      	call	0x7b4e <_Check_Pressure_Absnormal>
+    }
+  }
+
+	if( (SP_state.as_field.action_state&AS_FLAG_MASK) == AS_TRIGGER ||
+    7dd2:	62d8 0173 	lod	AL, 0x173 <_SP_state+0x1>
+    7dd6:	4203      	mov	[S-4], AL
+    7dd8:	b47f      	and	A, #127
+    7dda:	a0f6      	add	A, #-10
+    7ddc:	ac01      	cmp	A, #1
+    7dde:	1e1a      	jug	0x7e14 <_TPMS_state_processing_and_update+0x56>
+		(SP_state.as_field.action_state&AS_FLAG_MASK) == AS_TRIGGER_MANCHESTER	){
+#if 1 //2024/01/31(disable) 2024/02/17(enable)
+		if( (measurements_valid & DET_PVT) &&
+    7de0:	7100      	lod	A, dp:0x0 <__data_dp_size>
+    7de2:	b401      	and	A, #1
+    7de4:	1d01      	jne	0x7de8 <_TPMS_state_processing_and_update+0x2a>
+    7de6:	0055      	jmp	0x7e92 <_TPMS_state_processing_and_update+0xd4>
+    7de8:	6102      	lod	AL, dp:0x2 <__noinit_size>
+    7dea:	66e0      	lod	YL, AL
+    7dec:	5cf6      	usex	Y
+    7dee:	6903      	lod	AH, dp:0x3 <__noinit_size+0x1>
+    7df0:	6000      	lod	AL, #0
+    7df2:	a6e6      	or	A, Y
+    7df4:	ac13      	cmp	A, #19
+    7df6:	1a01      	jule	0x7dfa <_TPMS_state_processing_and_update+0x3c>
+    7df8:	004c      	jmp	0x7e92 <_TPMS_state_processing_and_update+0xd4>
+//				measured.pvt.pressure == 0 ){
+				measured.pvt.pressure < THRESHOLD_P_STORAGE_LOW ){
+			//SP_state.as_field.tpms_state = STATE_STORAGE;
+			SP_state.as_field.action_state |= AS_STATE_CHANGE;
+    7dfa:	6203      	lod	AL, [S-4]
+    7dfc:	8480      	or	AL, #-128
+    7dfe:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+			SP_state.as_field.rotation = STOPPED;
+    7e02:	62d8 0174 	lod	AL, 0x174 <_SP_state+0x2>
+    7e06:	94fe      	and	AL, #-2
+    7e08:	42d8 0174 	mov	0x174 <_SP_state+0x2>, AL
+			SP_state_keep_time = 0;
+    7e0c:	7000      	lod	A, #0
+    7e0e:	52d8 0176 	mov	0x176 <_SP_state_keep_time>, A
+		}
+#endif
+		return;
+    7e12:	5405      	ret	#6
+	}
+
+	if(SP_state.as_field.action_state == AS_NONE) {
+    7e14:	6203      	lod	AL, [S-4]
+    7e16:	1901      	je	0x7e1a <_TPMS_state_processing_and_update+0x5c>
+    7e18:	003c      	jmp	0x7e92 <_TPMS_state_processing_and_update+0xd4>
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    7e1a:	62d8 0172 	lod	AL, 0x172 <_SP_state>
+    7e1e:	4201      	mov	[S-2], AL
+    7e20:	8c09      	cmp	AL, #9
+    7e22:	1e02      	jug	0x7e28 <_TPMS_state_processing_and_update+0x6a>
+    7e24:	5cf2      	usex	A
+    7e26:	0001      	jmp	0x7e2a <_TPMS_state_processing_and_update+0x6c>
+    7e28:	7000      	lod	A, #0
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7e2a:	44a2      	asl	A, #2
+    7e2c:	4422      	asl	A
+    7e2e:	7ae2      	lod	Y, A
+    7e30:	e2da 8954 	add	Y, #35156
+    7e34:	62f0      	lod	AL, [Y]
+    7e36:	5cf2      	usex	A
+    7e38:	7ee2      	lod	X, A
+    7e3a:	6af1      	lod	AH, [Y+1]
+    7e3c:	6000      	lod	AL, #0
+    7e3e:	a6ee      	or	A, X
+    7e40:	1928      	je	0x7e92 <_TPMS_state_processing_and_update+0xd4>
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    7e42:	6201      	lod	AL, [S-2]
+    7e44:	8c09      	cmp	AL, #9
+    7e46:	1e02      	jug	0x7e4c <_TPMS_state_processing_and_update+0x8e>
+    7e48:	5cf2      	usex	A
+    7e4a:	0001      	jmp	0x7e4e <_TPMS_state_processing_and_update+0x90>
+    7e4c:	7000      	lod	A, #0
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7e4e:	44a2      	asl	A, #2
+    7e50:	4422      	asl	A
+    7e52:	7ae2      	lod	Y, A
+    7e54:	e2da 8954 	add	Y, #35156
+    7e58:	62f0      	lod	AL, [Y]
+    7e5a:	5cf2      	usex	A
+    7e5c:	7ee2      	lod	X, A
+    7e5e:	6af1      	lod	AH, [Y+1]
+    7e60:	6000      	lod	AL, #0
+    7e62:	a6ee      	or	A, X
+    7e64:	aed8 0176 	cmp	A, 0x176 <_SP_state_keep_time>
+    7e68:	1e14      	jug	0x7e92 <_TPMS_state_processing_and_update+0xd4>
+	return (SP_state.as_field.tpms_state>=STATE_TOTAL_NUMBER)? STATE_STORAGE:SP_state.as_field.tpms_state;
+    7e6a:	6201      	lod	AL, [S-2]
+    7e6c:	8c09      	cmp	AL, #9
+    7e6e:	1e02      	jug	0x7e74 <_TPMS_state_processing_and_update+0xb6>
+    7e70:	5cf2      	usex	A
+    7e72:	0001      	jmp	0x7e76 <_TPMS_state_processing_and_update+0xb8>
+    7e74:	7000      	lod	A, #0
+uint8_t get_wakeup_time(void);
+void Check_Pressure_Absnormal(void);
+
+
+static INLINE uint8_t get_tpms_state_index(void)
+{
+    7e76:	44a2      	asl	A, #2
+    7e78:	4422      	asl	A
+    7e7a:	7ae2      	lod	Y, A
+    7e7c:	e2da 8953 	add	Y, #35155
+    7e80:	62f0      	lod	AL, [Y]
+    7e82:	42d8 0172 	mov	0x172 <_SP_state>, AL
+		// check state keep time
+		if( (TPMS_STATE_PARAMETERS[get_tpms_state_index()].state_keep_timeout > 0) &&
+			( SP_state_keep_time >= TPMS_STATE_PARAMETERS[get_tpms_state_index()].state_keep_timeout) ) {
+
+			SP_state.as_field.tpms_state = TPMS_STATE_PARAMETERS[get_tpms_state_index()].state_keep_timeout_back_state;
+			SP_state.as_field.action_state |= AS_STATE_CHANGE;
+    7e86:	6080      	lod	AL, #-128
+    7e88:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+			SP_state_keep_time = 0;
+    7e8c:	7000      	lod	A, #0
+    7e8e:	52d8 0176 	mov	0x176 <_SP_state_keep_time>, A
+    7e92:	5405      	ret	#6
+
+00007e94 <_TPMS_state_Init>:
+ * Arguments:   TPMS state to be set
+ * Returns:     none
+ * Notes:
+ */
+void TPMS_state_Init(tpms_state_t state)
+{
+    7e94:	5801      	inc	S, #2
+    7e96:	5201      	mov	[S-2], A
+/* Inline version of the memset function
+ */
+ 
+extern __inline void *memset (void *buf, int c, size_t n)
+{
+  char *p = buf;
+    7e98:	7ada 0172 	lod	Y, #370
+    7e9c:	7c04      	lod	X, #4
+  
+  while( n-- )
+	*p++ = (char)c;
+    7e9e:	6000      	lod	AL, #0
+    7ea0:	42d6      	mov	[Y++], AL
+    7ea2:	1bfd      	djnz	X, 0x7e9e <_TPMS_state_Init+0xa>
+	memset(&SP_state, 0x00, sizeof(SP_state));
+
+    SP_state.as_field.tpms_state = state;
+    7ea4:	6201      	lod	AL, [S-2]
+    7ea6:	42d8 0172 	mov	0x172 <_SP_state>, AL
+    SP_state.as_field.action_state = AS_NONE;
+    7eaa:	6000      	lod	AL, #0
+    7eac:	42d8 0173 	mov	0x173 <_SP_state+0x1>, AL
+    SP_state.as_field.rotation = STOPPED;
+    7eb0:	62d8 0174 	lod	AL, 0x174 <_SP_state+0x2>
+    7eb4:	94fe      	and	AL, #-2
+    7eb6:	42d8 0174 	mov	0x174 <_SP_state+0x2>, AL
+
+#if 1	// 2024/01/03
+    // default timer
+    if( STATE_STORAGE == state ){	// 15 sec
+    7eba:	7201      	lod	A, [S-2]
+    7ebc:	1d05      	jne	0x7ec8 <_TPMS_state_Init+0x34>
+    	WakeupTimer_Init(212, 6);
+    7ebe:	54ca 0006 	pushw	#6
+    7ec2:	72da 00d4 	lod	A, #212
+    7ec6:	0003      	jmp	0x7ece <_TPMS_state_Init+0x3a>
+    }
+    else{
+    	WakeupTimer_Init(55, 5);	// 5 sec
+    7ec8:	54ca 0005 	pushw	#5
+    7ecc:	7037      	lod	A, #55
+    7ece:	1311      	call	0x84f2 <_WakeupTimer_Init>
+    7ed0:	5c01      	dec	S, #2
+    }
+#endif
+    SP_timer_wakeup_time = get_wakeup_time();
+    7ed2:	14fd      	call	0x78ce <_get_wakeup_time>
+    7ed4:	42d8 0184 	mov	0x184 <_SP_timer_wakeup_time>, AL
+    SP_timer_wakeup_totalTime = 0;
+    7ed8:	7000      	lod	A, #0
+    7eda:	52d8 0186 	mov	0x186 <_SP_timer_wakeup_totalTime>, A
+    7ede:	5403      	ret	#4
+
+00007ee0 <_delay_ms>:
+    7ee0:	a0ff      	add	A, #-1
+    7ee2:	acff      	cmp	A, #-1
+    7ee4:	1905      	je	0x7ef0 <_delay_ms+0x10>
+    @note
+    The minimum value for the @p nops parameter is 3!
+ */
+static INLINE
+void delay_nops(uint16_t nops)
+{
+    7ee6:	7eda 0fa0 	lod	X, #4000
+    uint16_t dummy;     /* used to inform that input operand is clobbered  */
+    __asm__ __volatile__ (
+    7eea:	20fe      	add	X, #-2
+    7eec:	1bff      	djnz	X, 0x7eec <_delay_ms+0xc>
+    7eee:	07f8      	jmp	0x7ee0 <_delay_ms>
+    7ef0:	5401      	ret
+
+00007ef2 <_wtimer_restart_sec>:
+void wtimer_restart_sec(uint16_t periodSec)
+{
+	/* 2024/01/04
+	 * WakeupTimer_Restart() change to WakeupTimer_Init();
+	 */
+	if( 15 == periodSec ){		// for storage
+    7ef2:	ac0f      	cmp	A, #15
+    7ef4:	1d01      	jne	0x7ef8 <_wtimer_restart_sec+0x6>
+    7ef6:	004a      	jmp	0x7f8c <_wtimer_restart_sec+0x9a>
+		WakeupTimer_Init(MANT_15s, EXP_15s);
+	}
+	else if( 5 == periodSec ){	// for PVT
+    7ef8:	ac05      	cmp	A, #5
+    7efa:	1d06      	jne	0x7f08 <_wtimer_restart_sec+0x16>
+		WakeupTimer_Init(MANT_5s, EXP_5s);
+    7efc:	54ca 0005 	pushw	#5
+    7f00:	7037      	lod	A, #55
+    7f02:	12f7      	call	0x84f2 <_WakeupTimer_Init>
+    7f04:	5c01      	dec	S, #2
+    7f06:	5401      	ret
+	}
+	else if( 10 == periodSec ){	// for Learn Drive Mode
+    7f08:	ac0a      	cmp	A, #10
+    7f0a:	1d03      	jne	0x7f12 <_wtimer_restart_sec+0x20>
+		WakeupTimer_Init(MANT_10s, EXP_10s);
+    7f0c:	54ca 0006 	pushw	#6
+    7f10:	07f7      	jmp	0x7f00 <_wtimer_restart_sec+0xe>
+	}
+	else if( 1 == periodSec ){
+    7f12:	ac01      	cmp	A, #1
+    7f14:	1d03      	jne	0x7f1c <_wtimer_restart_sec+0x2a>
+		WakeupTimer_Init(MANT_1s, EXP_1s);
+    7f16:	54ca 0002 	pushw	#2
+    7f1a:	0020      	jmp	0x7f5c <_wtimer_restart_sec+0x6a>
+	}
+	else if( 2 == periodSec ){
+    7f1c:	ac02      	cmp	A, #2
+    7f1e:	1d03      	jne	0x7f26 <_wtimer_restart_sec+0x34>
+		WakeupTimer_Init(MANT_2s, EXP_2s);
+    7f20:	54ca 0003 	pushw	#3
+    7f24:	001b      	jmp	0x7f5c <_wtimer_restart_sec+0x6a>
+	}
+	else if( 3 == periodSec ){
+    7f26:	ac03      	cmp	A, #3
+    7f28:	1d03      	jne	0x7f30 <_wtimer_restart_sec+0x3e>
+		WakeupTimer_Init(MANT_3s, EXP_3s);
+    7f2a:	54ca 0004 	pushw	#4
+    7f2e:	0009      	jmp	0x7f42 <_wtimer_restart_sec+0x50>
+	}
+	else if( 4 == periodSec ){
+    7f30:	ac04      	cmp	A, #4
+    7f32:	1d03      	jne	0x7f3a <_wtimer_restart_sec+0x48>
+		WakeupTimer_Init(MANT_4s, EXP_4s);
+    7f34:	54ca 0004 	pushw	#4
+    7f38:	0011      	jmp	0x7f5c <_wtimer_restart_sec+0x6a>
+	}
+	else if( 6 == periodSec ){
+    7f3a:	ac06      	cmp	A, #6
+    7f3c:	1d04      	jne	0x7f46 <_wtimer_restart_sec+0x54>
+		WakeupTimer_Init(MANT_6s, EXP_6s);
+    7f3e:	54ca 0005 	pushw	#5
+    7f42:	7076      	lod	A, #118
+    7f44:	07de      	jmp	0x7f02 <_wtimer_restart_sec+0x10>
+	}
+	else if( 7 == periodSec ){
+    7f46:	ac07      	cmp	A, #7
+    7f48:	1d05      	jne	0x7f54 <_wtimer_restart_sec+0x62>
+		WakeupTimer_Init(MANT_7s, EXP_7s);
+    7f4a:	54ca 0005 	pushw	#5
+    7f4e:	72da 00b4 	lod	A, #180
+    7f52:	07d7      	jmp	0x7f02 <_wtimer_restart_sec+0x10>
+	}
+	else if( 8 == periodSec ){
+    7f54:	ac08      	cmp	A, #8
+    7f56:	1d05      	jne	0x7f62 <_wtimer_restart_sec+0x70>
+		WakeupTimer_Init(MANT_8s, EXP_8s);
+    7f58:	54ca 0005 	pushw	#5
+    7f5c:	72da 00f3 	lod	A, #243
+    7f60:	07d0      	jmp	0x7f02 <_wtimer_restart_sec+0x10>
+	}
+	else if( 9 == periodSec ){
+    7f62:	ac09      	cmp	A, #9
+    7f64:	1d04      	jne	0x7f6e <_wtimer_restart_sec+0x7c>
+		WakeupTimer_Init(MANT_9s, EXP_9s);
+    7f66:	54ca 0006 	pushw	#6
+    7f6a:	7018      	lod	A, #24
+    7f6c:	07ca      	jmp	0x7f02 <_wtimer_restart_sec+0x10>
+	}
+	else if( 20 == periodSec ){
+    7f6e:	ac14      	cmp	A, #20
+    7f70:	1d03      	jne	0x7f78 <_wtimer_restart_sec+0x86>
+		WakeupTimer_Init(MANT_20s, EXP_20s);
+    7f72:	54ca 0007 	pushw	#7
+    7f76:	07c4      	jmp	0x7f00 <_wtimer_restart_sec+0xe>
+	}
+	else if( 30 == periodSec ){
+    7f78:	ac1e      	cmp	A, #30
+    7f7a:	1d03      	jne	0x7f82 <_wtimer_restart_sec+0x90>
+		WakeupTimer_Init(MANT_30s, EXP_30s);
+    7f7c:	54ca 0007 	pushw	#7
+    7f80:	0007      	jmp	0x7f90 <_wtimer_restart_sec+0x9e>
+	}
+	else if( 60 == periodSec ){
+    7f82:	ac3c      	cmp	A, #60
+    7f84:	1d03      	jne	0x7f8c <_wtimer_restart_sec+0x9a>
+		WakeupTimer_Init(MANT_60s, EXP_60s);
+    7f86:	54ca 0008 	pushw	#8
+    7f8a:	0002      	jmp	0x7f90 <_wtimer_restart_sec+0x9e>
+	}
+	else {
+		// Storage mode
+		WakeupTimer_Init(MANT_15s, EXP_15s);
+    7f8c:	54ca 0006 	pushw	#6
+    7f90:	72da 00d4 	lod	A, #212
+    7f94:	07b6      	jmp	0x7f02 <_wtimer_restart_sec+0x10>
+
+00007f96 <_get_pressgre_range>:
+}
+
+
+uint8_t get_pressgre_range(void)
+{
+	uint8_t pressure_range = Sys_GetPressureRange();
+    7f96:	127b      	call	0x848e <_Sys_GetPressureRange>
+    7f98:	5cf2      	usex	A
+
+#if 0	// Test : simulation truck or not
+	pressure_range = PRESSURE_RANGE_100_900_KPA;
+#endif
+	if( PRESSURE_RANGE_100_1400_KPA == pressure_range ) {
+    7f9a:	8c03      	cmp	AL, #3
+    7f9c:	1d04      	jne	0x7fa6 <_get_pressgre_range+0x10>
+		SP_drive_mode_report_period_spi = (DEFAULT_DRIVE_MODE_REPORT_PERIOD_SEC_TRUCK/DEFAULT_REPORT_PERIOD_STEP_SEC);
+    7f9e:	7824      	lod	Y, #36
+    7fa0:	5ad8 0188 	mov	0x188 <_SP_drive_mode_report_period_spi>, Y
+    7fa4:	5401      	ret
+	}
+	else {
+		SP_drive_mode_report_period_spi = (DEFAULT_DRIVE_MODE_REPORT_PERIOD_SEC/DEFAULT_REPORT_PERIOD_STEP_SEC);
+    7fa6:	780c      	lod	Y, #12
+    7fa8:	5ad8 0188 	mov	0x188 <_SP_drive_mode_report_period_spi>, Y
+	}
+
+	return (uint8_t)pressure_range;
+}
+    7fac:	5401      	ret
+
+00007fae <_init_lf>:
+
+
+void init_lf ( void )
+{
+	DBG("init_lf\n");
+	Lf_Init(&CLfCfg);
+    7fae:	72da 899e 	lod	A, #35230
+    7fb2:	1174      	call	0x829c <_Lf_Init>
+
+	Itc_ClearPending(ITC_LFRX_TIMEOUT);
+    7fb4:	1157      	call	0x8264 <_Itc_ClearPending_ITC_LFRX_TIMEOUT>
+	Itc_Enable(ITC_LFRX_TIMEOUT);
+    7fb6:	1141      	call	0x823a <_Itc_Enable_ITC_LFRX_TIMEOUT>
+	Wakeup_Enable(WAKEUP_LFRX_TIMEOUT);
+    7fb8:	127a      	call	0x84ae <_Wakeup_Enable_WAKEUP_LFRX_TIMEOUT>
+	Wakeup_Enable(WAKEUP_LF_DONE);
+    7fba:	1285      	call	0x84c6 <_Wakeup_Enable_WAKEUP_LF_DONE>
+    7fbc:	5401      	ret
+
+00007fbe <_mlx16_fatal>:
+    7fbe:	12b3      	call	0x8526 <_Sys_ResetCpu>
+
+00007fc0 <_AbsWatchdog_Restart>:
+    7fc0:	0b66      	setb	io:0x0c.6
+    7fc2:	5401      	ret
+
+00007fc4 <_AbsWatchdog_IsWindowOpen>:
+    7fc4:	7000      	lod	A, #0
+    7fc6:	0f6f      	lod	C, io:0x0d.7
+    7fc8:	b000      	adc	A, #0
+    7fca:	ac00      	cmp	A, #0
+    7fcc:	1901      	je	0x7fd0 <_AbsWatchdog_IsWindowOpen+0xc>
+    7fce:	7001      	lod	A, #1
+    7fd0:	5401      	ret
+
+00007fd2 <_Adc_ReadPVT>:
+    7fd2:	5803      	inc	S, #4
+    7fd4:	5203      	mov	[S-4], A
+    7fd6:	6356      	lod	AL, ep:0x56 <__flash_latches_mem_size+0x16>
+    7fd8:	b40f      	and	A, #15
+    7fda:	7ad8 01a6 	lod	Y, 0x1a6 <__scratchpad_end+0x16>
+    7fde:	f407      	and	Y, #7
+    7fe0:	5a01      	mov	[S-2], Y
+    7fe2:	7801      	lod	Y, #1
+    7fe4:	46d8 01a6 	mov	0x1a6 <__scratchpad_end+0x16>, YL
+    7fe8:	133b      	call	0x8660 <_adc_ll_read_pressure_init>
+    7fea:	1345      	call	0x8676 <_adc_ll_read_pressure_once>
+    7fec:	7a03      	lod	Y, [S-4]
+    7fee:	52f0      	mov	[Y], A
+    7ff0:	72da 080f 	lod	A, #2063
+    7ff4:	52d8 01fc 	mov	0x1fc <__scratchpad_end+0x6c>, A
+    7ff8:	7ada 2a40 	lod	Y, #10816
+    7ffc:	5ad8 01fe 	mov	0x1fe <__scratchpad_end+0x6e>, Y
+    8000:	1357      	call	0x86b0 <_adc_ll_read_voltage_once>
+    8002:	7a03      	lod	Y, [S-4]
+    8004:	52f2      	mov	[Y+2], A
+    8006:	72da 0e0f 	lod	A, #3599
+    800a:	52d8 01fc 	mov	0x1fc <__scratchpad_end+0x6c>, A
+    800e:	1350      	call	0x86b0 <_adc_ll_read_voltage_once>
+    8010:	7a03      	lod	Y, [S-4]
+    8012:	52f4      	mov	[Y+4], A
+    8014:	6201      	lod	AL, [S-2]
+    8016:	42d8 01a6 	mov	0x1a6 <__scratchpad_end+0x16>, AL
+    801a:	130b      	call	0x8632 <_adc_ll_common_deinit>
+    801c:	5405      	ret	#6
+
+0000801e <_Adc_IsError>:
+    801e:	62d8 0157 	lod	AL, 0x157 <__flash_config_mem_size+0xd7>
+    8022:	94fc      	and	AL, #-4
+    8024:	7800      	lod	Y, #0
+    8026:	8c00      	cmp	AL, #0
+    8028:	1901      	je	0x802c <_Adc_IsError+0xe>
+    802a:	7801      	lod	Y, #1
+    802c:	72e6      	lod	A, Y
+    802e:	5401      	ret
+
+00008030 <_Adc_ClearAllErrors>:
+    8030:	60ff      	lod	AL, #-1
+    8032:	42d8 0157 	mov	0x157 <__flash_config_mem_size+0xd7>, AL
+    8036:	5401      	ret
+
+00008038 <_Calc_Pressure>:
+    8038:	5813      	inc	S, #20
+    803a:	5213      	mov	[S-20], A
+    803c:	7a17      	lod	Y, [S-24]
+    803e:	7e19      	lod	X, [S-26]
+    8040:	eeda 02f0 	cmp	Y, #752
+    8044:	1e01      	jug	0x8048 <_Calc_Pressure+0x10>
+    8046:	003b      	jmp	0x80be <_Calc_Pressure+0x86>
+    8048:	7000      	lod	A, #0
+    804a:	520d      	mov	[S-14], A
+    804c:	2eda 07ff 	cmp	X, #2047
+    8050:	1f02      	jsg	0x8056 <_Calc_Pressure+0x1e>
+    8052:	7001      	lod	A, #1
+    8054:	520d      	mov	[S-14], A
+    8056:	e2da f510 	add	Y, #62736
+    805a:	4476      	asr	Y
+    805c:	5a0b      	mov	[S-12], Y
+    805e:	ec00      	cmp	Y, #0
+    8060:	1e89      	jsge	0x8074 <_Calc_Pressure+0x3c>
+    8062:	6350      	lod	AL, ep:0x50 <__flash_latches_mem_size+0x10>
+    8064:	5ce2      	ssex	A
+    8066:	5201      	mov	[S-2], A
+    8068:	7a0d      	lod	Y, [S-14]
+    806a:	1902      	je	0x8070 <_Calc_Pressure+0x38>
+    806c:	6348      	lod	AL, ep:0x48 <__flash_latches_mem_size+0x8>
+    806e:	000a      	jmp	0x8084 <_Calc_Pressure+0x4c>
+    8070:	6354      	lod	AL, ep:0x54 <__flash_latches_mem_size+0x14>
+    8072:	0008      	jmp	0x8084 <_Calc_Pressure+0x4c>
+    8074:	6351      	lod	AL, ep:0x51 <__flash_latches_mem_size+0x11>
+    8076:	5ce2      	ssex	A
+    8078:	5201      	mov	[S-2], A
+    807a:	7e0d      	lod	X, [S-14]
+    807c:	1902      	je	0x8082 <_Calc_Pressure+0x4a>
+    807e:	6349      	lod	AL, ep:0x49 <__flash_latches_mem_size+0x9>
+    8080:	0001      	jmp	0x8084 <_Calc_Pressure+0x4c>
+    8082:	6355      	lod	AL, ep:0x55 <__flash_latches_mem_size+0x15>
+    8084:	5ce2      	ssex	A
+    8086:	7ee2      	lod	X, A
+    8088:	720b      	lod	A, [S-12]
+    808a:	7a01      	lod	Y, [S-2]
+    808c:	4831      	muls	YA, A, Y
+    808e:	4cc0      	mov	D, YA
+    8090:	4891      	asr	D, #2
+    8092:	4c88      	mov	A, DL
+    8094:	5209      	mov	[S-10], A
+    8096:	720b      	lod	A, [S-12]
+    8098:	4833      	muls	YA, A, X
+    809a:	4cc0      	mov	D, YA
+    809c:	4898      	asr	D, #9
+    809e:	4c89      	mov	Y, DL
+    80a0:	7e0d      	lod	X, [S-14]
+    80a2:	1905      	je	0x80ae <_Calc_Pressure+0x76>
+    80a4:	7344      	lod	A, ep:0x44 <__flash_latches_mem_size+0x4>
+    80a6:	7e09      	lod	X, [S-10]
+    80a8:	22e2      	add	X, A
+    80aa:	7346      	lod	A, ep:0x46 <__flash_latches_mem_size+0x6>
+    80ac:	0004      	jmp	0x80b6 <_Calc_Pressure+0x7e>
+    80ae:	734e      	lod	A, ep:0x4e <__flash_latches_mem_size+0xe>
+    80b0:	7e09      	lod	X, [S-10]
+    80b2:	22e2      	add	X, A
+    80b4:	7352      	lod	A, ep:0x52 <__flash_latches_mem_size+0x12>
+    80b6:	a2e6      	add	A, Y
+    80b8:	a213      	add	A, [S-20]
+    80ba:	ac00      	cmp	A, #0
+    80bc:	1e84      	jsge	0x80c6 <_Calc_Pressure+0x8e>
+    80be:	7000      	lod	A, #0
+    80c0:	5211      	mov	[S-18], A
+    80c2:	520f      	mov	[S-16], A
+    80c4:	002c      	jmp	0x811e <_Calc_Pressure+0xe6>
+    80c6:	4803      	mulu	D, A, X
+    80c8:	7aef      	lod	Y, S
+    80ca:	e0ee      	add	Y, #-18
+    80cc:	4c85      	mov	[Y], D
+    80ce:	637d      	lod	AL, ep:0x7d <__flash_latches_mem_size+0x3d>
+    80d0:	5ce2      	ssex	A
+    80d2:	5205      	mov	[S-6], A
+    80d4:	7a0b      	lod	Y, [S-12]
+    80d6:	4811      	muls	D, A, Y
+    80d8:	4893      	asr	D, #4
+    80da:	7aef      	lod	Y, S
+    80dc:	e0fa      	add	Y, #-6
+    80de:	4c85      	mov	[Y], D
+    80e0:	7e05      	lod	X, [S-6]
+    80e2:	5e07      	mov	[S-8], X
+    80e4:	637c      	lod	AL, ep:0x7c <__flash_latches_mem_size+0x3c>
+    80e6:	5ce2      	ssex	A
+    80e8:	5205      	mov	[S-6], A
+    80ea:	7a0b      	lod	Y, [S-12]
+    80ec:	4811      	muls	D, A, Y
+    80ee:	4893      	asr	D, #4
+    80f0:	7aef      	lod	Y, S
+    80f2:	e0fa      	add	Y, #-6
+    80f4:	4c85      	mov	[Y], D
+    80f6:	7e05      	lod	X, [S-6]
+    80f8:	7a13      	lod	Y, [S-20]
+    80fa:	eb78      	sub	Y, ep:0x78 <__flash_latches_mem_size+0x38>
+    80fc:	7213      	lod	A, [S-20]
+    80fe:	ab7a      	sub	A, ep:0x7a <__flash_latches_mem_size+0x3a>
+    8100:	ea07      	sub	Y, [S-8]
+    8102:	aaee      	sub	A, X
+    8104:	4811      	muls	D, A, Y
+    8106:	4895      	asr	D, #6
+    8108:	634b      	lod	AL, ep:0x4b <__flash_latches_mem_size+0xb>
+    810a:	5ce2      	ssex	A
+    810c:	5205      	mov	[S-6], A
+    810e:	7205      	lod	A, [S-6]
+    8110:	4cf6      	ssex	YA
+    8112:	82db 36e2 	callf	0x6dc4 <___mulsi3_D>
+    8116:	a211      	add	A, [S-18]
+    8118:	f20f      	adc	Y, [S-16]
+    811a:	5211      	mov	[S-18], A
+    811c:	5a0f      	mov	[S-16], Y
+    811e:	7211      	lod	A, [S-18]
+    8120:	7a0f      	lod	Y, [S-16]
+    8122:	5415      	ret	#22
+
+00008124 <_Calc_Temperature>:
+    8124:	5803      	inc	S, #4
+    8126:	5201      	mov	[S-2], A
+    8128:	7ae2      	lod	Y, A
+    812a:	e34c      	add	Y, ep:0x4c <__flash_latches_mem_size+0xc>
+    812c:	44b6      	lsr	Y, #2
+    812e:	634a      	lod	AL, ep:0x4a <__flash_latches_mem_size+0xa>
+    8130:	5cf2      	usex	A
+    8132:	7ee2      	lod	X, A
+    8134:	72e6      	lod	A, Y
+    8136:	4873      	muls	A, A, X
+    8138:	5203      	mov	[S-4], A
+    813a:	7201      	lod	A, [S-2]
+    813c:	a2da f4de 	add	A, #62686
+    8140:	44f2      	asr	A, #2
+    8142:	4810      	muls	D, A, A
+    8144:	4c80      	mov	YA, D
+    8146:	54ca 0046 	pushw	#70
+    814a:	82db 36c6 	callf	0x6d8c <_mulU32_U32byU16>
+    814e:	5c01      	dec	S, #2
+    8150:	48ab      	lsr	YA, #12
+    8152:	ae03      	cmp	A, [S-4]
+    8154:	1802      	jc	0x815a <_Calc_Temperature+0x36>
+    8156:	7000      	lod	A, #0
+    8158:	5405      	ret	#6
+    815a:	7a03      	lod	Y, [S-4]
+    815c:	eae2      	sub	Y, A
+    815e:	72e6      	lod	A, Y
+    8160:	5405      	ret	#6
+
+00008162 <_Calc_Voltage>:
+    8162:	4872 000f 	muls	A, A, #15
+    8166:	44b2      	lsr	A, #2
+    8168:	44b2      	lsr	A, #2
+    816a:	44b2      	lsr	A, #2
+    816c:	4432      	lsr	A
+    816e:	5401      	ret
+
+00008170 <_Gpio_Init>:
+    8170:	7ee2      	lod	X, A
+    8172:	4ce7      	mov	YA, [X]
+    8174:	52d8 01ac 	mov	0x1ac <__scratchpad_end+0x1c>, A
+    8178:	5ad8 01ae 	mov	0x1ae <__scratchpad_end+0x1e>, Y
+    817c:	62fc      	lod	AL, [X+4]
+    817e:	42d8 01a9 	mov	0x1a9 <__scratchpad_end+0x19>, AL
+    8182:	5401      	ret
+
+00008184 <_Gpio_SetPinMode>:
+    8184:	5801      	inc	S, #2
+    8186:	7a05      	lod	Y, [S-6]
+    8188:	5a01      	mov	[S-2], Y
+    818a:	ac03      	cmp	A, #3
+    818c:	1e05      	jug	0x8198 <_Gpio_SetPinMode+0x14>
+    818e:	7ae2      	lod	Y, A
+    8190:	e2da 01ac 	add	Y, #428
+    8194:	6201      	lod	AL, [S-2]
+    8196:	42f0      	mov	[Y], AL
+    8198:	5403      	ret	#4
+
+0000819a <_Gpio_ReadPin>:
+    819a:	ac01      	cmp	A, #1
+    819c:	190a      	je	0x81b2 <_Gpio_ReadPin+0x18>
+    819e:	1805      	jc	0x81aa <_Gpio_ReadPin+0x10>
+    81a0:	ac02      	cmp	A, #2
+    81a2:	190c      	je	0x81bc <_Gpio_ReadPin+0x22>
+    81a4:	ac03      	cmp	A, #3
+    81a6:	190f      	je	0x81c6 <_Gpio_ReadPin+0x2c>
+    81a8:	0014      	jmp	0x81d2 <_Gpio_ReadPin+0x38>
+    81aa:	72d8 01a8 	lod	A, 0x1a8 <__scratchpad_end+0x18>
+    81ae:	b401      	and	A, #1
+    81b0:	0011      	jmp	0x81d4 <_Gpio_ReadPin+0x3a>
+    81b2:	72d8 01a8 	lod	A, 0x1a8 <__scratchpad_end+0x18>
+    81b6:	b402      	and	A, #2
+    81b8:	4432      	lsr	A
+    81ba:	000c      	jmp	0x81d4 <_Gpio_ReadPin+0x3a>
+    81bc:	72d8 01a8 	lod	A, 0x1a8 <__scratchpad_end+0x18>
+    81c0:	b404      	and	A, #4
+    81c2:	44b2      	lsr	A, #2
+    81c4:	0007      	jmp	0x81d4 <_Gpio_ReadPin+0x3a>
+    81c6:	72d8 01a8 	lod	A, 0x1a8 <__scratchpad_end+0x18>
+    81ca:	b408      	and	A, #8
+    81cc:	44b2      	lsr	A, #2
+    81ce:	4432      	lsr	A
+    81d0:	0001      	jmp	0x81d4 <_Gpio_ReadPin+0x3a>
+    81d2:	7000      	lod	A, #0
+    81d4:	ac00      	cmp	A, #0
+    81d6:	1901      	je	0x81da <_Gpio_ReadPin+0x40>
+    81d8:	7001      	lod	A, #1
+    81da:	5401      	ret
+
+000081dc <_Gpio_WritePin>:
+    81dc:	7ae2      	lod	Y, A
+    81de:	7203      	lod	A, [S-4]
+    81e0:	1905      	je	0x81ec <_Gpio_WritePin+0x10>
+    81e2:	4cd3      	swap	D
+    81e4:	48cf      	asl	D, #16
+    81e6:	4c0a 0006 	addu	D, #6
+    81ea:	0004      	jmp	0x81f4 <_Gpio_WritePin+0x18>
+    81ec:	4cd3      	swap	D
+    81ee:	48cf      	asl	D, #16
+    81f0:	4c0a 0005 	addu	D, #5
+    81f4:	4c8b      	push	DL
+    81f6:	72e6      	lod	A, Y
+    81f8:	17c5      	call	0x8184 <_Gpio_SetPinMode>
+    81fa:	5c01      	dec	S, #2
+    81fc:	5401      	ret
+
+000081fe <_Itc_Enable_ITC_GPIO0>:
+    81fe:	62d8 005d 	lod	AL, 0x5d <__flash_latches_mem_size+0x1d>
+    8202:	8404      	or	AL, #4
+    8204:	42d8 005d 	mov	0x5d <__flash_latches_mem_size+0x1d>, AL
+    8208:	5401      	ret
+
+0000820a <_Itc_Disable_ITC_GPIO0>:
+    820a:	62d8 005d 	lod	AL, 0x5d <__flash_latches_mem_size+0x1d>
+    820e:	94fb      	and	AL, #-5
+    8210:	42d8 005d 	mov	0x5d <__flash_latches_mem_size+0x1d>, AL
+    8214:	5401      	ret
+
+00008216 <_Itc_IsPending_ITC_GPIO0>:
+    8216:	72d8 0040 	lod	A, 0x40 <__flash_latches_mem_size>
+    821a:	b6da 0400 	and	A, #1024
+    821e:	72e4      	swap	A
+    8220:	b6da 00ff 	and	A, #255
+    8224:	44b2      	lsr	A, #2
+    8226:	5401      	ret
+
+00008228 <_Itc_ClearPending_ITC_GPIO0>:
+    8228:	6004      	lod	AL, #4
+    822a:	42d8 0041 	mov	0x41 <__flash_latches_mem_size+0x1>, AL
+    822e:	5401      	ret
+
+00008230 <_Itc_IsPending_ITC_WUPTMR>:
+    8230:	72d8 0042 	lod	A, 0x42 <__flash_latches_mem_size+0x2>
+    8234:	b404      	and	A, #4
+    8236:	44b2      	lsr	A, #2
+    8238:	5401      	ret
+
+0000823a <_Itc_Enable_ITC_LFRX_TIMEOUT>:
+    823a:	62d8 005f 	lod	AL, 0x5f <__flash_latches_mem_size+0x1f>
+    823e:	8404      	or	AL, #4
+    8240:	42d8 005f 	mov	0x5f <__flash_latches_mem_size+0x1f>, AL
+    8244:	5401      	ret
+
+00008246 <_Itc_Disable_ITC_LFRX_TIMEOUT>:
+    8246:	62d8 005f 	lod	AL, 0x5f <__flash_latches_mem_size+0x1f>
+    824a:	94fb      	and	AL, #-5
+    824c:	42d8 005f 	mov	0x5f <__flash_latches_mem_size+0x1f>, AL
+    8250:	5401      	ret
+
+00008252 <_Itc_IsPending_ITC_LFRX_TIMEOUT>:
+    8252:	72d8 0042 	lod	A, 0x42 <__flash_latches_mem_size+0x2>
+    8256:	b6da 0400 	and	A, #1024
+    825a:	72e4      	swap	A
+    825c:	b6da 00ff 	and	A, #255
+    8260:	44b2      	lsr	A, #2
+    8262:	5401      	ret
+
+00008264 <_Itc_ClearPending_ITC_LFRX_TIMEOUT>:
+    8264:	6004      	lod	AL, #4
+    8266:	42d8 0043 	mov	0x43 <__flash_latches_mem_size+0x3>, AL
+    826a:	5401      	ret
+
+0000826c <_Itc_Enable_ITC_LFRX_DONE>:
+    826c:	62d8 005f 	lod	AL, 0x5f <__flash_latches_mem_size+0x1f>
+    8270:	8420      	or	AL, #32
+    8272:	42d8 005f 	mov	0x5f <__flash_latches_mem_size+0x1f>, AL
+    8276:	5401      	ret
+
+00008278 <_Itc_Disable_ITC_LFRX_DONE>:
+    8278:	62d8 005f 	lod	AL, 0x5f <__flash_latches_mem_size+0x1f>
+    827c:	94df      	and	AL, #-33
+    827e:	42d8 005f 	mov	0x5f <__flash_latches_mem_size+0x1f>, AL
+    8282:	5401      	ret
+
+00008284 <_Itc_IsPending_ITC_LFRX_DONE>:
+    8284:	72d8 0042 	lod	A, 0x42 <__flash_latches_mem_size+0x2>
+    8288:	b6da 2000 	and	A, #8192
+    828c:	44c2      	rl	A, #2
+    828e:	4442      	rl	A
+    8290:	b407      	and	A, #7
+    8292:	5401      	ret
+
+00008294 <_Itc_ClearPending_ITC_LFRX_DONE>:
+    8294:	6020      	lod	AL, #32
+    8296:	42d8 0043 	mov	0x43 <__flash_latches_mem_size+0x3>, AL
+    829a:	5401      	ret
+
+0000829c <_Lf_Init>:
+    829c:	54ca 0016 	pushw	#22
+    82a0:	52df      	push	A
+    82a2:	72da 01e0 	lod	A, #480
+    82a6:	82db 36f3 	callf	0x6de6 <_memcpy>
+    82aa:	6000      	lod	AL, #0
+    82ac:	42d8 01e3 	mov	0x1e3 <__scratchpad_end+0x53>, AL
+    82b0:	42d8 01df 	mov	0x1df <__scratchpad_end+0x4f>, AL
+    82b4:	5c03      	dec	S, #4
+    82b6:	5401      	ret
+
+000082b8 <_Lf_Disable>:
+    82b8:	6000      	lod	AL, #0
+    82ba:	42d8 01a2 	mov	0x1a2 <__scratchpad_end+0x12>, AL
+    82be:	5401      	ret
+
+000082c0 <_LfRx_FifoReadByte>:
+    82c0:	62d8 01e2 	lod	AL, 0x1e2 <__scratchpad_end+0x52>
+    82c4:	5cf2      	usex	A
+    82c6:	42d8 01e2 	mov	0x1e2 <__scratchpad_end+0x52>, AL
+    82ca:	5401      	ret
+
+000082cc <_LfRx_FifoFlush>:
+    82cc:	6000      	lod	AL, #0
+    82ce:	42d8 01e3 	mov	0x1e3 <__scratchpad_end+0x53>, AL
+    82d2:	5401      	ret
+
+000082d4 <_LfRx_FifoCount>:
+    82d4:	62d8 01e3 	lod	AL, 0x1e3 <__scratchpad_end+0x53>
+    82d8:	b40f      	and	A, #15
+    82da:	5401      	ret
+
+000082dc <_LfRx_IsFifoOverrun>:
+    82dc:	7800      	lod	Y, #0
+    82de:	62d8 01e3 	lod	AL, 0x1e3 <__scratchpad_end+0x53>
+    82e2:	b6da 0088 	and	A, #136
+    82e6:	aeda 0088 	cmp	A, #136
+    82ea:	1d01      	jne	0x82ee <_LfRx_IsFifoOverrun+0x12>
+    82ec:	7801      	lod	Y, #1
+    82ee:	72e6      	lod	A, Y
+    82f0:	5401      	ret
+    82f2:	581f      	inc	S, #32
+    82f4:	72da 41e3 	lod	A, #16867
+    82f8:	487a 0002 	muls	Y, A, #2
+    82fc:	7eef      	lod	X, S
+    82fe:	20e0      	add	X, #-32
+    8300:	54c6      	movsw	[X++], [Y++]
+    8302:	eeda 83dc 	cmp	Y, #33756
+    8306:	1a7c      	jule	0x8300 <_LfRx_IsFifoOverrun+0x24>
+    8308:	72d8 023c 	lod	A, 0x23c <__scratchpad_end+0xac>
+    830c:	5201      	mov	[S-2], A
+    830e:	b4df      	and	A, #-33
+    8310:	7aef      	lod	Y, S
+    8312:	e0e0      	add	Y, #-32
+    8314:	4436      	lsr	Y
+    8316:	0001      	jmp	0x831a <_LfRx_IsFifoOverrun+0x3e>
+    8318:	76e6      	jmp	Y
+    831a:	17fe      	call	0x8318 <_LfRx_IsFifoOverrun+0x3c>
+    831c:	62a7      	lod	AL, io:0x27 <__bss_size+0x5>
+    831e:	8402      	or	AL, #2
+    8320:	42a7      	mov	io:0x27 <__bss_size+0x5>, AL
+    8322:	72a6      	lod	A, io:0x26 <__bss_size+0x4>
+    8324:	b6da 0300 	and	A, #768
+    8328:	1d7c      	jne	0x8322 <_LfRx_IsFifoOverrun+0x46>
+    832a:	7201      	lod	A, [S-2]
+    832c:	7aef      	lod	Y, S
+    832e:	e0e0      	add	Y, #-32
+    8330:	4436      	lsr	Y
+    8332:	0001      	jmp	0x8336 <_LfRx_IsFifoOverrun+0x5a>
+    8334:	76e6      	jmp	Y
+    8336:	17fe      	call	0x8334 <_LfRx_IsFifoOverrun+0x58>
+    8338:	5421      	ret	#34
+
+0000833a <_NvRam_Recall>:
+    833a:	5801      	inc	S, #2
+    833c:	72a6      	lod	A, io:0x26 <__bss_size+0x4>
+    833e:	b6da 0300 	and	A, #768
+    8342:	1d7c      	jne	0x833c <_NvRam_Recall+0x2>
+    8344:	62d8 020e 	lod	AL, 0x20e <__scratchpad_end+0x7e>
+    8348:	8404      	or	AL, #4
+    834a:	42d8 020e 	mov	0x20e <__scratchpad_end+0x7e>, AL
+    834e:	62d8 0209 	lod	AL, 0x209 <__scratchpad_end+0x79>
+    8352:	8404      	or	AL, #4
+    8354:	42d8 0209 	mov	0x209 <__scratchpad_end+0x79>, AL
+    8358:	7001      	lod	A, #1
+    835a:	42d8 01b1 	mov	0x1b1 <__scratchpad_end+0x21>, AL
+    835e:	7008      	lod	A, #8
+    8360:	42d8 01b2 	mov	0x1b2 <__scratchpad_end+0x22>, AL
+    8364:	72da 4040 	lod	A, #16448
+    8368:	52d8 01b6 	mov	0x1b6 <__scratchpad_end+0x26>, A
+    836c:	62d8 01a4 	lod	AL, 0x1a4 <__scratchpad_end+0x14>
+    8370:	94f8      	and	AL, #-8
+    8372:	8401      	or	AL, #1
+    8374:	42d8 01a4 	mov	0x1a4 <__scratchpad_end+0x14>, AL
+    8378:	781a      	lod	Y, #26
+    837a:	7ee6      	lod	X, Y
+    837c:	20fe      	add	X, #-2
+    837e:	1bff      	djnz	X, 0x837e <_NvRam_Recall+0x44>
+    8380:	62d8 01b0 	lod	AL, 0x1b0 <__scratchpad_end+0x20>
+    8384:	4201      	mov	[S-2], AL
+    8386:	62d8 01a4 	lod	AL, 0x1a4 <__scratchpad_end+0x14>
+    838a:	94f8      	and	AL, #-8
+    838c:	42d8 01a4 	mov	0x1a4 <__scratchpad_end+0x14>, AL
+    8390:	7ee6      	lod	X, Y
+    8392:	20fe      	add	X, #-2
+    8394:	1bff      	djnz	X, 0x8394 <_NvRam_Recall+0x5a>
+    8396:	62d8 020e 	lod	AL, 0x20e <__scratchpad_end+0x7e>
+    839a:	94fb      	and	AL, #-5
+    839c:	42d8 020e 	mov	0x20e <__scratchpad_end+0x7e>, AL
+    83a0:	62d8 0209 	lod	AL, 0x209 <__scratchpad_end+0x79>
+    83a4:	94fb      	and	AL, #-5
+    83a6:	42d8 0209 	mov	0x209 <__scratchpad_end+0x79>, AL
+    83aa:	6201      	lod	AL, [S-2]
+    83ac:	9403      	and	AL, #3
+    83ae:	8c02      	cmp	AL, #2
+    83b0:	1d08      	jne	0x83c2 <_NvRam_Recall+0x88>
+    83b2:	62a7      	lod	AL, io:0x27 <__bss_size+0x5>
+    83b4:	8402      	or	AL, #2
+    83b6:	42a7      	mov	io:0x27 <__bss_size+0x5>, AL
+    83b8:	72a6      	lod	A, io:0x26 <__bss_size+0x4>
+    83ba:	b6da 0300 	and	A, #768
+    83be:	1902      	je	0x83c4 <_NvRam_Recall+0x8a>
+    83c0:	07fb      	jmp	0x83b8 <_NvRam_Recall+0x7e>
+    83c2:	1797      	call	0x82f2 <_LfRx_IsFifoOverrun+0x16>
+    83c4:	5403      	ret	#4
+
+000083c6 <_dcdc_config>:
+    83c6:	6400      	lod	YL, #0
+    83c8:	4681      	mov	io:0x1 <__data_dp_size+0x1>, YL
+    83ca:	52d8 023c 	mov	0x23c <__scratchpad_end+0xac>, A
+    83ce:	7c10      	lod	X, #16
+    83d0:	1bff      	djnz	X, 0x83d0 <_dcdc_config+0xa>
+    83d2:	7280      	lod	A, io:0x0 <__data_dp_size>
+    83d4:	ac00      	cmp	A, #0
+    83d6:	1efd      	jsge	0x83d2 <_dcdc_config+0xc>
+    83d8:	6040      	lod	AL, #64
+    83da:	4281      	mov	io:0x1 <__data_dp_size+0x1>, AL
+
+000083dc <_dcdc_config_func_end>:
+    83dc:	5401      	ret
+    83de:	5801      	inc	S, #2
+    83e0:	7a07      	lod	Y, [S-8]
+    83e2:	5adf      	push	Y
+    83e4:	7a07      	lod	Y, [S-8]
+    83e6:	5adf      	push	Y
+    83e8:	117e      	call	0x86e6 <_adc_ll_read_accel_init>
+    83ea:	5c03      	dec	S, #4
+    83ec:	72da 058c 	lod	A, #1420
+    83f0:	52d8 0152 	mov	0x152 <__flash_config_mem_size+0xd2>, A
+    83f4:	1206      	call	0x8802 <_adc_ll_read_accel>
+    83f6:	5201      	mov	[S-2], A
+    83f8:	111c      	call	0x8632 <_adc_ll_common_deinit>
+    83fa:	7800      	lod	Y, #0
+    83fc:	5ad8 01fa 	mov	0x1fa <__scratchpad_end+0x6a>, Y
+    8400:	6000      	lod	AL, #0
+    8402:	42d8 0241 	mov	0x241 <__scratchpad_end+0xb1>, AL
+    8406:	7201      	lod	A, [S-2]
+    8408:	5403      	ret	#4
+
+0000840a <_Phys_AccelerationZ>:
+    840a:	6b57      	lod	AH, ep:0x57 <__flash_latches_mem_size+0x17>
+    840c:	6000      	lod	AL, #0
+    840e:	62e4      	lod	AL, AH
+    8410:	5ce2      	ssex	A
+    8412:	44f2      	asr	A, #2
+    8414:	44f2      	asr	A, #2
+    8416:	52df      	push	A
+    8418:	54ca 0001 	pushw	#1
+    841c:	7003      	lod	A, #3
+    841e:	17df      	call	0x83de <_dcdc_config_func_end+0x2>
+    8420:	5c03      	dec	S, #4
+    8422:	ab62      	sub	A, ep:0x62 <__flash_latches_mem_size+0x22>
+    8424:	6765      	lod	YL, ep:0x65 <__flash_latches_mem_size+0x25>
+    8426:	5cf6      	usex	Y
+    8428:	4831      	muls	YA, A, Y
+    842a:	48b6      	asr	YA, #7
+    842c:	5401      	ret
+
+0000842e <_Phys_AccelerationX>:
+    842e:	6357      	lod	AL, ep:0x57 <__flash_latches_mem_size+0x17>
+    8430:	b40f      	and	A, #15
+    8432:	44d2      	rr	A, #2
+    8434:	44d2      	rr	A, #2
+    8436:	62e4      	lod	AL, AH
+    8438:	5ce2      	ssex	A
+    843a:	44f2      	asr	A, #2
+    843c:	44f2      	asr	A, #2
+    843e:	5ce2      	ssex	A
+    8440:	52df      	push	A
+    8442:	54ca 0000 	pushw	#0
+    8446:	7001      	lod	A, #1
+    8448:	17ca      	call	0x83de <_dcdc_config_func_end+0x2>
+    844a:	5c03      	dec	S, #4
+    844c:	ab60      	sub	A, ep:0x60 <__flash_latches_mem_size+0x20>
+    844e:	6764      	lod	YL, ep:0x64 <__flash_latches_mem_size+0x24>
+    8450:	5cf6      	usex	Y
+    8452:	4831      	muls	YA, A, Y
+    8454:	48b6      	asr	YA, #7
+    8456:	5401      	ret
+
+00008458 <_Sys_DeepSleepWith>:
+    8458:	5803      	inc	S, #4
+    845a:	5201      	mov	[S-2], A
+    845c:	62d8 0226 	lod	AL, 0x226 <__scratchpad_end+0x96>
+    8460:	94ef      	and	AL, #-17
+    8462:	42d8 0226 	mov	0x226 <__scratchpad_end+0x96>, AL
+    8466:	54f8      	mov	UPr, #8
+    8468:	6201      	lod	AL, [S-2]
+    846a:	44a0      	asl	AL, #2
+    846c:	940c      	and	AL, #12
+    846e:	8412      	or	AL, #18
+    8470:	42d8 01a2 	mov	0x1a2 <__scratchpad_end+0x12>, AL
+    8474:	42c9      	halt
+    8476:	15a3      	call	0x7fbe <_mlx16_fatal>
+
+00008478 <_Sys_IsColdBoot>:
+    8478:	7800      	lod	Y, #0
+    847a:	62d8 019f 	lod	AL, 0x19f <__scratchpad_end+0xf>
+    847e:	8c00      	cmp	AL, #0
+    8480:	1a81      	jsl	0x8484 <_Sys_IsColdBoot+0xc>
+    8482:	7801      	lod	Y, #1
+    8484:	72e6      	lod	A, Y
+    8486:	5401      	ret
+
+00008488 <_Sys_GetChipId>:
+    8488:	7366      	lod	A, ep:0x66 <__flash_latches_mem_size+0x26>
+    848a:	7b68      	lod	Y, ep:0x68 <__flash_latches_mem_size+0x28>
+    848c:	5401      	ret
+
+0000848e <_Sys_GetPressureRange>:
+    848e:	6356      	lod	AL, ep:0x56 <__flash_latches_mem_size+0x16>
+    8490:	b40f      	and	A, #15
+    8492:	ac0e      	cmp	A, #14
+    8494:	1d02      	jne	0x849a <_Sys_GetPressureRange+0xc>
+    8496:	7001      	lod	A, #1
+    8498:	5401      	ret
+    849a:	ac0b      	cmp	A, #11
+    849c:	1d02      	jne	0x84a2 <_Sys_GetPressureRange+0x14>
+    849e:	7002      	lod	A, #2
+    84a0:	5401      	ret
+    84a2:	ac08      	cmp	A, #8
+    84a4:	1d02      	jne	0x84aa <_Sys_GetPressureRange+0x1c>
+    84a6:	7003      	lod	A, #3
+    84a8:	5401      	ret
+    84aa:	7000      	lod	A, #0
+    84ac:	5401      	ret
+
+000084ae <_Wakeup_Enable_WAKEUP_LFRX_TIMEOUT>:
+    84ae:	62d8 01a3 	lod	AL, 0x1a3 <__scratchpad_end+0x13>
+    84b2:	8410      	or	AL, #16
+    84b4:	42d8 01a3 	mov	0x1a3 <__scratchpad_end+0x13>, AL
+    84b8:	5401      	ret
+
+000084ba <_Wakeup_Disable_WAKEUP_LFRX_TIMEOUT>:
+    84ba:	62d8 01a3 	lod	AL, 0x1a3 <__scratchpad_end+0x13>
+    84be:	94ef      	and	AL, #-17
+    84c0:	42d8 01a3 	mov	0x1a3 <__scratchpad_end+0x13>, AL
+    84c4:	5401      	ret
+
+000084c6 <_Wakeup_Enable_WAKEUP_LF_DONE>:
+    84c6:	62d8 01a3 	lod	AL, 0x1a3 <__scratchpad_end+0x13>
+    84ca:	8480      	or	AL, #-128
+    84cc:	42d8 01a3 	mov	0x1a3 <__scratchpad_end+0x13>, AL
+    84d0:	5401      	ret
+
+000084d2 <_Wakeup_Enable_WAKEUP_GPIO0_HIGH>:
+    84d2:	62d8 01a7 	lod	AL, 0x1a7 <__scratchpad_end+0x17>
+    84d6:	8411      	or	AL, #17
+    84d8:	42d8 01a7 	mov	0x1a7 <__scratchpad_end+0x17>, AL
+    84dc:	5401      	ret
+
+000084de <_WakeupTimer_Restart>:
+    84de:	b6da 0fff 	and	A, #4095
+    84e2:	a6da 3000 	or	A, #12288
+    84e6:	52d8 01a0 	mov	0x1a0 <__scratchpad_end+0x10>, A
+    84ea:	6004      	lod	AL, #4
+    84ec:	42d8 0042 	mov	0x42 <__flash_latches_mem_size+0x2>, AL
+    84f0:	5401      	ret
+
+000084f2 <_WakeupTimer_Init>:
+    84f2:	7a03      	lod	Y, [S-4]
+    84f4:	b6da 00ff 	and	A, #255
+    84f8:	6c00      	lod	YH, #0
+    84fa:	7ae8      	swap	Y
+    84fc:	f6da 0f00 	and	Y, #3840
+    8500:	a6e6      	or	A, Y
+    8502:	a6da 3000 	or	A, #12288
+    8506:	52d8 01a0 	mov	0x1a0 <__scratchpad_end+0x10>, A
+    850a:	6004      	lod	AL, #4
+    850c:	42d8 0042 	mov	0x42 <__flash_latches_mem_size+0x2>, AL
+    8510:	5401      	ret
+
+00008512 <_WakeupTimer_IntClear>:
+    8512:	62d8 01a1 	lod	AL, 0x1a1 <__scratchpad_end+0x11>
+    8516:	940f      	and	AL, #15
+    8518:	8420      	or	AL, #32
+    851a:	42d8 01a1 	mov	0x1a1 <__scratchpad_end+0x11>, AL
+    851e:	6004      	lod	AL, #4
+    8520:	42d8 0042 	mov	0x42 <__flash_latches_mem_size+0x2>, AL
+    8524:	5401      	ret
+
+00008526 <_Sys_ResetCpu>:
+    8526:	6020      	lod	AL, #32
+    8528:	4281      	mov	io:0x1 <__data_dp_size+0x1>, AL
+    852a:	07fd      	jmp	0x8526 <_Sys_ResetCpu>
+
+0000852c <_mlx16_low_level_init>:
+    852c:	62d8 0000 	lod	AL, 0x0 <__data_dp_size>
+    8530:	42d8 202e 	mov	0x202e <__bss_end>, AL
+    8534:	60ff      	lod	AL, #-1
+    8536:	42d8 0000 	mov	0x0 <__data_dp_size>, AL
+    853a:	72d8 01a2 	lod	A, 0x1a2 <__scratchpad_end+0x12>
+    853e:	b403      	and	A, #3
+    8540:	190b      	je	0x8558 <_mlx16_low_level_init+0x2c>
+    8542:	62d8 019f 	lod	AL, 0x19f <__scratchpad_end+0xf>
+    8546:	940c      	and	AL, #12
+    8548:	1901      	je	0x854c <_mlx16_low_level_init+0x20>
+    854a:	17ed      	call	0x8526 <_Sys_ResetCpu>
+    854c:	62d8 019f 	lod	AL, 0x19f <__scratchpad_end+0xf>
+    8550:	8480      	or	AL, #-128
+    8552:	42d8 019f 	mov	0x19f <__scratchpad_end+0xf>, AL
+    8556:	0045      	jmp	0x85e2 <_mlx16_low_level_init+0xb6>
+    8558:	6002      	lod	AL, #2
+    855a:	42d8 0231 	mov	0x231 <__scratchpad_end+0xa1>, AL
+    855e:	62d8 019f 	lod	AL, 0x19f <__scratchpad_end+0xf>
+    8562:	947f      	and	AL, #127
+    8564:	42d8 019f 	mov	0x19f <__scratchpad_end+0xf>, AL
+    8568:	62d8 019f 	lod	AL, 0x19f <__scratchpad_end+0xf>
+    856c:	9440      	and	AL, #64
+    856e:	1903      	je	0x8576 <_mlx16_low_level_init+0x4a>
+    8570:	6040      	lod	AL, #64
+    8572:	42d8 202e 	mov	0x202e <__bss_end>, AL
+    8576:	72da 3cff 	lod	A, #15615
+    857a:	52d8 01a0 	mov	0x1a0 <__scratchpad_end+0x10>, A
+    857e:	62d8 0234 	lod	AL, 0x234 <__scratchpad_end+0xa4>
+    8582:	8480      	or	AL, #-128
+    8584:	42d8 0234 	mov	0x234 <__scratchpad_end+0xa4>, AL
+    8588:	72d8 0224 	lod	A, 0x224 <__scratchpad_end+0x94>
+    858c:	a6da 1008 	or	A, #4104
+    8590:	52d8 0224 	mov	0x224 <__scratchpad_end+0x94>, A
+    8594:	62d8 020d 	lod	AL, 0x20d <__scratchpad_end+0x7d>
+    8598:	8410      	or	AL, #16
+    859a:	42d8 020d 	mov	0x20d <__scratchpad_end+0x7d>, AL
+    859e:	62d8 0209 	lod	AL, 0x209 <__scratchpad_end+0x79>
+    85a2:	8410      	or	AL, #16
+    85a4:	42d8 0209 	mov	0x209 <__scratchpad_end+0x79>, AL
+    85a8:	62d8 0216 	lod	AL, 0x216 <__scratchpad_end+0x86>
+    85ac:	94f0      	and	AL, #-16
+    85ae:	8403      	or	AL, #3
+    85b0:	42d8 0216 	mov	0x216 <__scratchpad_end+0x86>, AL
+    85b4:	6356      	lod	AL, ep:0x56 <__flash_latches_mem_size+0x16>
+    85b6:	44b2      	lsr	A, #2
+    85b8:	44b2      	lsr	A, #2
+    85ba:	b403      	and	A, #3
+    85bc:	bcff      	xor	A, #-1
+    85be:	9403      	and	AL, #3
+    85c0:	42d8 023f 	mov	0x23f <__scratchpad_end+0xaf>, AL
+    85c4:	728a      	lod	A, io:0xa <__noinit_size+0x8>
+    85c6:	b6da 6000 	and	A, #24576
+    85ca:	1d05      	jne	0x85d6 <_mlx16_low_level_init+0xaa>
+    85cc:	62d8 0206 	lod	AL, 0x206 <__scratchpad_end+0x76>
+    85d0:	8480      	or	AL, #-128
+    85d2:	42d8 0206 	mov	0x206 <__scratchpad_end+0x76>, AL
+    85d6:	70ff      	lod	A, #-1
+    85d8:	52d8 0040 	mov	0x40 <__flash_latches_mem_size>, A
+    85dc:	52d8 0042 	mov	0x42 <__flash_latches_mem_size+0x2>, A
+    85e0:	1112      	call	0x8806 <_mlx16_ram_section_init>
+    85e2:	62d8 0226 	lod	AL, 0x226 <__scratchpad_end+0x96>
+    85e6:	8410      	or	AL, #16
+    85e8:	42d8 0226 	mov	0x226 <__scratchpad_end+0x96>, AL
+    85ec:	54f7      	mov	UPr, #7
+    85ee:	5401      	ret
+
+000085f0 <_adc_ll_common_init>:
+    85f0:	62d8 020e 	lod	AL, 0x20e <__scratchpad_end+0x7e>
+    85f4:	8404      	or	AL, #4
+    85f6:	42d8 020e 	mov	0x20e <__scratchpad_end+0x7e>, AL
+    85fa:	62d8 020b 	lod	AL, 0x20b <__scratchpad_end+0x7b>
+    85fe:	8484      	or	AL, #-124
+    8600:	42d8 020b 	mov	0x20b <__scratchpad_end+0x7b>, AL
+    8604:	7002      	lod	A, #2
+    8606:	52d8 0200 	mov	0x200 <__scratchpad_end+0x70>, A
+    860a:	7040      	lod	A, #64
+    860c:	52d8 0202 	mov	0x202 <__scratchpad_end+0x72>, A
+    8610:	6000      	lod	AL, #0
+    8612:	42d8 0158 	mov	0x158 <__flash_config_mem_size+0xd8>, AL
+    8616:	5401      	ret
+
+00008618 <_adc_ll_common_pvt_init>:
+    8618:	62d8 0209 	lod	AL, 0x209 <__scratchpad_end+0x79>
+    861c:	8403      	or	AL, #3
+    861e:	42d8 0209 	mov	0x209 <__scratchpad_end+0x79>, AL
+    8622:	7060      	lod	A, #96
+    8624:	52d8 015a 	mov	0x15a <__flash_config_mem_size+0xda>, A
+    8628:	72da 00b8 	lod	A, #184
+    862c:	52d8 0152 	mov	0x152 <__flash_config_mem_size+0xd2>, A
+    8630:	5401      	ret
+
+00008632 <_adc_ll_common_deinit>:
+    8632:	62d8 020e 	lod	AL, 0x20e <__scratchpad_end+0x7e>
+    8636:	94fb      	and	AL, #-5
+    8638:	42d8 020e 	mov	0x20e <__scratchpad_end+0x7e>, AL
+    863c:	62d8 020b 	lod	AL, 0x20b <__scratchpad_end+0x7b>
+    8640:	947b      	and	AL, #123
+    8642:	42d8 020b 	mov	0x20b <__scratchpad_end+0x7b>, AL
+    8646:	62d8 0209 	lod	AL, 0x209 <__scratchpad_end+0x79>
+    864a:	94dc      	and	AL, #-36
+    864c:	42d8 0209 	mov	0x209 <__scratchpad_end+0x79>, AL
+    8650:	7000      	lod	A, #0
+    8652:	52d8 0200 	mov	0x200 <__scratchpad_end+0x70>, A
+    8656:	52d8 0202 	mov	0x202 <__scratchpad_end+0x72>, A
+    865a:	52d8 01fe 	mov	0x1fe <__scratchpad_end+0x6e>, A
+    865e:	5401      	ret
+
+00008660 <_adc_ll_read_pressure_init>:
+    8660:	7800      	lod	Y, #0
+    8662:	5ad8 01fc 	mov	0x1fc <__scratchpad_end+0x6c>, Y
+    8666:	b43f      	and	A, #63
+    8668:	a6da 19c0 	or	A, #6592
+    866c:	52d8 01fe 	mov	0x1fe <__scratchpad_end+0x6e>, A
+    8670:	17bf      	call	0x85f0 <_adc_ll_common_init>
+    8672:	17d2      	call	0x8618 <_adc_ll_common_pvt_init>
+    8674:	5401      	ret
+
+00008676 <_adc_ll_read_pressure_once>:
+    8676:	72da 89c2 	lod	A, #35266
+    867a:	52d8 0154 	mov	0x154 <__flash_config_mem_size+0xd4>, A
+    867e:	7001      	lod	A, #1
+    8680:	52d8 0152 	mov	0x152 <__flash_config_mem_size+0xd2>, A
+    8684:	72d8 0156 	lod	A, 0x156 <__flash_config_mem_size+0xd6>
+    8688:	b6da 00c0 	and	A, #192
+    868c:	aeda 00c0 	cmp	A, #192
+    8690:	1d79      	jne	0x8684 <_adc_ll_read_pressure_once+0xe>
+    8692:	6004      	lod	AL, #4
+    8694:	42d8 0156 	mov	0x156 <__flash_config_mem_size+0xd6>, AL
+    8698:	72d8 0156 	lod	A, 0x156 <__flash_config_mem_size+0xd6>
+    869c:	b6da 00c0 	and	A, #192
+    86a0:	1d7b      	jne	0x8698 <_adc_ll_read_pressure_once+0x22>
+    86a2:	72d8 2028 	lod	A, 0x2028 <_g_adc_result+0x2>
+    86a6:	7ad8 202a 	lod	Y, 0x202a <_g_adc_result+0x4>
+    86aa:	aae6      	sub	A, Y
+    86ac:	4432      	lsr	A
+    86ae:	5401      	ret
+
+000086b0 <_adc_ll_read_voltage_once>:
+    86b0:	72da 89cc 	lod	A, #35276
+    86b4:	52d8 0154 	mov	0x154 <__flash_config_mem_size+0xd4>, A
+    86b8:	7001      	lod	A, #1
+    86ba:	52d8 0152 	mov	0x152 <__flash_config_mem_size+0xd2>, A
+    86be:	72d8 0156 	lod	A, 0x156 <__flash_config_mem_size+0xd6>
+    86c2:	b6da 00c0 	and	A, #192
+    86c6:	aeda 00c0 	cmp	A, #192
+    86ca:	1d79      	jne	0x86be <_adc_ll_read_voltage_once+0xe>
+    86cc:	6004      	lod	AL, #4
+    86ce:	42d8 0156 	mov	0x156 <__flash_config_mem_size+0xd6>, AL
+    86d2:	72d8 0156 	lod	A, 0x156 <__flash_config_mem_size+0xd6>
+    86d6:	b6da 00c0 	and	A, #192
+    86da:	1d7b      	jne	0x86d2 <_adc_ll_read_voltage_once+0x22>
+    86dc:	72d8 2028 	lod	A, 0x2028 <_g_adc_result+0x2>
+    86e0:	a2da f000 	add	A, #61440
+    86e4:	5401      	ret
+
+000086e6 <_adc_ll_read_accel_init>:
+    86e6:	7a03      	lod	Y, [S-4]
+    86e8:	7e05      	lod	X, [S-6]
+    86ea:	b6da c803 	and	A, #51203
+    86ee:	a6da 1000 	or	A, #4096
+    86f2:	52d8 01fa 	mov	0x1fa <__scratchpad_end+0x6a>, A
+    86f6:	72da 0101 	lod	A, #257
+    86fa:	52d8 01fc 	mov	0x1fc <__scratchpad_end+0x6c>, A
+    86fe:	f43f      	and	Y, #63
+    8700:	e6da 1940 	or	Y, #6464
+    8704:	5ad8 01fe 	mov	0x1fe <__scratchpad_end+0x6e>, Y
+    8708:	72da 04ac 	lod	A, #1196
+    870c:	52d8 0152 	mov	0x152 <__flash_config_mem_size+0xd2>, A
+    8710:	7aee      	lod	Y, X
+    8712:	4476      	asr	Y
+    8714:	e007      	add	Y, #7
+    8716:	72e6      	lod	A, Y
+    8718:	aaee      	sub	A, X
+    871a:	b6da f0ff 	and	A, #61695
+    871e:	6c00      	lod	YH, #0
+    8720:	7ae8      	swap	Y
+    8722:	a6e6      	or	A, Y
+    8724:	52d8 0204 	mov	0x204 <__scratchpad_end+0x74>, A
+    8728:	62d8 0209 	lod	AL, 0x209 <__scratchpad_end+0x79>
+    872c:	8423      	or	AL, #35
+    872e:	42d8 0209 	mov	0x209 <__scratchpad_end+0x79>, AL
+    8732:	7060      	lod	A, #96
+    8734:	52d8 015a 	mov	0x15a <__flash_config_mem_size+0xda>, A
+    8738:	6040      	lod	AL, #64
+    873a:	42d8 0241 	mov	0x241 <__scratchpad_end+0xb1>, AL
+    873e:	1758      	call	0x85f0 <_adc_ll_common_init>
+    8740:	5401      	ret
+
+00008742 <_adc_ll_read_accel_once>:
+    8742:	5805      	inc	S, #6
+    8744:	72e3      	lod	A, M
+    8746:	5027      	call	fp1:0x38
+    8748:	7ad8 005c 	lod	Y, 0x5c <__flash_latches_mem_size+0x1c>
+    874c:	5a05      	mov	[S-6], Y
+    874e:	7ad8 005e 	lod	Y, 0x5e <__flash_latches_mem_size+0x1e>
+    8752:	5a03      	mov	[S-4], Y
+    8754:	7800      	lod	Y, #0
+    8756:	5ad8 005c 	mov	0x5c <__flash_latches_mem_size+0x1c>, Y
+    875a:	5ad8 005e 	mov	0x5e <__flash_latches_mem_size+0x1e>, Y
+    875e:	52e3      	mov	M, A
+    8760:	6010      	lod	AL, #16
+    8762:	42d8 01a2 	mov	0x1a2 <__scratchpad_end+0x12>, AL
+    8766:	72da 89b4 	lod	A, #35252
+    876a:	52d8 0154 	mov	0x154 <__flash_config_mem_size+0xd4>, A
+    876e:	6002      	lod	AL, #2
+    8770:	42d8 0041 	mov	0x41 <__flash_latches_mem_size+0x1>, AL
+    8774:	62d8 005d 	lod	AL, 0x5d <__flash_latches_mem_size+0x1d>
+    8778:	8402      	or	AL, #2
+    877a:	42d8 005d 	mov	0x5d <__flash_latches_mem_size+0x1d>, AL
+    877e:	7801      	lod	Y, #1
+    8780:	5ad8 0152 	mov	0x152 <__flash_config_mem_size+0xd2>, Y
+    8784:	42c9      	halt
+    8786:	62d8 01fb 	lod	AL, 0x1fb <__scratchpad_end+0x6b>
+    878a:	8420      	or	AL, #32
+    878c:	42d8 01fb 	mov	0x1fb <__scratchpad_end+0x6b>, AL
+    8790:	42c9      	halt
+    8792:	62d8 01fb 	lod	AL, 0x1fb <__scratchpad_end+0x6b>
+    8796:	94df      	and	AL, #-33
+    8798:	42d8 01fb 	mov	0x1fb <__scratchpad_end+0x6b>, AL
+    879c:	72d8 0204 	lod	A, 0x204 <__scratchpad_end+0x74>
+    87a0:	72e4      	swap	A
+    87a2:	52d8 0204 	mov	0x204 <__scratchpad_end+0x74>, A
+    87a6:	7ed8 2028 	lod	X, 0x2028 <_g_adc_result+0x2>
+    87aa:	72da 89bc 	lod	A, #35260
+    87ae:	52d8 0154 	mov	0x154 <__flash_config_mem_size+0xd4>, A
+    87b2:	62d8 0152 	lod	AL, 0x152 <__flash_config_mem_size+0xd2>
+    87b6:	94f0      	and	AL, #-16
+    87b8:	8404      	or	AL, #4
+    87ba:	42d8 0152 	mov	0x152 <__flash_config_mem_size+0xd2>, AL
+    87be:	62d8 01fb 	lod	AL, 0x1fb <__scratchpad_end+0x6b>
+    87c2:	8420      	or	AL, #32
+    87c4:	42d8 01fb 	mov	0x1fb <__scratchpad_end+0x6b>, AL
+    87c8:	5ad8 0152 	mov	0x152 <__flash_config_mem_size+0xd2>, Y
+    87cc:	42c9      	halt
+    87ce:	62d8 01fb 	lod	AL, 0x1fb <__scratchpad_end+0x6b>
+    87d2:	94df      	and	AL, #-33
+    87d4:	42d8 01fb 	mov	0x1fb <__scratchpad_end+0x6b>, AL
+    87d8:	7ada 2026 	lod	Y, #8230
+    87dc:	72f0      	lod	A, [Y]
+    87de:	5201      	mov	[S-2], A
+    87e0:	7ad8 0204 	lod	Y, 0x204 <__scratchpad_end+0x74>
+    87e4:	7ae8      	swap	Y
+    87e6:	5ad8 0204 	mov	0x204 <__scratchpad_end+0x74>, Y
+    87ea:	7ae3      	lod	Y, M
+    87ec:	5027      	call	fp1:0x38
+    87ee:	7205      	lod	A, [S-6]
+    87f0:	52d8 005c 	mov	0x5c <__flash_latches_mem_size+0x1c>, A
+    87f4:	7203      	lod	A, [S-4]
+    87f6:	52d8 005e 	mov	0x5e <__flash_latches_mem_size+0x1e>, A
+    87fa:	5ae3      	mov	M, Y
+    87fc:	7201      	lod	A, [S-2]
+    87fe:	aaee      	sub	A, X
+    8800:	5407      	ret	#8
+
+00008802 <_adc_ll_read_accel>:
+    8802:	179f      	call	0x8742 <_adc_ll_read_accel_once>
+    8804:	5401      	ret
+
+00008806 <_mlx16_ram_section_init>:
+    8806:	7ada 2000 	lod	Y, #8192
+    880a:	eeda 200c 	cmp	Y, #8204
+    880e:	1c03      	jnc	0x8816 <_mlx16_ram_section_init+0x10>
+    8810:	7000      	lod	A, #0
+    8812:	52d6      	mov	[Y++], A
+    8814:	07fa      	jmp	0x880a <_mlx16_ram_section_init+0x4>
+    8816:	7ada 200c 	lod	Y, #8204
+    881a:	eeda 202e 	cmp	Y, #8238
+    881e:	1c03      	jnc	0x8826 <_mlx16_ram_section_init+0x20>
+    8820:	7000      	lod	A, #0
+    8822:	52d6      	mov	[Y++], A
+    8824:	07fa      	jmp	0x881a <_mlx16_ram_section_init+0x14>
+    8826:	7eda 89d4 	lod	X, #35284
+    882a:	7ada 2000 	lod	Y, #8192
+    882e:	eeda 2000 	cmp	Y, #8192
+    8832:	1c02      	jnc	0x8838 <_mlx16_ram_section_init+0x32>
+    8834:	54ce      	movsw	[Y++], [X++]
+    8836:	07fb      	jmp	0x882e <_mlx16_ram_section_init+0x28>
+    8838:	7ada 200c 	lod	Y, #8204
+    883c:	eeda 200c 	cmp	Y, #8204
+    8840:	1c02      	jnc	0x8846 <_mlx16_ram_section_init+0x40>
+    8842:	54ce      	movsw	[Y++], [X++]
+    8844:	07fb      	jmp	0x883c <_mlx16_ram_section_init+0x36>
+    8846:	5401      	ret
+    8848:	0101      	jmp	0x8a4c <_etext+0x78>
+    884a:	0001      	jmp	0x884e <_mlx16_ram_section_init+0x48>
+    884c:	0014      	jmp	0x8876 <_mlx16_ram_section_init+0x70>
+    884e:	0700      	jmp	0x8650 <_adc_ll_common_deinit+0x1e>
+    8850:	090e      	clrb	io:0x01.6
+    8852:	1b1c      	jsle	0x888c <_mlx16_ram_section_init+0x86>
+    8854:	1512      	call	0x827a <_Itc_Disable_ITC_LFRX_DONE+0x2>
+    8856:	3f38      	xor	X, ep:0x38 <__bss_size+0x16>
+    8858:	3136      	adc	X, dp:0x36 <__bss_size+0x14>
+    885a:	2324      	add	X, ep:0x24 <__bss_size+0x2>
+    885c:	2d2a      	cmp	X, dp:0x2a <__bss_size+0x8>
+    885e:	7770      	lod	PC, ep:0x70 <__flash_latches_mem_size+0x30>
+    8860:	797e      	lod	Y, dp:0x7e <__flash_latches_mem_size+0x3e>
+    8862:	6b6c      	lod	AH, ep:0x6c <__flash_latches_mem_size+0x2c>
+    8864:	6562      	lod	YL, dp:0x62 <__flash_latches_mem_size+0x22>
+    8866:	4f48      	mov	ep:0x48 <__flash_latches_mem_size+0x8>, YH
+    8868:	4146      	mov	dp:0x46 <__flash_latches_mem_size+0x6>, AL
+    886a:	5354      	mov	ep:0x54 <__flash_latches_mem_size+0x14>, A
+    886c:	5d5a      	mov	dp:0x5a <__flash_latches_mem_size+0x1a>, X
+    886e:	e7e0      	or	Y, ep:0xe0 <__flash_config_mem_size+0x60>
+    8870:	e9ee      	sub	Y, dp:0xee <__flash_config_mem_size+0x6e>
+    8872:	fbfc      	subc	Y, ep:0xfc <__flash_config_mem_size+0x7c>
+    8874:	f5f2      	and	Y, dp:0xf2 <__flash_config_mem_size+0x72>
+    8876:	dfd8      	xor	AH, ep:0xd8 <__flash_config_mem_size+0x58>
+    8878:	d1d6      	adc	AH, dp:0xd6 <__flash_config_mem_size+0x56>
+    887a:	c3c4      	add	AH, ep:0xc4 <__flash_config_mem_size+0x44>
+    887c:	cdca      	cmp	AH, dp:0xca <__flash_config_mem_size+0x4a>
+    887e:	9790      	and	AL, ep:0x90 <__flash_config_mem_size+0x10>
+    8880:	999e      	subc	AL, dp:0x9e <__flash_config_mem_size+0x1e>
+    8882:	8b8c      	sub	AL, ep:0x8c <__flash_config_mem_size+0xc>
+    8884:	8582      	or	AL, dp:0x82 <__flash_config_mem_size+0x2>
+    8886:	afa8      	cmp	A, ep:0xa8 <__flash_config_mem_size+0x28>
+    8888:	a1a6      	add	A, dp:0xa6 <__flash_config_mem_size+0x26>
+    888a:	b3b4      	adc	A, ep:0xb4 <__flash_config_mem_size+0x34>
+    888c:	bdba      	xor	A, dp:0xba <__flash_config_mem_size+0x3a>
+    888e:	c0c7      	add	AH, #-57
+    8890:	cec9      	.word	0xcec9
+    8892:	dcdb      	xor	AH, #-37
+    8894:	d2d5      	.word	0xd2d5
+    8896:	f8ff      	subc	Y, #-1
+    8898:	f6f1      	and	Y, [Y+1]
+    889a:	e4e3      	or	Y, #-29
+    889c:	eaed      	sub	Y, UPr
+    889e:	b0b7      	adc	A, #-73
+    88a0:	beb9      	xor	A, io:0x39 <__bss_size+0x17>
+    88a2:	acab      	cmp	A, #-85
+    88a4:	a2a5      	add	A, io:0x25 <__bss_size+0x3>
+    88a6:	888f      	sub	AL, #-113
+    88a8:	8681      	or	AL, io:0x1 <__data_dp_size+0x1>
+    88aa:	9493      	and	AL, #-109
+    88ac:	9a9d      	subc	AL, io:0x1d <__bss_dp_size+0x11>
+    88ae:	2027      	add	X, #39
+    88b0:	2e29      	cmp	X, [S-42]
+    88b2:	3c3b      	xor	X, #59
+    88b4:	3235      	adc	X, [S-54]
+    88b6:	181f      	jc	0x88f6 <_mlx16_ram_section_init+0xf0>
+    88b8:	1611      	call	0x84dc <_Wakeup_Enable_WAKEUP_GPIO0_HIGH+0xa>
+    88ba:	0403      	jmp	0x80c2 <_Calc_Pressure+0x8a>
+    88bc:	0a0d      	setb	dp:0x01.5
+    88be:	5057      	call	fp2:0xB8
+    88c0:	5e59      	mov	[S-90], X
+    88c2:	4c4b      	dadju	D, X
+    88c4:	4245      	mov	[S-70], AL
+    88c6:	686f      	lod	AH, #111
+    88c8:	6661      	lod	YL, [S-98]
+    88ca:	7473      	lod	PC, #115
+    88cc:	7a7d      	lod	Y, [S-126]
+    88ce:	8e89      	cmp	AL, io:0x9 <__noinit_size+0x7>
+    88d0:	8087      	add	AL, #-121
+    88d2:	9295      	adc	AL, io:0x15 <__bss_dp_size+0x9>
+    88d4:	9c9b      	xor	AL, #-101
+    88d6:	b6b1      	and	A, io:0x31 <__bss_size+0xf>
+    88d8:	b8bf      	subc	A, #-65
+    88da:	aaad      	sub	A, io:0x2d <__bss_size+0xb>
+    88dc:	a4a3      	or	A, #-93
+    88de:	fef9      	xor	Y, [X+1]
+    88e0:	f0f7      	adc	Y, #-9
+    88e2:	e2e5      	add	Y, MH
+    88e4:	eceb      	cmp	Y, #-21
+    88e6:	c6c1      	.word	0xc6c1
+    88e8:	c8cf      	sub	AH, #-49
+    88ea:	dadd      	.word	0xdadd
+    88ec:	d4d3      	and	AH, #-45
+    88ee:	6e69      	lod	YH, [S-106]
+    88f0:	6067      	lod	AL, #103
+    88f2:	7275      	lod	A, [S-118]
+    88f4:	7c7b      	lod	X, #123
+    88f6:	5651      	mov	[S-82], PC
+    88f8:	585f      	inc	S, #96
+    88fa:	4a4d      	mov	[S-78], AH
+    88fc:	4443      	.word	0x4443
+    88fe:	1e19      	jug	0x8932 <_mlx16_ram_section_init+0x12c>
+    8900:	1017      	call	0x8930 <_mlx16_ram_section_init+0x12a>
+    8902:	0205      	jmp	0x8d0e <_etext+0x33a>
+    8904:	0c0b      	mov	dp:0x01.3, C
+    8906:	2621      	or	X, [S-34]
+    8908:	282f      	sub	X, #47
+    890a:	3a3d      	subc	X, [S-62]
+    890c:	3433      	and	X, #51
+    890e:	494e      	mov	dp:0x4e <__flash_latches_mem_size+0xe>, AH
+    8910:	4740      	mov	ep:0x40 <__flash_latches_mem_size>, YL
+    8912:	5552      	mov	dp:0x52 <__flash_latches_mem_size+0x12>, PC
+    8914:	5b5c      	mov	ep:0x5c <__flash_latches_mem_size+0x1c>, Y
+    8916:	7176      	lod	A, dp:0x76 <__flash_latches_mem_size+0x36>
+    8918:	7f78      	lod	X, ep:0x78 <__flash_latches_mem_size+0x38>
+    891a:	6d6a      	lod	YH, dp:0x6a <__flash_latches_mem_size+0x2a>
+    891c:	6364      	lod	AL, ep:0x64 <__flash_latches_mem_size+0x24>
+    891e:	393e      	subc	X, dp:0x3e <__bss_size+0x1c>
+    8920:	3730      	and	X, ep:0x30 <__bss_size+0xe>
+    8922:	2522      	or	X, dp:0x22 <__bss_size>
+    8924:	2b2c      	sub	X, ep:0x2c <__bss_size+0xa>
+    8926:	0106      	jmp	0x8b34 <_etext+0x160>
+    8928:	0f08      	lod	C, io:0x01.0
+    892a:	1d1a      	jne	0x8960 <_TPMS_STATE_PARAMETERS+0x12>
+    892c:	1314      	call	0x8f56 <_etext+0x582>
+    892e:	a9ae      	sub	A, dp:0xae <__flash_config_mem_size+0x2e>
+    8930:	a7a0      	or	A, ep:0xa0 <__flash_config_mem_size+0x20>
+    8932:	b5b2      	and	A, dp:0xb2 <__flash_config_mem_size+0x32>
+    8934:	bbbc      	subc	A, ep:0xbc <__flash_config_mem_size+0x3c>
+    8936:	9196      	adc	AL, dp:0x96 <__flash_config_mem_size+0x16>
+    8938:	9f98      	xor	AL, ep:0x98 <__flash_config_mem_size+0x18>
+    893a:	8d8a      	cmp	AL, dp:0x8a <__flash_config_mem_size+0xa>
+    893c:	8384      	add	AL, ep:0x84 <__flash_config_mem_size+0x4>
+    893e:	d9de      	subc	AH, dp:0xde <__flash_config_mem_size+0x5e>
+    8940:	d7d0      	and	AH, ep:0xd0 <__flash_config_mem_size+0x50>
+    8942:	c5c2      	or	AH, dp:0xc2 <__flash_config_mem_size+0x42>
+    8944:	cbcc      	sub	AH, ep:0xcc <__flash_config_mem_size+0x4c>
+    8946:	e1e6      	add	Y, dp:0xe6 <__flash_config_mem_size+0x66>
+    8948:	efe8      	cmp	Y, ep:0xe8 <__flash_config_mem_size+0x68>
+    894a:	fdfa      	xor	Y, dp:0xfa <__flash_config_mem_size+0x7a>
+    894c:	f3f4      	adc	Y, ep:0xf4 <__flash_config_mem_size+0x74>
+
+0000894e <_TPMS_STATE_PARAMETERS>:
+    894e:	0502 0000 0000 0000 0502 b400 0000 0000     ................
+    895e:	0502 0000 0000 0005 0502 0a00 0000 0000     ................
+    896e:	0502 dc00 0005 0000 0000 0000 0000 0000     ................
+    897e:	0000 0000 0000 0000 0000 0000 0000 0000     ................
+    898e:	0000 0000 0000 0000 0000 0000 0000 0000     ................
+    899e:	0005 0000 1201 9a94 0550 000a 9416 257f     ........P......%
+    89ae:	0000 ffff 0000                              ......
+
+000089b4 <_g_adc_seq_table_accel_2>:
+    89b4:	2026 0000 0000 ffff                         & ......
+
+000089bc <_g_adc_seq_table_accel_1>:
+    89bc:	2026 0200 ffff                              & ....
+
+000089c2 <_g_adc_seq_table_n_samples_3>:
+    89c2:	2026 0100 0100 0000 ffff                    & ........
+
+000089cc <_g_adc_seq_table_n_samples_2>:
+    89cc:	2026 0000 0000 ffff                         & ......

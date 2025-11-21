@@ -1,0 +1,102 @@
+/*
+ * Software Platform Linker script file
+ *
+ * Copyright (C) 2016-2020 Melexis N.V.
+ *
+ */
+
+OUTPUT_FORMAT("elf32-mlx16-ex")
+OUTPUT_ARCH(mlx16ex)
+
+/*
+ * Default libraries which will be used for linking
+ * Any additional libraries could be provided either through command
+ * line option or in linker script
+ */
+GROUP(-lc -lgcc)    /* Standard library */
+
+EXTERN(__vectors)   /* Force searching symbol in libraries if not defined */
+
+ENTRY(__gdb_entry_point__) /* Define the entry point */
+
+MEMORY
+{
+    scratchpad      (rwx)   : ORIGIN = 0x0170, LENGTH = 48-1    /* one byte (SCRATCHPAD_BYTE47) is reserved for the boot code */
+    eeprom          (rwx)   : ORIGIN = 0x1000, LENGTH = 64      /* customer area */
+    ram             (rwx)   : ORIGIN = 0x2000, LENGTH = 512
+    rom             (rx)    : ORIGIN = 0x4000, LENGTH = 2K
+    flash_latches   (rwx)   : ORIGIN = 0x5fc0, LENGTH = 64
+    flash_config    (rx)    : ORIGIN = 0xA000, LENGTH = 128     /* configuration pages */
+}
+
+#if defined (__APPLICATION_WITH_LOADER__)
+/* Program memory configuration for application when Loader is enabled */
+MEMORY
+{
+    flash           (rx)    : ORIGIN = 0x6000+1k*__LOADERSIZE__, LENGTH = 16k-1k*__LOADERSIZE__-42+__LOADERSIZE__*2
+}
+
+__flash_user_mem_start = ABSOLUTE(ORIGIN(flash)); /* start address of user area */
+
+#elif defined (__LOADER_ONLY__)
+/* Program memory configuration for Loader itself */
+MEMORY
+{
+    flash           (rx)    : ORIGIN = 0x6000, LENGTH = 1k*__LOADERSIZE__ - 2   /* -2 bytes for loader's CRC */
+    flash_user      (rx)    : ORIGIN = 0x6000+1k*__LOADERSIZE__, LENGTH = 16k-1k*__LOADERSIZE__-42+__LOADERSIZE__*2
+    flash_protect   (rx)    : ORIGIN = 0x6000+16k-42+__LOADERSIZE__*2, LENGTH = 42-__LOADERSIZE__*2   /* app. CRCs and protection key at the end of flash */
+}
+
+__flash_protection_area = ABSOLUTE(ORIGIN(flash_protect));  /* address of protection structure */
+__flash_user_mem_start  = ABSOLUTE(ORIGIN(flash_user));     /* start address of user area */
+__flash_USER_FP0_hi     = __flash_user_mem_start / 256;     /* High part app. Flash address to configure Far Page 0 */
+
+#else
+/* Default program memory configuration when Loader is not used @@@ */
+MEMORY
+{
+    flash           (rx)    : ORIGIN = 0x6000, LENGTH = 16K-8-2     /* -10 bytes for protection key / CRC */
+}
+
+__flash_user_mem_start = ABSOLUTE(ORIGIN(flash));   /* start address of user area */
+
+#endif 
+
+/* Define direct, extra and io page addresses */
+__io__ = 0x0000;                    /* io page,    max 64 bytes */
+__ep__ = ABSOLUTE(ORIGIN(eeprom));  /* extra page, max 256 bytes */
+__dp__ = ABSOLUTE(ORIGIN(ram));     /* dp page,    max 256 bytes */
+
+__fp0__ = ABSOLUTE(ORIGIN(rom));    /* interrupt vector table */
+__fp1__ = __fp0__ + 0x100;
+__fp2__ = __fp0__ + 0x200;
+__fp3__ = __fp0__ + 0x300;
+__fp4__ = __fp0__ + 0x400;
+__fp5__ = __fp0__ + 0x500;
+__fp6__ = __fp0__ + 0x600;
+__fp7__ = __dp__  + 0x100;
+
+/* _nvram_mlx = __ep__ + 64; => assigned in symb-addr.ld */
+_nvram_mlx_data_first_word = __ep__ + 64 + 4;       /* address of the first word of the Melexis data in the nvRAM */
+_nvram_mlx_data_last_word  = __ep__ + 64 + 64 - 2;  /* address of the last  word of the Melexis data in the nvRAM */
+
+_flash_latches = ABSOLUTE(ORIGIN(flash_latches));   /* used to access the latches */
+
+/* Helper symbols for memories start/end/size */
+__flash_latches_mem_start = ABSOLUTE(ORIGIN(flash_latches));
+__flash_latches_mem_size  = LENGTH(flash_latches);
+__flash_latches_mem_end   = __flash_latches_mem_start + __flash_latches_mem_size;
+
+__flash_config_mem_start = ABSOLUTE(ORIGIN(flash_config));
+__flash_config_mem_size  = LENGTH(flash_config);
+__flash_config_mem_end   = __flash_config_mem_start + __flash_config_mem_size;
+
+#if defined (HAS_APP_IN_RAM)
+__gdb_entry_point__ = ABSOLUTE(ORIGIN(ram));
+#include "sections-text-in-ram-noloader.ldt"
+#else
+__gdb_entry_point__ = 0x4000;
+#include "sections-text-in-flash.ldt"
+#endif
+
+/* EOF */

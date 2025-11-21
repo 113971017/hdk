@@ -1,0 +1,36 @@
+MainReleaseNote
+(最新的，在最上面)
+
+
+===== =====
+2024/08/14 by Jenny
+主旨：上傳 Eden 更改 SDK後的版本
+根據 Ian 提供的code base，進行下列修改
+1) 更換 Melexis 的 SDK, 前後版本分別為 1.10.3 與 1.10.9
+2) 修正更換至1.10.9後，產生的x/z值不正確問題。(CosPhase.h等相關) ==> 未開 Redmine Bug。詳見 Eden 2024年07月01日給 Melexis 的 mail。
+3) 修正問題(#1472): 快速洩壓ADV應間隔5秒
+4) 修正問題(#1477): 發送條件應照09T SRS，150 kPa 轉起來達 3min才開始發送
+
+===== =====
+2024/08/08 by Jenny
+主旨：確認可順利build
+
+D:\MiCVS\BSx18_SGA_91804\BSI15_mlx91804\BSIxx-SGA_mems>make
+--- Building process started ...
+CRC for  1-Kb of APP data (FROM: 0x6C00 TO: 0x6FFF PLACE AT: 0x9FDC)
+CRC for  2-Kb of APP data (FROM: 0x7000 TO: 0x73FF PLACE AT: 0x9FDE)
+CRC for  3-Kb of APP data (FROM: 0x7400 TO: 0x77FF PLACE AT: 0x9FE0)
+CRC for  4-Kb of APP data (FROM: 0x7800 TO: 0x7BFF PLACE AT: 0x9FE2)
+CRC for  5-Kb of APP data (FROM: 0x7C00 TO: 0x7FFF PLACE AT: 0x9FE4)
+CRC for  6-Kb of APP data (FROM: 0x8000 TO: 0x83FF PLACE AT: 0x9FE6)
+CRC for  7-Kb of APP data (FROM: 0x8400 TO: 0x87FF PLACE AT: 0x9FE8)
+CRC for  8-Kb of APP data (FROM: 0x8800 TO: 0x8BFF PLACE AT: 0x9FEA)
+CRC for  9-Kb of APP data (FROM: 0x8C00 TO: 0x8FFF PLACE AT: 0x9FEC)
+CRC for 10-Kb of APP data (FROM: 0x9000 TO: 0x93FF PLACE AT: 0x9FEE)
+CRC for 11-Kb of APP data (FROM: 0x9400 TO: 0x97FF PLACE AT: 0x9FF0)
+CRC for 12-Kb of APP data (FROM: 0x9800 TO: 0x9BFF PLACE AT: 0x9FF2)
+Added Protection Key      (FROM: 0x9FF6 TO: 0x9FFD); Protection Key content = 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+CRC for 13-Kb of APP data (FROM: 0x9C00 TO: 0x9FFD PLACE AT: 0x9FFE)
+--- Building process finished
+
+D:\MiCVS\BSx18_SGA_91804\BSI15_mlx91804\BSIxx-SGA_mems>

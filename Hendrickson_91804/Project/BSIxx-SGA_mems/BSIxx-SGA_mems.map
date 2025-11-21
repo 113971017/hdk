@@ -1,0 +1,1529 @@
+Archive member included because of file (symbol)
+
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(vectors.o)
+                              (__vectors)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(vectors.o) (_mlx16_fatal)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+                              obj/spi_process.o (_AbsWatchdog_Restart)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+                              obj/measurements.o (_Adc_ReadPVT)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+                              obj/measurements.o (_Adc_IsError)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+                              obj/measurements.o (_Calc_Pressure)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+                              obj/measurements.o (_Calc_Temperature)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+                              obj/measurements.o (_Calc_Voltage)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+                              obj/main.o (_Gpio_Init)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                              obj/main.o (_Itc_Enable_ITC_GPIO0)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+                              obj/sg_lf.o (_Lf_Init)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+                              obj/main.o (_Lf_Disable)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+                              obj/main.o (_NvRam_Recall)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+                              obj/measurements.o (_Phys_AccelerationZ)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+                              obj/main.o (_Sys_DeepSleepWith)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+                              obj/processing.o (_Wakeup_Enable_WAKEUP_LFRX_TIMEOUT)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+                              obj/main.o (_WakeupTimer_Restart)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+                              obj/sg_dbg.o (_debug_put_word)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+                              obj/sg_dbg.o (_debug_put_string)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+                              obj/sg_dbg.o (_debug_put_word_hex)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+                              obj/main.o (_Sys_ResetCpu)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(crt0.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(vectors.o) (_ISR_MLX16_RESET)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mul32_32by16.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o) (_mulU32_U32byU16)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(crt0.o) (_mlx16_low_level_init)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o) (_adc_ll_common_deinit)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o) (_g_adc_result)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o) (_adc_ll_read_accel_init)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o) (_adc_ll_read_accel)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o) (_adc_ll_read_pressure)
+/cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o) (_mlx16_ram_section_init)
+/cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___udivmodqi4.o)
+                              obj/processing.o (___udivmodqi4)
+/cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___mulsi3.o)
+                              /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o) (___mulsi3)
+/cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___divmodhelper.o)
+                              /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___udivmodqi4.o) (___divmodhelper)
+/cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/../../../../mlx16/lib/mlx16-ex/libc.a(memcpy.o)
+                              obj/main.o (_memcpy)
+/cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/../../../../mlx16/lib/mlx16-ex/libc.a(memcmp.o)
+                              obj/main.o (_memcmp)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 obj/main.o
+ .data          0x00000000        0x0 obj/main.o
+ .bss           0x00000000        0x0 obj/main.o
+ .myBufSection  0x00000000        0x8 obj/main.o
+ .bss.F_Xdir    0x00000000        0x2 obj/main.o
+ .text          0x00000000        0x0 obj/spi_process.o
+ .data          0x00000000        0x0 obj/spi_process.o
+ .bss           0x00000000        0x0 obj/spi_process.o
+ .text.dbg_spi  0x00000000        0x2 obj/spi_process.o
+ .text.dbg_str  0x00000000        0xc obj/spi_process.o
+ .text          0x00000000        0x0 obj/measurements.o
+ .data          0x00000000        0x0 obj/measurements.o
+ .bss           0x00000000        0x0 obj/measurements.o
+ .text.Direct_Motion_Detection
+                0x00000000       0x40 obj/measurements.o
+ .text          0x00000000        0x0 obj/processing.o
+ .data          0x00000000        0x0 obj/processing.o
+ .bss           0x00000000        0x0 obj/processing.o
+ .rodata.STATE_AUTO_SWITCH
+                0x00000000        0x8 obj/processing.o
+ .text          0x00000000        0x0 obj/sg_common.o
+ .data          0x00000000        0x0 obj/sg_common.o
+ .bss           0x00000000        0x0 obj/sg_common.o
+ .text.wtimer_restart_ms
+                0x00000000       0x20 obj/sg_common.o
+ .text.get_cmd_temperature
+                0x00000000       0x40 obj/sg_common.o
+ .text.get_cmd_voltage
+                0x00000000       0x40 obj/sg_common.o
+ .text.get_cmd_pressure
+                0x00000000       0x16 obj/sg_common.o
+ .text          0x00000000        0x0 obj/sg_dbg.o
+ .data          0x00000000        0x0 obj/sg_dbg.o
+ .bss           0x00000000        0x0 obj/sg_dbg.o
+ .debug_abbrev  0x00000000       0xe6 obj/sg_dbg.o
+ .debug_info    0x00000000      0x28a obj/sg_dbg.o
+ .debug_line    0x00000000      0x2f9 obj/sg_dbg.o
+ .text.dbg_byte
+                0x00000000        0x2 obj/sg_dbg.o
+ .text.IntegertoString
+                0x00000000       0xbe obj/sg_dbg.o
+ .text.dbg_pvt  0x00000000        0x2 obj/sg_dbg.o
+ .text.dbg_word
+                0x00000000        0x6 obj/sg_dbg.o
+ .text.dbg_dec  0x00000000       0x14 obj/sg_dbg.o
+ .text.dbg_hex  0x00000000        0x6 obj/sg_dbg.o
+ .text.dbg_string
+                0x00000000        0xe obj/sg_dbg.o
+ .debug_frame   0x00000000       0xa0 obj/sg_dbg.o
+ .debug_pubnames
+                0x00000000       0x73 obj/sg_dbg.o
+ .debug_aranges
+                0x00000000       0x58 obj/sg_dbg.o
+ .debug_str     0x00000000      0x21f obj/sg_dbg.o
+ .comment       0x00000000       0x12 obj/sg_dbg.o
+ .text          0x00000000        0x0 obj/sg_lf.o
+ .data          0x00000000        0x0 obj/sg_lf.o
+ .bss           0x00000000        0x0 obj/sg_lf.o
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(vectors.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(vectors.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .text.Adc_ReadPressure
+                0x00000000       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .text.Calc_PressureWithCalibration
+                0x00000000      0x150 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .text.Calc_TemperatureWithCalibration
+                0x00000000       0x48 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .text.Gpio_ReadPort
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .text.Gpio_TogglePin
+                0x00000000       0x28 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_ROM_SHELL_MEM_ERR
+                0x00000000       0x1a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_ROM_SHELL_MEM_ERR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_ROM_SHELL_MEM_ERR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_ROM_SHELL_MEM_ERR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_ROM_SHELL_MEM_ERR
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_FLASH_SHELL_ERR
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_FLASH_SHELL_ERR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_FLASH_SHELL_ERR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_FLASH_SHELL_ERR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_FLASH_SHELL_ERR
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_RAM_SHELL_MEM_ERR
+                0x00000000       0x1e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_RAM_SHELL_MEM_ERR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_RAM_SHELL_MEM_ERR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_RAM_SHELL_MEM_ERR
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_RAM_SHELL_MEM_ERR
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_NVRAM_SHELL_STORE
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_NVRAM_SHELL_STORE
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_NVRAM_SHELL_STORE
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_NVRAM_SHELL_STORE
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_NVRAM_SHELL_STORE
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_STIMER1
+                0x00000000       0x1a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_STIMER1
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_STIMER1
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_STIMER1
+                0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_STIMER1
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_STIMER2
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_STIMER2
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_STIMER2
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_STIMER2
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_STIMER2
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_ADC_XH018
+                0x00000000       0x1e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_ADC_XH018
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_ADC_XH018
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_ADC_XH018
+                0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_ADC_XH018
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_GPIO0
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_GPIO1
+                0x00000000       0x1a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_GPIO1
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_GPIO1
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_GPIO1
+                0x00000000       0x14 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_GPIO1
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_GPIO2
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_GPIO2
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_GPIO2
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_GPIO2
+                0x00000000       0x10 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_GPIO2
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_GPIO3
+                0x00000000       0x1e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_GPIO3
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_GPIO3
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_GPIO3
+                0x00000000       0x10 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_GPIO3
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_DIAG0
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_DIAG0
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_DIAG0
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_DIAG0
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_DIAG0
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_DIAG1
+                0x00000000       0x1a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_DIAG1
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_DIAG1
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_DIAG1
+                0x00000000        0xa /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_DIAG1
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_DIAG2
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_DIAG2
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_DIAG2
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_DIAG2
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_DIAG2
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_DIAG3
+                0x00000000       0x1e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_DIAG3
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_DIAG3
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_DIAG3
+                0x00000000        0xa /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_DIAG3
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_WUPTMR
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_WUPTMR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_WUPTMR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_WUPTMR
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_TEMPSENS
+                0x00000000       0x1a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_TEMPSENS
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_TEMPSENS
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_TEMPSENS
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_TEMPSENS
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_RFTX_LOCKED
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_RFTX_LOCKED
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_RFTX_LOCKED
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_RFTX_LOCKED
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_RFTX_LOCKED
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_LFTX_HALF
+                0x00000000       0x1a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_LFTX_HALF
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_LFTX_HALF
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_LFTX_HALF
+                0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_LFTX_HALF
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_LFTX_DONE
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_LFTX_DONE
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_LFTX_DONE
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_LFTX_DONE
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_LFTX_DONE
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_LFRX_SNIFF
+                0x00000000       0x1e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_LFRX_SNIFF
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_LFRX_SNIFF
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_LFRX_SNIFF
+                0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_LFRX_SNIFF
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_LFRX_TIMEOUT
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_LFRX_SYNC
+                0x00000000       0x1a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_LFRX_SYNC
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_LFRX_SYNC
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_LFRX_SYNC
+                0x00000000       0x14 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_LFRX_SYNC
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_LFRX_DATA
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_LFRX_DATA
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_LFRX_DATA
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_LFRX_DATA
+                0x00000000       0x10 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_LFRX_DATA
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_LFRX_DONE
+                0x00000000       0x1e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_SetPrio_ITC_FREQCNT_DONE
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_FREQCNT_DONE
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_FREQCNT_DONE
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_FREQCNT_DONE
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_FREQCNT_DONE
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_MLX16_EXCHG
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_MLX16_EXCHG
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_MLX16_EXCHG
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_MLX16_EXCHG
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_MLX16_DMAERR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_MLX16_DMAERR
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_MLX16_DMAERR
+                0x00000000        0xa /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_MLX16_DMAERR
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_AWD_ATT
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_AWD_ATT
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_AWD_ATT
+                0x00000000        0xa /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_AWD_ATT
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Enable_ITC_MLX16_SOFT
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_Disable_ITC_MLX16_SOFT
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_IsPending_ITC_MLX16_SOFT
+                0x00000000        0xa /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text.Itc_ClearPending_ITC_MLX16_SOFT
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .text.Lf_Start
+                0x00000000        0xa /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .text.LfRx_ReceivedHeader
+                0x00000000        0xa /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .text.Lf_GetState
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .text.LfRx_FifoPeekByte
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .text.LfRx_IsFifoFull
+                0x00000000       0x10 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .text.LfRx_IsFifoUnderrun
+                0x00000000       0x1a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .text.NvRam_Store
+                0x00000000       0x20 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .text.NvRam_RestoreOscTrimming
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .text.Sys_HaltWith
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .text.Sys_StopWith
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .text.Sys_SleepWith
+                0x00000000       0x22 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .text.Sys_GetResetReason
+                0x00000000       0x1a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .text.Sys_GetChipIdHi
+                0x00000000        0x4 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .text.Sys_SetNormalLfo
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .text.Sys_SetUlpLfo
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_LFTX_HALF
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_LFTX_HALF
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_LFRX_SNIFF
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_LFRX_SNIFF
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_LFRX_SYNC
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_LFRX_SYNC
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_LFRX_DATA
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_LFRX_DATA
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_LF_DONE
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_GPIO0_LOW
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_GPIO0_LOW
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_GPIO0_HIGH
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_GPIO1_LOW
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_GPIO1_LOW
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_GPIO1_HIGH
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_GPIO1_HIGH
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_GPIO2_LOW
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_GPIO2_LOW
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_GPIO2_HIGH
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_GPIO2_HIGH
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_GPIO3_LOW
+                0x00000000        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_GPIO3_LOW
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_WAKEUP_GPIO3_HIGH
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_WAKEUP_GPIO3_HIGH
+                0x00000000        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_TEMP_BELOW_LOW_THRESHOLD
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_TEMP_BELOW_LOW_THRESHOLD
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_TEMP_ABOVE_LOW_THRESHOLD
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_TEMP_ABOVE_LOW_THRESHOLD
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_TEMP_ABOVE_HIGH_THRESHOLD
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_TEMP_ABOVE_HIGH_THRESHOLD
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_TEMP_BELOW_HIGH_THRESHOLD
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_TEMP_BELOW_HIGH_THRESHOLD
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_TEMP_OUT_OF_RANGE
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_TEMP_OUT_OF_RANGE
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Enable_TEMP_IN_RANGE
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text.Wakeup_Disable_TEMP_IN_RANGE
+                0x00000000        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .debug_abbrev  0x00000000      0x172 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .debug_info    0x00000000      0x2be /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .debug_line    0x00000000      0x1a3 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .text.debug_put_byte
+                0x00000000       0x4c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .text.debug_put_word
+                0x00000000       0x16 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .debug_frame   0x00000000       0x46 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .debug_pubnames
+                0x00000000       0x38 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .debug_aranges
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .debug_str     0x00000000      0x277 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .debug_abbrev  0x00000000       0x60 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .debug_info    0x00000000       0x95 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .debug_line    0x00000000       0xac /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .text.debug_put_string
+                0x00000000       0x32 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .debug_frame   0x00000000       0x2e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .debug_pubnames
+                0x00000000       0x27 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .debug_aranges
+                0x00000000       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .debug_str     0x00000000       0xf3 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_string.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .debug_abbrev  0x00000000       0x9e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .debug_info    0x00000000      0x101 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .debug_line    0x00000000      0x106 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .text.as_hex   0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .rodata        0x00000000        0x3 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .text.debug_put_word_hex
+                0x00000000       0x76 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .debug_frame   0x00000000       0x3a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .debug_pubnames
+                0x00000000       0x29 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .debug_aranges
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .debug_str     0x00000000      0x139 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(debug_put_word_hex.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(crt0.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(crt0.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mul32_32by16.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mul32_32by16.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .text.adc_ll_read_voltage_init
+                0x00000000       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .text.adc_ll_read_vbat_once
+                0x00000000       0x3a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+ .rodata.g_adc_seq_table_accel_3
+                0x00000000        0xa /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .debug_abbrev  0x00000000       0x57 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .debug_info    0x00000000       0xc1 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .debug_line    0x00000000      0x142 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .text.adc_ll_read_pressure
+                0x00000000        0x6 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .debug_frame   0x00000000       0x22 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .debug_pubnames
+                0x00000000       0x2b /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .debug_aranges
+                0x00000000       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .debug_str     0x00000000      0x133 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_pressure_default.o)
+ .text          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+ .data          0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+ .bss           0x00000000        0x0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+ .data          0x00000000        0x0 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___udivmodqi4.o)
+ .bss           0x00000000        0x0 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___udivmodqi4.o)
+ .data          0x00000000        0x0 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___mulsi3.o)
+ .bss           0x00000000        0x0 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___mulsi3.o)
+ .data          0x00000000        0x0 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___divmodhelper.o)
+ .bss           0x00000000        0x0 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___divmodhelper.o)
+ .data          0x00000000        0x0 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/../../../../mlx16/lib/mlx16-ex/libc.a(memcpy.o)
+ .bss           0x00000000        0x0 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/../../../../mlx16/lib/mlx16-ex/libc.a(memcpy.o)
+ .data          0x00000000        0x0 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/../../../../mlx16/lib/mlx16-ex/libc.a(memcmp.o)
+ .bss           0x00000000        0x0 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/../../../../mlx16/lib/mlx16-ex/libc.a(memcmp.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+scratchpad       0x00000170         0x0000002f         xrw
+eeprom           0x00001000         0x00000040         xrw
+ram              0x00002000         0x00000200         xrw
+rom              0x00004000         0x00000800         xr
+flash_latches    0x00005fc0         0x00000040         xrw
+flash_config     0x0000a000         0x00000080         xr
+flash            0x00006c00         0x000033dc         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD obj/main.o
+LOAD obj/spi_process.o
+LOAD obj/measurements.o
+LOAD obj/processing.o
+LOAD obj/sg_common.o
+LOAD obj/sg_dbg.o
+LOAD obj/sg_lf.o
+LOAD /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a
+LOAD /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a
+LOAD /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/../../../../mlx16/lib/mlx16-ex/libc.a
+LOAD /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a
+START GROUP
+LOAD /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/../../../../mlx16/lib/mlx16-ex/libc.a
+LOAD /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a
+END GROUP
+                0x00006c00                __flash_user_mem_start = ABSOLUTE (ORIGIN (flash))
+                0x00000000                __io__ = 0x0
+                0x00001000                __ep__ = ABSOLUTE (ORIGIN (eeprom))
+                0x00002000                __dp__ = ABSOLUTE (ORIGIN (ram))
+                0x00004000                __fp0__ = ABSOLUTE (ORIGIN (rom))
+                0x00004100                __fp1__ = (__fp0__ + 0x100)
+                0x00004200                __fp2__ = (__fp0__ + 0x200)
+                0x00004300                __fp3__ = (__fp0__ + 0x300)
+                0x00004400                __fp4__ = (__fp0__ + 0x400)
+                0x00004500                __fp5__ = (__fp0__ + 0x500)
+                0x00004600                __fp6__ = (__fp0__ + 0x600)
+                0x00002100                __fp7__ = (__dp__ + 0x100)
+                0x00001044                _nvram_mlx_data_first_word = ((__ep__ + 0x40) + 0x4)
+                0x0000107e                _nvram_mlx_data_last_word = (((__ep__ + 0x40) + 0x40) - 0x2)
+                0x00005fc0                _flash_latches = ABSOLUTE (ORIGIN (flash_latches))
+                0x00005fc0                __flash_latches_mem_start = ABSOLUTE (ORIGIN (flash_latches))
+                0x00000040                __flash_latches_mem_size = 0x40
+                0x00006000                __flash_latches_mem_end = (__flash_latches_mem_start + __flash_latches_mem_size)
+                0x0000a000                __flash_config_mem_start = ABSOLUTE (ORIGIN (flash_config))
+                0x00000080                __flash_config_mem_size = 0x80
+                0x0000a080                __flash_config_mem_end = (__flash_config_mem_start + __flash_config_mem_size)
+
+.text           0x00006c00     0x1dd4
+                0x00006c00                _stext = .
+                0x00006c00                __vectors_start = .
+ *(.vectors)
+ .vectors       0x00006c00      0x140 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(vectors.o)
+                0x00006c00                __vectors
+                0x00006d30                enter_system_mode_keep_prio
+                0x00006d38                enter_system_mode_prio_0
+                0x00006d40                __vectors_end = .
+                0x00000140                __vectors_size = (__vectors_end - __vectors_start)
+                0x00006d40                . = ALIGN (0x2)
+ *(.text)
+ .text          0x00006d40        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(vectors.o)
+                0x00006d40                _ISR_MLX16_MEMERR
+                0x00006d40                _ISR_MLX16_PROTERR
+                0x00006d40                _ISR_MLX16_STACKERR
+                0x00006d40                _ISR_unused_5
+                0x00006d40                _ISR_MLX16_OPERR
+                0x00006d44                _ISR_RFTX_HALF
+                0x00006d44                _ISR_MLX16_SOFT
+                0x00006d44                _ISR_DIAG3
+                0x00006d44                _ISR_ADC_XH018
+                0x00006d44                _ISR_FREQCNT_DONE
+                0x00006d44                _ISR_DIAG2
+                0x00006d44                _ISR_LFTX_HALF
+                0x00006d44                _ISR_RAM_SHELL_MEM_ERR
+                0x00006d44                _ISR_DIAG0
+                0x00006d44                _ISR_MLX16_DMAERR
+                0x00006d44                _ISR_LFRX_DATA
+                0x00006d44                _ISR_LFRX_TIMEOUT
+                0x00006d44                _ISR_LFTX_DONE
+                0x00006d44                _ISR_STIMER2
+                0x00006d44                _ISR_RFTX_LOCKED
+                0x00006d44                _ISR_LFRX_SNIFF
+                0x00006d44                _ISR_MLX16_EXCHG
+                0x00006d44                _ISR_ROM_SHELL_MEM_ERR
+                0x00006d44                _ISR_GPIO0
+                0x00006d44                _ISR_WUPTMR
+                0x00006d44                _ISR_GPIO3
+                0x00006d44                _ISR_NVRAM_SHELL_STORE
+                0x00006d44                _ISR_GPIO1
+                0x00006d44                _ISR_LFRX_SYNC
+                0x00006d44                _ISR_DIAG1
+                0x00006d44                _ISR_RFTX_DONE
+                0x00006d44                _ISR_TEMPSENS
+                0x00006d44                _ISR_AWD_ATT
+                0x00006d44                _ISR_STIMER1
+                0x00006d44                _ISR_FLASH_SHELL_ERR
+                0x00006d44                _ISR_GPIO2
+ .text          0x00006d48       0x14 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(crt0.o)
+                0x00006d48                _start
+                0x00006d48                _ISR_MLX16_RESET
+ .text          0x00006d5c       0x40 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mul32_32by16.o)
+                0x00006d5c                _mulI32_I32byI16
+                0x00006d74                _mulI32_I32byU16
+                0x00006d8c                _mulU32_U32byU16
+ .text          0x00006d9c        0x6 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___udivmodqi4.o)
+                0x00006d9c                ___udivmodqi4
+ .text          0x00006da2       0x2e /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___mulsi3.o)
+                0x00006da2                ___mulsi3
+                0x00006dae                ___mulsi3_1
+                0x00006dc4                ___mulsi3_D
+ .text          0x00006dd0       0x16 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/mlx16-ex/libgcc.a(___divmodhelper.o)
+                0x00006dd0                ___divmodhelper
+ .text          0x00006de6       0x30 /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/../../../../mlx16/lib/mlx16-ex/libc.a(memcpy.o)
+                0x00006de6                _memcpy
+ .text          0x00006e16       0x1c /cygdrive/c/mlx16-gcc/bin/../lib/gcc/mlx16/3.4.3/../../../../mlx16/lib/mlx16-ex/libc.a(memcmp.o)
+                0x00006e16                _memcmp
+ *(.text.*)
+ .text.init_default_value
+                0x00006e32       0x3a obj/main.o
+                0x00006e32                _init_default_value
+ .text.main     0x00006e6c      0x200 obj/main.o
+                0x00006e6c                _main
+ .text.ISR_LFRX_DONE
+                0x0000706c       0x20 obj/main.o
+                0x0000706c                _ISR_LFRX_DONE
+ .text.SPI_OUT_ENABLE
+                0x0000708c       0xe4 obj/spi_process.o
+                0x0000708c                _SPI_OUT_ENABLE
+ .text.SPI_WRITE_BYTES
+                0x00007170       0x4a obj/spi_process.o
+                0x00007170                _SPI_WRITE_BYTES
+ .text.SPI_WRITE
+                0x000071ba       0x62 obj/spi_process.o
+                0x000071ba                _SPI_WRITE
+ .text.SPI_R_CHECK
+                0x0000721c       0xb2 obj/spi_process.o
+                0x0000721c                _SPI_R_CHECK
+ .text.SPI_READ_BYTES_verify
+                0x000072ce       0x64 obj/spi_process.o
+                0x000072ce                _SPI_READ_BYTES_verify
+ .text.CalcCRC8
+                0x00007332       0x30 obj/spi_process.o
+                0x00007332                _CalcCRC8
+ .text.SPI_READ
+                0x00007362       0x9c obj/spi_process.o
+                0x00007362                _SPI_READ
+ .text.Process_spi_buf_tx
+                0x000073fe      0x212 obj/spi_process.o
+                0x000073fe                _Process_spi_buf_tx
+ .text.Process_spi_buf_rx
+                0x00007610       0x78 obj/spi_process.o
+                0x00007610                _Process_spi_buf_rx
+ .text.Compensated_Acceleration_Measurement_X
+                0x00007688       0x1e obj/measurements.o
+                0x00007688                _Compensated_Acceleration_Measurement_X
+ .text.Compensated_Acceleration_Measurement_Z
+                0x000076a6       0x1e obj/measurements.o
+                0x000076a6                _Compensated_Acceleration_Measurement_Z
+ .text.Measure_PVT
+                0x000076c4       0xde obj/measurements.o
+                0x000076c4                _Measure_PVT
+ .text.Measure_ACC
+                0x000077a2       0x1a obj/measurements.o
+                0x000077a2                _Measure_ACC
+ .text.Hendrickson_Init
+                0x000077bc       0x10 obj/processing.o
+                0x000077bc                _Hendrickson_Init
+ .text.update_measured_rec
+                0x000077cc       0x7c obj/processing.o
+                0x000077cc                _update_measured_rec
+ .text.TPMS_state_Measurements
+                0x00007848       0x84 obj/processing.o
+                0x00007848                _TPMS_state_Measurements
+ .text.TPMS_state_Motion_Detection
+                0x000078cc        0x2 obj/processing.o
+                0x000078cc                _TPMS_state_Motion_Detection
+ .text.get_wakeup_time
+                0x000078ce      0x132 obj/processing.o
+                0x000078ce                _get_wakeup_time
+ .text.TPMS_state_processing_end
+                0x00007a00      0x14e obj/processing.o
+                0x00007a00                _TPMS_state_processing_end
+ .text.Check_Pressure_Absnormal
+                0x00007b4e      0x270 obj/processing.o
+                0x00007b4e                _Check_Pressure_Absnormal
+ .text.TPMS_state_processing_and_update
+                0x00007dbe       0xd6 obj/processing.o
+                0x00007dbe                _TPMS_state_processing_and_update
+ .text.TPMS_state_Init
+                0x00007e94       0x4c obj/processing.o
+                0x00007e94                _TPMS_state_Init
+ .text.delay_ms
+                0x00007ee0       0x12 obj/sg_common.o
+                0x00007ee0                _delay_ms
+ .text.wtimer_restart_sec
+                0x00007ef2       0xa4 obj/sg_common.o
+                0x00007ef2                _wtimer_restart_sec
+ .text.get_pressgre_range
+                0x00007f96       0x18 obj/sg_common.o
+                0x00007f96                _get_pressgre_range
+ .text.init_lf  0x00007fae       0x10 obj/sg_lf.o
+                0x00007fae                _init_lf
+ .text.mlx16_fatal
+                0x00007fbe        0x2 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+                0x00007fbe                _mlx16_fatal
+ .text.AbsWatchdog_Restart
+                0x00007fc0        0x4 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+                0x00007fc0                _AbsWatchdog_Restart
+ .text.AbsWatchdog_IsWindowOpen
+                0x00007fc4        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+                0x00007fc4                _AbsWatchdog_IsWindowOpen
+ .text.Adc_ReadPVT
+                0x00007fd2       0x4c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+                0x00007fd2                _Adc_ReadPVT
+ .text.Adc_IsError
+                0x0000801e       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+                0x0000801e                _Adc_IsError
+ .text.Adc_ClearAllErrors
+                0x00008030        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+                0x00008030                _Adc_ClearAllErrors
+ .text.Calc_Pressure
+                0x00008038       0xec /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+                0x00008038                _Calc_Pressure
+ .text.Calc_Temperature
+                0x00008124       0x3e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+                0x00008124                _Calc_Temperature
+ .text.Calc_Voltage
+                0x00008162        0xe /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+                0x00008162                _Calc_Voltage
+ .text.Gpio_Init
+                0x00008170       0x14 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+                0x00008170                _Gpio_Init
+ .text.Gpio_SetPinMode
+                0x00008184       0x16 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+                0x00008184                _Gpio_SetPinMode
+ .text.Gpio_ReadPin
+                0x0000819a       0x42 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+                0x0000819a                _Gpio_ReadPin
+ .text.Gpio_WritePin
+                0x000081dc       0x22 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+                0x000081dc                _Gpio_WritePin
+ .text.Itc_Enable_ITC_GPIO0
+                0x000081fe        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x000081fe                _Itc_Enable_ITC_GPIO0
+ .text.Itc_Disable_ITC_GPIO0
+                0x0000820a        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x0000820a                _Itc_Disable_ITC_GPIO0
+ .text.Itc_IsPending_ITC_GPIO0
+                0x00008216       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x00008216                _Itc_IsPending_ITC_GPIO0
+ .text.Itc_ClearPending_ITC_GPIO0
+                0x00008228        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x00008228                _Itc_ClearPending_ITC_GPIO0
+ .text.Itc_IsPending_ITC_WUPTMR
+                0x00008230        0xa /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x00008230                _Itc_IsPending_ITC_WUPTMR
+ .text.Itc_Enable_ITC_LFRX_TIMEOUT
+                0x0000823a        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x0000823a                _Itc_Enable_ITC_LFRX_TIMEOUT
+ .text.Itc_Disable_ITC_LFRX_TIMEOUT
+                0x00008246        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x00008246                _Itc_Disable_ITC_LFRX_TIMEOUT
+ .text.Itc_IsPending_ITC_LFRX_TIMEOUT
+                0x00008252       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x00008252                _Itc_IsPending_ITC_LFRX_TIMEOUT
+ .text.Itc_ClearPending_ITC_LFRX_TIMEOUT
+                0x00008264        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x00008264                _Itc_ClearPending_ITC_LFRX_TIMEOUT
+ .text.Itc_Enable_ITC_LFRX_DONE
+                0x0000826c        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x0000826c                _Itc_Enable_ITC_LFRX_DONE
+ .text.Itc_Disable_ITC_LFRX_DONE
+                0x00008278        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x00008278                _Itc_Disable_ITC_LFRX_DONE
+ .text.Itc_IsPending_ITC_LFRX_DONE
+                0x00008284       0x10 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x00008284                _Itc_IsPending_ITC_LFRX_DONE
+ .text.Itc_ClearPending_ITC_LFRX_DONE
+                0x00008294        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                0x00008294                _Itc_ClearPending_ITC_LFRX_DONE
+ .text.Lf_Init  0x0000829c       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+                0x0000829c                _Lf_Init
+ .text.Lf_Disable
+                0x000082b8        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+                0x000082b8                _Lf_Disable
+ .text.LfRx_FifoReadByte
+                0x000082c0        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+                0x000082c0                _LfRx_FifoReadByte
+ .text.LfRx_FifoFlush
+                0x000082cc        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+                0x000082cc                _LfRx_FifoFlush
+ .text.LfRx_FifoCount
+                0x000082d4        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+                0x000082d4                _LfRx_FifoCount
+ .text.LfRx_IsFifoOverrun
+                0x000082dc       0x16 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+                0x000082dc                _LfRx_IsFifoOverrun
+ .text.recall_using_dcdc
+                0x000082f2       0x48 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .text.NvRam_Recall
+                0x0000833a       0x8c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+                0x0000833a                _NvRam_Recall
+ .text.dcdc_config
+                0x000083c6       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+                0x000083c6                _dcdc_config
+                0x000083dc                _dcdc_config_func_end
+ .text.adc_read_accel_helper
+                0x000083de       0x2c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .text.Phys_AccelerationZ
+                0x0000840a       0x24 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+                0x0000840a                _Phys_AccelerationZ
+ .text.Phys_AccelerationX
+                0x0000842e       0x2a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+                0x0000842e                _Phys_AccelerationX
+ .text.Sys_DeepSleepWith
+                0x00008458       0x20 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+                0x00008458                _Sys_DeepSleepWith
+ .text.Sys_IsColdBoot
+                0x00008478       0x10 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+                0x00008478                _Sys_IsColdBoot
+ .text.Sys_GetChipId
+                0x00008488        0x6 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+                0x00008488                _Sys_GetChipId
+ .text.Sys_GetPressureRange
+                0x0000848e       0x20 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+                0x0000848e                _Sys_GetPressureRange
+ .text.Wakeup_Enable_WAKEUP_LFRX_TIMEOUT
+                0x000084ae        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+                0x000084ae                _Wakeup_Enable_WAKEUP_LFRX_TIMEOUT
+ .text.Wakeup_Disable_WAKEUP_LFRX_TIMEOUT
+                0x000084ba        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+                0x000084ba                _Wakeup_Disable_WAKEUP_LFRX_TIMEOUT
+ .text.Wakeup_Enable_WAKEUP_LF_DONE
+                0x000084c6        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+                0x000084c6                _Wakeup_Enable_WAKEUP_LF_DONE
+ .text.Wakeup_Enable_WAKEUP_GPIO0_HIGH
+                0x000084d2        0xc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+                0x000084d2                _Wakeup_Enable_WAKEUP_GPIO0_HIGH
+ .text.WakeupTimer_Restart
+                0x000084de       0x14 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+                0x000084de                _WakeupTimer_Restart
+ .text.WakeupTimer_Init
+                0x000084f2       0x20 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+                0x000084f2                _WakeupTimer_Init
+ .text.WakeupTimer_IntClear
+                0x00008512       0x14 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+                0x00008512                _WakeupTimer_IntClear
+ .text.Sys_ResetCpu
+                0x00008526        0x6 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+                0x00008526                _Sys_ResetCpu
+ .text.mlx16_low_level_init
+                0x0000852c       0xc4 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+                0x0000852c                _mlx16_low_level_init
+ .text.adc_ll_common_init
+                0x000085f0       0x28 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+                0x000085f0                _adc_ll_common_init
+ .text.adc_ll_common_pvt_init
+                0x00008618       0x1a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+                0x00008618                _adc_ll_common_pvt_init
+ .text.adc_ll_common_deinit
+                0x00008632       0x2e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+                0x00008632                _adc_ll_common_deinit
+ .text.adc_ll_read_pressure_init
+                0x00008660       0x16 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+                0x00008660                _adc_ll_read_pressure_init
+ .text.adc_ll_read_pressure_once
+                0x00008676       0x3a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+                0x00008676                _adc_ll_read_pressure_once
+ .text.adc_ll_read_voltage_once
+                0x000086b0       0x36 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+                0x000086b0                _adc_ll_read_voltage_once
+ .text.adc_ll_read_accel_init
+                0x000086e6       0x5c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+                0x000086e6                _adc_ll_read_accel_init
+ .text.adc_ll_read_accel_once
+                0x00008742       0xc0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+                0x00008742                _adc_ll_read_accel_once
+ .text.adc_ll_read_accel
+                0x00008802        0x4 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+                0x00008802                _adc_ll_read_accel
+ .text.mlx16_ram_section_init
+                0x00008806       0x42 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+                0x00008806                _mlx16_ram_section_init
+ *(.rodata)
+ *(.rodata.*)
+ .rodata.__cfg_io_0
+                0x00008848        0x6 obj/main.o
+ .rodata.crc_table
+                0x0000884e      0x100 obj/spi_process.o
+ .rodata.TPMS_STATE_PARAMETERS
+                0x0000894e       0x50 obj/processing.o
+                0x0000894e                _TPMS_STATE_PARAMETERS
+ .rodata.CLfCfg
+                0x0000899e       0x16 obj/sg_lf.o
+ .rodata.g_adc_seq_table_accel_2
+                0x000089b4        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+                0x000089b4                _g_adc_seq_table_accel_2
+ .rodata.g_adc_seq_table_accel_1
+                0x000089bc        0x6 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+                0x000089bc                _g_adc_seq_table_accel_1
+ .rodata.g_adc_seq_table_n_samples_3
+                0x000089c2        0xa /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+                0x000089c2                _g_adc_seq_table_n_samples_3
+ .rodata.g_adc_seq_table_n_samples_2
+                0x000089cc        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+                0x000089cc                _g_adc_seq_table_n_samples_2
+                0x000089d4                . = ALIGN (0x2)
+                0x000089d4                _etext = .
+
+.dp.data        0x00002000        0x0 load address 0x000089d4
+                0x00002000                . = ALIGN (0x2)
+                0x00002000                __data_dp_start = .
+ *(.dp.data)
+                0x00002000                . = ALIGN (0x2)
+                0x00002000                __data_dp_end = .
+                0x00000000                __data_dp_size = (__data_dp_end - __data_dp_start)
+                0x000089d4                __data_load_start = LOADADDR (.dp.data)
+
+.dp             0x00002000        0xc load address 0x000089d4
+                0x00002000                . = ALIGN (0x2)
+                0x00002000                __bss_dp_start = .
+ *(.dp)
+ .dp            0x00002000        0x2 obj/main.o
+                0x00002000                _measurements_valid
+ .dp            0x00002002        0x9 obj/measurements.o
+                0x00002002                _measured
+                0x0000200c                . = ALIGN (0x2)
+ *fill*         0x0000200b        0x1 
+                0x0000200c                __bss_dp_end = .
+                0x0000000c                __bss_dp_size = (__bss_dp_end - __bss_dp_start)
+
+.data           0x0000200c        0x0 load address 0x000089d4
+                0x0000200c                . = ALIGN (0x2)
+                0x0000200c                __data_start = .
+ *(.ramfunc)
+ *(.data)
+ *(.data.*)
+                0x0000200c                . = ALIGN (0x2)
+                0x0000200c                __data_end = .
+                0x00000000                __data_size = (__data_end - __data_start)
+
+.bss            0x0000200c       0x22 load address 0x000089d4
+                0x0000200c                . = ALIGN (0x2)
+                0x0000200c                __bss_start = .
+ *(.bss)
+ *(.bss.*)
+ .bss.buffer_rx
+                0x0000200c        0x7 obj/spi_process.o
+ .bss.buffer_tx
+                0x00002013       0x12 obj/spi_process.o
+ *fill*         0x00002025        0x1 
+ .bss.g_adc_result
+                0x00002026        0x8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+                0x00002026                _g_adc_result
+ *(COMMON)
+                0x0000202e                . = ALIGN (0x2)
+                0x0000202e                __bss_end = .
+                0x00000022                __bss_size = (__bss_end - __bss_start)
+
+.noinit         0x0000202e        0x2 load address 0x000089d4
+                0x0000202e                . = ALIGN (0x2)
+                0x0000202e                __noinit_start = .
+ *(.noinit)
+ .noinit        0x0000202e        0x1 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+                0x0000202e                _mlx16_reset_reason
+                0x00002030                . = ALIGN (0x2)
+ *fill*         0x0000202f        0x1 
+                0x00002030                __noinit_end = .
+                0x00000002                __noinit_size = (__noinit_end - __noinit_start)
+                0x00002030                PROVIDE (_stack, .)
+                0x00002200                PROVIDE (__end, (ORIGIN (ram) + 0x200))
+
+.scratchpad     0x00000170       0x20
+                0x00000170                . = ALIGN (0x2)
+                0x00000170                __scratchpad_start = .
+ *(.scratchpad)
+ .scratchpad    0x00000170        0x8 obj/main.o
+                0x00000170                _SP_lf_count
+                0x00000172                _SP_state
+                0x00000176                _SP_state_keep_time
+ .scratchpad    0x00000178        0xb obj/measurements.o
+                0x00000178                _SP_measured_rec
+                0x0000017e                _SP_lfrx_rec
+ *fill*         0x00000183        0x1 
+ .scratchpad    0x00000184        0xc obj/processing.o
+                0x00000184                _SP_timer_wakeup_time
+                0x00000186                _SP_timer_wakeup_totalTime
+                0x00000188                _SP_drive_mode_report_period_spi
+                0x0000018a                _TmpSt
+                0x0000018c                _DP1
+                0x0000018e                _DP2
+                0x00000190                __scratchpad_end = .
+                0x00000020                __scratchpad_size = (__scratchpad_end - __scratchpad_start)
+
+.ep             0x00001000        0x0
+                0x00001000                . = ALIGN (0x2)
+                0x00001000                __bss_ep_start = .
+ *(.ep)
+                0x00001000                . = ALIGN (0x2)
+                0x00001000                __bss_ep_end = .
+
+.ep.data        0x00001000        0x0
+                0x00001000                . = ALIGN (0x2)
+                0x00001000                __data_ep_start = .
+ *(.ep.data)
+                0x00001000                . = ALIGN (0x2)
+                0x00001000                __data_ep_end = .
+                0x00005026                OPCODE_CALL_FP_ENTER_SYSTEM_MODE_KEEP_PRIO = (0x5000 | (((enter_system_mode_keep_prio - __vectors_start) / 0x8) & 0xff))
+                0x00005027                OPCODE_CALL_FP_ENTER_SYSTEM_MODE_PRIO_0 = (0x5000 | (((enter_system_mode_prio_0 - __vectors_start) / 0x8) & 0xff))
+                0x00001040                _nvram_mlx = 0x1040
+                0x00004398                PROVIDE (_Dcdc_Init, 0x4398)
+                0x000043a6                PROVIDE (_Dcdc_InitAndRestart, 0x43a6)
+                0x000044ae                PROVIDE (write_all_1, 0x44ae)
+                0x000044d6                PROVIDE (read_flash_sbc_ded, 0x44d6)
+                0x000044de                PROVIDE (fast_erase_start, 0x44de)
+                0x0000450a                PROVIDE (test_cyc20, 0x450a)
+                0x00004532                PROVIDE (read_flash_all, 0x4532)
+                0x0000454c                PROVIDE (test_xy, 0x454c)
+                0x0000457c                PROVIDE (test_erase_sps, 0x457c)
+                0x00004654                PROVIDE (test_chess, 0x4654)
+                0x00004658                PROVIDE (test_ichess, 0x4658)
+                0x000046ac                PROVIDE (test_cmr, 0x46ac)
+                0x0000478e                PROVIDE (get_revision, 0x478e)
+                0x000043f0                PROVIDE (_rom_write_tr5, 0x43f0)
+OUTPUT(BSIxx-SGA_mems.elf elf32-mlx16-ex)
+
+.debug_abbrev   0x00000000     0x2441
+ .debug_abbrev  0x00000000      0x208 obj/main.o
+ .debug_abbrev  0x00000208      0x275 obj/spi_process.o
+ .debug_abbrev  0x0000047d      0x170 obj/measurements.o
+ .debug_abbrev  0x000005ed      0x205 obj/processing.o
+ .debug_abbrev  0x000007f2      0x106 obj/sg_common.o
+ .debug_abbrev  0x000008f8       0x69 obj/sg_lf.o
+ .debug_abbrev  0x00000961       0xd7 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+ .debug_abbrev  0x00000a38       0xa9 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+ .debug_abbrev  0x00000ae1      0x1b3 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .debug_abbrev  0x00000c94       0xab /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+ .debug_abbrev  0x00000d3f      0x1cd /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .debug_abbrev  0x00000f0c      0x163 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .debug_abbrev  0x0000106f       0x5d /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+ .debug_abbrev  0x000010cc      0x151 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .debug_abbrev  0x0000121d       0x92 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .debug_abbrev  0x000012af       0xa4 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+ .debug_abbrev  0x00001353      0x114 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .debug_abbrev  0x00001467      0x247 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .debug_abbrev  0x000016ae      0x1eb /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .debug_abbrev  0x00001899      0x212 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .debug_abbrev  0x00001aab       0x55 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .debug_abbrev  0x00001b00       0xdf /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+ .debug_abbrev  0x00001bdf       0xd7 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+ .debug_abbrev  0x00001cb6      0x16e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+ .debug_abbrev  0x00001e24      0x1df /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .debug_abbrev  0x00002003       0xab /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+ .debug_abbrev  0x000020ae      0x1ff /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+ .debug_abbrev  0x000022ad       0x9c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+ .debug_abbrev  0x00002349       0xf8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+
+.debug_info     0x00000000     0xb43f
+ .debug_info    0x00000000      0x59d obj/main.o
+ .debug_info    0x0000059d      0xc93 obj/spi_process.o
+ .debug_info    0x00001230      0x4d3 obj/measurements.o
+ .debug_info    0x00001703      0x819 obj/processing.o
+ .debug_info    0x00001f1c      0x250 obj/sg_common.o
+ .debug_info    0x0000216c       0xa5 obj/sg_lf.o
+ .debug_info    0x00002211      0x5f5 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+ .debug_info    0x00002806      0x100 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+ .debug_info    0x00002906      0x907 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .debug_info    0x0000320d      0x10e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+ .debug_info    0x0000331b      0x979 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .debug_info    0x00003c94      0x66a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .debug_info    0x000042fe       0x8d /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+ .debug_info    0x0000438b      0x423 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .debug_info    0x000047ae      0xc99 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .debug_info    0x00005447      0x150 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+ .debug_info    0x00005597      0x2e9 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .debug_info    0x00005880      0xf13 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .debug_info    0x00006793      0x90f /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .debug_info    0x000070a2      0xacc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .debug_info    0x00007b6e      0x31b /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .debug_info    0x00007e89      0x1cb /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+ .debug_info    0x00008054      0x603 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+ .debug_info    0x00008657      0x969 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+ .debug_info    0x00008fc0      0x8c6 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .debug_info    0x00009886      0x2cd /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+ .debug_info    0x00009b53      0xfc0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+ .debug_info    0x0000ab13      0x296 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+ .debug_info    0x0000ada9      0x696 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+
+.debug_line     0x00000000     0x59bd
+ .debug_line    0x00000000      0x49e obj/main.o
+ .debug_line    0x0000049e      0x929 obj/spi_process.o
+ .debug_line    0x00000dc7      0x35a obj/measurements.o
+ .debug_line    0x00001121      0x903 obj/processing.o
+ .debug_line    0x00001a24      0x48c obj/sg_common.o
+ .debug_line    0x00001eb0      0x1d0 obj/sg_lf.o
+ .debug_line    0x00002080      0x1a8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+ .debug_line    0x00002228      0x120 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+ .debug_line    0x00002348      0x210 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .debug_line    0x00002558      0x105 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+ .debug_line    0x0000265d      0x27a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .debug_line    0x000028d7      0x174 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .debug_line    0x00002a4b       0x99 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+ .debug_line    0x00002ae4      0x1ae /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .debug_line    0x00002c92      0xd5b /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .debug_line    0x000039ed      0x10f /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+ .debug_line    0x00003afc      0x1f6 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .debug_line    0x00003cf2      0x2bd /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .debug_line    0x00003faf      0x223 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .debug_line    0x000041d2      0x304 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .debug_line    0x000044d6      0x442 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .debug_line    0x00004918      0x12c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+ .debug_line    0x00004a44      0x1a6 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+ .debug_line    0x00004bea      0x274 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+ .debug_line    0x00004e5e      0x33b /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .debug_line    0x00005199       0xcd /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+ .debug_line    0x00005266      0x3ce /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+ .debug_line    0x00005634      0x18e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+ .debug_line    0x000057c2      0x1fb /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+
+.debug_frame    0x00000000     0x1968
+ .debug_frame   0x00000000       0xa4 obj/main.o
+ .debug_frame   0x000000a4      0x40c obj/spi_process.o
+ .debug_frame   0x000004b0       0xc4 obj/measurements.o
+ .debug_frame   0x00000574      0x124 obj/processing.o
+ .debug_frame   0x00000698      0x234 obj/sg_common.o
+ .debug_frame   0x000008cc       0x28 obj/sg_lf.o
+ .debug_frame   0x000008f4       0x22 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+ .debug_frame   0x00000916       0x2e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+ .debug_frame   0x00000944       0x46 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .debug_frame   0x0000098a       0x2e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+ .debug_frame   0x000009b8       0x46 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .debug_frame   0x000009fe       0x7a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .debug_frame   0x00000a78       0x22 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+ .debug_frame   0x00000a9a       0x84 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .debug_frame   0x00000b1e      0x826 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .debug_frame   0x00001344       0x4a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+ .debug_frame   0x0000138e       0x9a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .debug_frame   0x00001428       0x6a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .debug_frame   0x00001492       0xbc /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .debug_frame   0x0000154e       0xb2 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .debug_frame   0x00001600      0x1f6 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .debug_frame   0x000017f6       0x3a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+ .debug_frame   0x00001830       0x22 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+ .debug_frame   0x00001852       0x22 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+ .debug_frame   0x00001874       0x76 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .debug_frame   0x000018ea       0x3a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+ .debug_frame   0x00001924       0x22 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+ .debug_frame   0x00001946       0x22 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+
+.debug_pubnames
+                0x00000000     0x242b
+ .debug_pubnames
+                0x00000000       0xa9 obj/main.o
+ .debug_pubnames
+                0x000000a9       0xd1 obj/spi_process.o
+ .debug_pubnames
+                0x0000017a       0xd5 obj/measurements.o
+ .debug_pubnames
+                0x0000024f      0x1a8 obj/processing.o
+ .debug_pubnames
+                0x000003f7       0xa4 obj/sg_common.o
+ .debug_pubnames
+                0x0000049b       0x1e obj/sg_lf.o
+ .debug_pubnames
+                0x000004b9       0x22 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+ .debug_pubnames
+                0x000004db       0x47 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+ .debug_pubnames
+                0x00000522       0x37 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .debug_pubnames
+                0x00000559       0x39 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+ .debug_pubnames
+                0x00000592       0x45 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .debug_pubnames
+                0x000005d7       0x4b /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .debug_pubnames
+                0x00000622       0x23 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+ .debug_pubnames
+                0x00000645       0x7c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .debug_pubnames
+                0x000006c1     0x11ed /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .debug_pubnames
+                0x000018ae       0x1e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+ .debug_pubnames
+                0x000018cc       0xeb /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .debug_pubnames
+                0x000019b7       0x60 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .debug_pubnames
+                0x00001a17       0x40 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .debug_pubnames
+                0x00001a57       0xec /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .debug_pubnames
+                0x00001b43      0x5ea /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .debug_pubnames
+                0x0000212d       0x58 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+ .debug_pubnames
+                0x00002185       0x23 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+ .debug_pubnames
+                0x000021a8       0x42 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+ .debug_pubnames
+                0x000021ea       0xed /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .debug_pubnames
+                0x000022d7       0xb7 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+ .debug_pubnames
+                0x0000238e       0x48 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+ .debug_pubnames
+                0x000023d6       0x28 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+ .debug_pubnames
+                0x000023fe       0x2d /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+
+.debug_aranges  0x00000000      0x788
+ .debug_aranges
+                0x00000000       0x38 obj/main.o
+ .debug_aranges
+                0x00000038       0x78 obj/spi_process.o
+ .debug_aranges
+                0x000000b0       0x48 obj/measurements.o
+ .debug_aranges
+                0x000000f8       0x68 obj/processing.o
+ .debug_aranges
+                0x00000160       0x58 obj/sg_common.o
+ .debug_aranges
+                0x000001b8       0x28 obj/sg_lf.o
+ .debug_aranges
+                0x000001e0       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+ .debug_aranges
+                0x000001f8       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+ .debug_aranges
+                0x00000214       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .debug_aranges
+                0x00000230       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+ .debug_aranges
+                0x0000024c       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .debug_aranges
+                0x00000268       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .debug_aranges
+                0x00000284       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+ .debug_aranges
+                0x0000029c       0x2c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .debug_aranges
+                0x000002c8      0x25c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .debug_aranges
+                0x00000524       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+ .debug_aranges
+                0x0000053c       0x40 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .debug_aranges
+                0x0000057c       0x28 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .debug_aranges
+                0x000005a4       0x20 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .debug_aranges
+                0x000005c4       0x40 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .debug_aranges
+                0x00000604       0xb4 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .debug_aranges
+                0x000006b8       0x20 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+ .debug_aranges
+                0x000006d8       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+ .debug_aranges
+                0x000006f0       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+ .debug_aranges
+                0x00000708       0x34 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .debug_aranges
+                0x0000073c       0x1c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+ .debug_aranges
+                0x00000758       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+ .debug_aranges
+                0x00000770       0x18 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+
+.debug_str      0x00000000     0x4cd3
+ .debug_str     0x00000000      0x546 obj/main.o
+                                0x59d (size before relaxing)
+ .debug_str     0x00000546      0x20e obj/spi_process.o
+                                0x6b6 (size before relaxing)
+ .debug_str     0x00000754       0xd4 obj/measurements.o
+                                0x5c1 (size before relaxing)
+ .debug_str     0x00000828      0x28d obj/processing.o
+                                0x7d2 (size before relaxing)
+ .debug_str     0x00000ab5       0xa9 obj/sg_common.o
+                                0x24e (size before relaxing)
+ .debug_str     0x00000b5e       0x25 obj/sg_lf.o
+                                0x12d (size before relaxing)
+ .debug_str     0x00000b83      0x4f5 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+                                0x5a5 (size before relaxing)
+ .debug_str     0x00001078       0xce /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x00001146      0x3d8 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+                                0x8d7 (size before relaxing)
+ .debug_str     0x0000151e       0x29 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+                                0x15d (size before relaxing)
+ .debug_str     0x00001547       0xfd /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+                                0x5d7 (size before relaxing)
+ .debug_str     0x00001644       0x75 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+                                0x553 (size before relaxing)
+ .debug_str     0x000016b9       0x19 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+                                 0xfa (size before relaxing)
+ .debug_str     0x000016d2      0x4d6 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+                                0x68c (size before relaxing)
+ .debug_str     0x00001ba8     0x109d /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+                               0x1186 (size before relaxing)
+ .debug_str     0x00002c45       0x74 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+                                0x19e (size before relaxing)
+ .debug_str     0x00002cb9      0x1d1 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+                                0x350 (size before relaxing)
+ .debug_str     0x00002e8a      0x74b /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+                                0xc65 (size before relaxing)
+ .debug_str     0x000035d5      0x1d0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+                                0x87c (size before relaxing)
+ .debug_str     0x000037a5      0x4f0 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+                                0xbe0 (size before relaxing)
+ .debug_str     0x00003c95      0x561 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+                                0x668 (size before relaxing)
+ .debug_str     0x000041f6       0xa5 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+                                0x1a9 (size before relaxing)
+ .debug_str     0x0000429b       0x6a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+                                0x5b4 (size before relaxing)
+ .debug_str     0x00004305      0x16c /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+                                0x828 (size before relaxing)
+ .debug_str     0x00004471      0x47a /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+                                0x7ba (size before relaxing)
+ .debug_str     0x000048eb       0x6f /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+                                0x220 (size before relaxing)
+ .debug_str     0x0000495a      0x265 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+                                0xd05 (size before relaxing)
+ .debug_str     0x00004bbf       0x2e /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+                                0x2d0 (size before relaxing)
+ .debug_str     0x00004bed       0xe6 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)
+                                0x630 (size before relaxing)
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 obj/main.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 obj/spi_process.o
+ .comment       0x00000000       0x12 obj/measurements.o
+ .comment       0x00000000       0x12 obj/processing.o
+ .comment       0x00000000       0x12 obj/sg_common.o
+ .comment       0x00000000       0x12 obj/sg_lf.o
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_fatal.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(abs_watchdog_imp.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_imp.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_pressure.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_temp.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(calc_volt.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(gpio_imp.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(itc_imp.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(lf_imp.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(nvram.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(phys_accel.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_imp.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_imp.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(wakeup_timer_imp.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(sys_reset.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_low_level_init.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_low_level.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_tables.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(adc_ll_read_accel_default.o)
+ .comment       0x00000000       0x12 /cygdrive/d/Working/Projects/BG22/Hendrickson/Sensor_WorkSpace/BSx18_SGA_91804_SW_Lib_1_10_9_cvs/platform_amalthea/lib/lib91804CA_14BAR_XZ.a(mlx16_ram_section_init.o)

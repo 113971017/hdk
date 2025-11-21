@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Bsx18_SGA_91804_SW_Lib_1_10_11</name>
+	<comment></comment>
+	<projects>
+		<project>BSIxx-SGA_mems</project>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+</projectDescription>

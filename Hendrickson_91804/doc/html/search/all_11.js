@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['wake_20up_20configuration_20interface_2c_20_3csensorlib_2eh_3e',['Wake up configuration Interface, &lt;sensorlib.h&gt;',['../group___wake_up.html',1,'']]],
+  ['wakeup_5fdisable',['Wakeup_Disable',['../group___wake_up.html#ga41b59e02ba626fb909ece8ef3658e694',1,'wakeup_imp.h']]],
+  ['wakeup_5fenable',['Wakeup_Enable',['../group___wake_up.html#ga0771ba06f249658b1d5545c845ac0ab9',1,'wakeup_imp.h']]],
+  ['wakeup_5fgpio0_5fhigh',['WAKEUP_GPIO0_HIGH',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fba4e7d5de454d6d3614d53892043f03221',1,'wakeup_imp.h']]],
+  ['wakeup_5fgpio0_5flow',['WAKEUP_GPIO0_LOW',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fbace643170427d2300b54ef416edaf9bd9',1,'wakeup_imp.h']]],
+  ['wakeup_5fgpio1_5fhigh',['WAKEUP_GPIO1_HIGH',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fbaae45d61205a056a9e6d5d336ad3499f9',1,'wakeup_imp.h']]],
+  ['wakeup_5fgpio1_5flow',['WAKEUP_GPIO1_LOW',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fba5255964188b4d7961802a526ded63514',1,'wakeup_imp.h']]],
+  ['wakeup_5fgpio2_5fhigh',['WAKEUP_GPIO2_HIGH',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fbab3630181e09798a1aedd231a455733e0',1,'wakeup_imp.h']]],
+  ['wakeup_5fgpio2_5flow',['WAKEUP_GPIO2_LOW',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fba92aa74c8a70d4f112545aa2c5a3f8aa2',1,'wakeup_imp.h']]],
+  ['wakeup_5fgpio3_5fhigh',['WAKEUP_GPIO3_HIGH',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fba98c975d4b90ef25d1bf2513dcb3de85c',1,'wakeup_imp.h']]],
+  ['wakeup_5fgpio3_5flow',['WAKEUP_GPIO3_LOW',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fba4b130a487c8f459943ad455135da464d',1,'wakeup_imp.h']]],
+  ['wakeup_5flf_5fdone',['WAKEUP_LF_DONE',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fba8f6f8b4911d3c2a52a9a12596459dba6',1,'wakeup_imp.h']]],
+  ['wakeup_5flfrx_5fdata',['WAKEUP_LFRX_DATA',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fbaa17227990aabbc9f387de97b96a84bbe',1,'wakeup_imp.h']]],
+  ['wakeup_5flfrx_5fsniff',['WAKEUP_LFRX_SNIFF',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fba4511c505cc54f5ca09c313808f0b1731',1,'wakeup_imp.h']]],
+  ['wakeup_5flfrx_5fsync',['WAKEUP_LFRX_SYNC',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fbadf85ca9029e6efeee8ec55a1af3f444d',1,'wakeup_imp.h']]],
+  ['wakeup_5flfrx_5ftimeout',['WAKEUP_LFRX_TIMEOUT',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fbaefa45b6d97948acf2ca3fce9a611b37c',1,'wakeup_imp.h']]],
+  ['wakeup_5flftx_5fhalf',['WAKEUP_LFTX_HALF',['../group___wake_up.html#ggac81cbbb4effbf3552fd0219d1e60a5fba52bb21b4b05c4abcc9f2a0b4f4d628ce',1,'wakeup_imp.h']]],
+  ['wakeupevent_5ftype',['WakeupEvent_Type',['../group___wake_up.html#gac81cbbb4effbf3552fd0219d1e60a5fb',1,'wakeup_imp.h']]],
+  ['wake_2dup_20timer_20interface_2c_20_3csensorlib_2eh_3e',['Wake-up Timer Interface, &lt;sensorlib.h&gt;',['../group___wakeup_timer.html',1,'']]],
+  ['wakeuptimer_5finit',['WakeupTimer_Init',['../group___wakeup_timer.html#ga09f58b6fdb2ce9e36c80e65fe94220ed',1,'WakeupTimer_Init(uint16_t mant, uint16_t exponent):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#ga09f58b6fdb2ce9e36c80e65fe94220ed',1,'WakeupTimer_Init(uint16_t mant, uint16_t exponent):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#ga09f58b6fdb2ce9e36c80e65fe94220ed',1,'WakeupTimer_Init(uint16_t mant, uint16_t exponent):&#160;wakeup_timer_imp.h']]],
+  ['wakeuptimer_5fintclear',['WakeupTimer_IntClear',['../group___wakeup_timer.html#gad5cd44cbbe18bd88c4b211a1128ddf0e',1,'WakeupTimer_IntClear(void):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#gad5cd44cbbe18bd88c4b211a1128ddf0e',1,'WakeupTimer_IntClear(void):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#gad5cd44cbbe18bd88c4b211a1128ddf0e',1,'WakeupTimer_IntClear(void):&#160;wakeup_timer_imp.h']]],
+  ['wakeuptimer_5frestart',['WakeupTimer_Restart',['../group___wakeup_timer.html#ga5aaef4f128047751c984f632655527a9',1,'WakeupTimer_Restart(WakeupTimerPeriod_Type period):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#ga5aaef4f128047751c984f632655527a9',1,'WakeupTimer_Restart(WakeupTimerPeriod_Type period):&#160;wakeup_timer_imp.h'],['../group___wakeup_timer.html#ga5aaef4f128047751c984f632655527a9',1,'WakeupTimer_Restart(WakeupTimerPeriod_Type period):&#160;wakeup_timer_imp.h']]],
+  ['wakeuptimerperiod_5ftype',['WakeupTimerPeriod_Type',['../struct_wakeup_timer_period___type.html',1,'']]]
+];

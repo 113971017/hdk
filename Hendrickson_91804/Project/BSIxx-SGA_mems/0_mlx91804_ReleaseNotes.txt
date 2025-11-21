@@ -1,0 +1,953 @@
+//--------------------------------
+//		Melexis 91804
+//--------------------------------
+	
+
+'Notice'
+'*** 編譯BSE-18T時，必須開啟SG_ENABLE_MOTION_DET_XZ'
+
+
+
+//-------------------------------------------------------
+// Date : 2025/09/19
+// BLE SDK : gecko 4.1.3
+// Melexis SDK : 1.10.11
+// Melexis FW : V0B
+// BLE FW : V08
+//-------------------------------------------------------
+修正在 storage mode 耗電 >1 uA 問題
+
+修正如下:
+
+1.Melexis
+
+    sg_lf.c
+    (1)	void init_lf ( void )
+    { 
+	 // 1. Disable LF interrupts
+	    Itc_Disable(ITC_LFRX_TIMEOUT);
+	    Itc_ClearPending(ITC_LFRX_TIMEOUT);
+
+	    // 2. Disable wakeup sources related to LF
+	    Wakeup_Disable(WAKEUP_LFRX_TIMEOUT);
+	    Wakeup_Disable(WAKEUP_LF_DONE);
+
+	    // 3. disable the LF module
+	    Lf_Disable();  // Lf_Disable() depending on API
+    }
+   
+   
+   (2)spi_process.c
+       if(action == AS_TRIGGER ||	action == AS_TRIGGER_MANCHESTER) {
+		T_TPMS_DATA_TX_TRIGGER *pBuf = (T_TPMS_DATA_TX_TRIGGER*) buffer_tx;
+
+         ...
+
+
+      void Process_spi_buf_tx(action_state_t action)   
+   #ifndef LF_COMPONENT_ENABLE
+		return ;
+   #endif
+   
+   
+   (3)main.c
+ 	else if( SP_lf_count > THRESHOLD_LF_COUNT_MAX ) {
+			//SP_lf_count = 0;
+			Itc_Disable(ITC_GPIO0);
+            #ifdef LF_COMPONENT_ENABLE
+			SP_state.as_field.action_state = AS_NONE;
+			//SP_state.as_field.action_state = AS_TRIGGER;
+            #else
+			SP_state.as_field.action_state = AS_NONE;
+            #endif
+
+     
+
+   
+//-------------------------------------------------------
+// Date : 2025/09/08
+// BLE SDK : gecko 4.1.3
+// Melexis SDK : 1.10.11
+// Melexis FW : V0A
+// BLE FW : V07
+//-------------------------------------------------------
+
+修正如下:
+1.Melexis
+  1.1 wakeup 時間從 5 秒改為 10 秒。為了修正有兩種 adv 同時發生。
+      (ex: P-variation adn ADV ) P-variation 第25個 ADV資料會被下一個
+	  ADV 資料。
+	  
+	  Hendrickson 18T redmine
+      BUG #1593	  
+	  BSE-18T
+      BUG #1729	  
+ 
+     
+     //修正如下:  
+     1.	 main.c 
+	 wakeup 時間從 5 秒改為 10 秒
+	 void TPMS_state_Init(tpms_state_t state)
+     {
+	memset(&SP_state, 0x00, sizeof(SP_state));
+
+    SP_state.as_field.tpms_state = state;
+    SP_state.as_field.action_state = AS_NONE;
+    SP_state.as_field.rotation = STOPPED;
+
+
+        // default timer
+	    //WakeupTimer_Ini t(55, 5); // 5 sec
+	    WakeupTimer_Init(MANT_10s, EXP_10s);
+	  }
+    
+	2. processing.c 
+       
+	   void TPMS_state_processing_end(void)
+       {
+	      ...
+	   
+	      	// default define report_period
+        			if( SP_timer_wakeup_totalTime >= TPMS_STATE_PARAMETERS[m_state_index].report_period_spi ) {
+						bSendMsg = true;
+						SP_timer_wakeup_totalTime = 0;
+						measurements_valid=0;
+						Measure_PVT();
+        			} 
+	      ...
+	   }
+	   
+	   
+	   
+
+   3. processing.c
+      修正 Normal mode <==> Monitoring mode 狀態會錯誤問題
+      增加預防產生 Delta P 計算產生overflow 程式碼  
+      BSE-18T redmine
+	  BUG #1731
+     
+    	 
+	//3. Normal mdoe to Monitoring mode.  Delta P <5 PSI for 15 mins.
+
+    void Check_Pressure_Absnormal(void) 
+	if((SP_state.as_field.tpms_state == STATE_STATIONARY)&&(GET_NORMAL_TO_MONITORING(SensorModeCounter)==0))
+	{
+		pivot_pressure=SP_measured_rec.pressure;
+	}
+
+
+	if(pivot_pressure > measured.pvt.pressure)
+	{
+	    pivot_delta = pivot_pressure - measured.pvt.pressure;
+	}else
+	{
+	    pivot_delta = measured.pvt.pressure - pivot_pressure;
+	}
+
+
+	if(pivot_delta < RANGE_DELTA_P_MONITORING)
+    {
+
+		IncrementNormalToMonitoring();
+    	if(GET_NORMAL_TO_MONITORING(SensorModeCounter)>THRESHOLD_P_NORMAL_TO_MONITORING_15MIN_TIMEOUT)
+        //if(NormalToMonitoringMode_Counter>= 20)//5*20= 100 second
+    	{
+    	    //1.Delta P < 5  for 15 mins (go to Monitoring)
+       //  SP_state.as_field.tpms_state = STATE_MONITORING;
+         //bChangeMode = true;
+    		//SP_NormalToMonitoring_flag=true;
+    		  NormalToSMonitoring_DeltaPFlag=true;
+
+        	  SET_NORMAL_TO_STANDBY(SensorModeCounter,0);
+        	  SET_NORMAL_TO_MONITORING(SensorModeCounter,0);
+
+        }
+
+    }else
+    {
+    	// Reset counter
+        SET_NORMAL_TO_MONITORING(SensorModeCounter, 0);
+    }  
+	  
+	  
+
+
+
+
+
+
+//-------------------------------------------------------
+// Date : 2025/08/22
+// BLE SDK : gecko 4.1.3
+// Melexis SDK : 1.10.11
+// Melexis FW : V09
+// BLE FW : V06
+//-------------------------------------------------------
+
+1.Melexis
+1.1 關閉 LF 功能
+
+2.BLE:
+
+2.1  ADV 不交叉打
+3.測試完成項目如下:
+
+3.1 Standby Mode
+      (1)Standby mode > Normal mode
+         1.Delta P >4 PSI -> PASS
+      (2)Abnormal Pressure     
+         1.Delta P >31 PSI --> PASS
+          Standby Mode 每1分鐘偵測一次 溫度、壓力、電量 --> PASS
+3.2 Normal Mode
+      (1)Normal mode --> Standby mode
+         1.Pressure < 3 PSIG for 10 mins --> PASS
+      (2)Normal Mode  --> Monitoring mode
+         1. Pressure >= 80 PSIG 後進入 Monitoring mode --> PASS
+         2. Delta P < 5 PSI for 15 mins  --> PASS
+         Normal Mode 每5分鐘發送一次 ADV --> PASS
+         Normal Mode 每1分鐘偵測一次 壓力 --> PASS
+       3.3 Monitoring Mode
+      (1)Monitoring mode --> Normal mode
+         1. Pressure &lt;60 PSI  時進入 Normal mode  --&gt; PASS
+         2. Delta P > 4.5 PSI for 15 mins --> PASS
+         Monitoring Mode 每25分鐘發送一次 ADV --> PASS
+         Monitoring Mode 每1分鐘偵測一次 壓力 --> PASS
+
+4. LF Function
+     (1) Tool 無法 trigger sensor  --> PASS
+
+5. ADV 取消交叉打
+     (1) 使用 sniffer 觀察 ，目前並無交叉打狀況  -->PASS
+
+//-------------------------------------------------------
+//  Date        : 2025/06/05
+//  BLE     SDK : gecko 4.1.3
+//  Melexis SDK : 1.10.11
+//  Melexis FW  : V08
+//  BLE     FW  : V05
+//-------------------------------------------------------
+
+1.Melexis
+  1.1 修正 無法顯示 Monitor 問題. 
+  
+  
+  1.2 修改檔案
+ 
+ (1) datatypes.h
+//Main state  machine
+typedef enum {
+
+	STATE_STORAGE              = 0x00,	//
+	STATE_STATIONARY,			// 1
+	STATE_STATIONARY_TFA,    	// 2 Tire fill alert in stationary
+	STATE_DRIVE,            	// 3
+	STATE_MONITORING,			// 4
+	STATE_DRIVE_TFA,         	// 4 Tire fill alert in drive
+
+	STATE_TOTAL_NUMBER,
+
+} tpms_state_t;
+ 
+ (2)processing.c 
+    const tpms_state_property_t TPMS_STATE_PARAMETERS[STATE_TOTAL_NUMBER] 
+	加入 Driving mode，只是為了符合 tpms_state_t 對應順序。
+	Hendrickson 沒有 driving mode.
+    
+ 	{
+			,{
+							.enabled_rx_lf				= 1, //Driving mode
+							.enabled_tx_rf				= 0,
+							.calibration_needed_LFO 	= 0,
+							.calibration_needed_HFO 	= 0,
+							.det_period_PVT 			= 0u,
+							.det_period_G				= 0u,
+							.report_period_spi			= 0u,
+							.state_keep_timeout_back_state = 0,
+							.state_keep_timeout 		= 0
+			}
+			,{
+				.enabled_rx_lf				= 1, // Monitoring mode
+				.enabled_tx_rf				= 0,
+				.calibration_needed_LFO 	= 0,
+				.calibration_needed_HFO 	= 0,
+				.det_period_PVT 			= 5u,
+				.det_period_G				= 0u,
+				.report_period_spi			= 1500u,//25 min
+				.state_keep_timeout_back_state = 0,
+				.state_keep_timeout 		= 0
+			}
+		
+
+//-------------------------------------------------------
+//  Date        : 2025/05/29
+//  BLE     SDK : gecko 4.1.3
+//  Melexis SDK : 1.10.11
+//  Melexis FW  : V07
+//  BLE     FW  : V03 
+//-------------------------------------------------------
+1. Fix UART 關閉時 Trigger 會當機的問題
+ (1)app.c
+   
+    1.1 uint8_t ibeacon_change = 0; // To fix system crashed issue 
+   
+     case sl_bt_evt_advertiser_timeout_id:
+	 case sl_bt_evt_connection_closed_id:
+    #if 1 //20241112   To fix system crashed issue when  UART debugging  message was turned on.
+      else if(evt->data.evt_system_external_signal.extsignals == SG_EXT_SIGNAL_ADVERTISING_ALTERNATE_START) {
+              if(!ibeacon_change){
+                  ibeacon_alternate();
+              }
+              else{
+                  ibeacon_start();
+              }
+            }
+    #endif 
+  
+    
+	1.2 add a new callback function
+	
+    
+     void adv_timer_callback(void)
+     {
+      sl_bt_external_signal(SG_EXT_SIGNAL_ADVERTISING_ALTERNATE_START);
+     }
+  	
+
+ (2)sg_connection.h  
+   #define SG_EXT_SIGNAL_ADVERTISING_ALTERNATE_START   (0x1UL << 9)    // 0x200
+   
+
+
+2. 修正在 delta P 發生後，最後會送出 normal state bug
+
+   processing.c
+   void Check_Pressure_Absnormal(void)
+   
+//-------------------------------------------------------
+//  Date        : 2025/05/20
+//  BLE     SDK : gecko 4.1.3
+//  Melexis SDK : 1.10.11
+//  Melexis FW  : V06
+//  BLE     FW  : V02 
+//-------------------------------------------------------
+1. 修改壓力顯示，壓力超過最大值時，就顯示 sensor 所以感測最大值
+   (1) TRUCK : 1300kPa(相對) 
+   (2) 一般車: 800kPa (相對) 
+
+   measurements.c
+#if defined( SG_ENABLE_MEASURE_CHK_LIMIT_P )
+		if( get_pressgre_range() == PRESSURE_RANGE_100_1400_KPA ) {
+			if( measured.pvt.pressure > (PRESSURE_RANGE_HIGH_TRUCK-PRESSURE_RANGE_LOW) ) {
+				measured.pvt.pressure = PRESSURE_RANGE_HIGH_TRUCK-PRESSURE_RANGE_LOW;
+			}
+		}
+		else {
+			if( measured.pvt.pressure > (PRESSURE_RANGE_HIGH-PRESSURE_RANGE_LOW) ) {
+				measured.pvt.pressure = PRESSURE_RANGE_HIGH-PRESSURE_RANGE_LOW;
+			}
+		}
+#endif	// defined( SG_ENABLE_MEASURE_CHK_LIMIT_P )
+
+//-------------------------------------------------------
+//  Date        : 2025/05/20
+//  BLE     SDK : gecko 4.1.3
+//  Melexis SDK : 1.10.11
+//  Melexis FW  : V05
+//  BLE     FW  : V02 
+//-------------------------------------------------------
+1. 把 Melexis SDK 從 1.10.9 更新為 1.10.11
+
+//-------------------------------------------------------
+//  Date        : 2025/05/20
+//  BLE     SDK : gecko 4.1.3
+//  Melexis SDK : 1.10.9
+//  Melexis FW  : V04
+//  BLE     FW  : V02 
+//-------------------------------------------------------
+
+1.把 Melexis  state machine 更新為 Hendrickson 定義的行為
+  (1)processing.c
+     1.1 const tpms_state_property_t TPMS_STATE_PARAMETERS[STATE_TOTAL_NUMBER] 
+     1.2 Check_Pressure_Absnormal()//Hendrickson  state machine 
+void Check_Pressure_Absnormal(void)
+{
+  uint16_t delta_p;
+  bool bChangeMode = false;
+
+#if defined (SG_DEFAULT_CUST) && SG_DEFAULT_CUST != SG_CUST_HENDRICKSON
+  return;
+#endif
+
+  if(!(measurements_valid & DET_PVT)){  return;  }
+
+#ifdef SG_ENABLE_NEW_MEASURE_REC
+  if(measured.pvt.pressure > SP_measured_rec.pressure) {
+    delta_p = measured.pvt.pressure - SP_measured_rec.pressure;
+  }
+  else {
+    delta_p = SP_measured_rec.pressure - measured.pvt.pressure;
+  }
+#else
+  if(measured.pvt.pressure > SP_measured_rec.pvt.pressure) {
+    delta_p = measured.pvt.pressure - SP_measured_rec.pvt.pressure;
+  }
+  else {
+    delta_p = SP_measured_rec.pvt.pressure - measured.pvt.pressure;
+  }
+#endif
+  DeltaP_debug=delta_p;
+
+  //update pressure  previous pressure = current pressure;
+  SP_measured_rec.pressure	   = measured.pvt.pressure;
+  switch(SP_state.as_field.tpms_state) {
+
+  /****************************************
+   * Standby mode
+   *
+   *
+   * out: delta P > 4 PSIG
+   *****************************************/
+
+  case STATE_STORAGE:
+    if(SP_state.as_field.action_state == AS_TRIGGER){
+      //TmpSt = SP_state.as_field.tpms_state;
+     // SP_state.as_field.tpms_state = STATE_TRIGGER;
+      SP_state.as_field.action_state =AS_TRIGGER;
+      //bChangeMode = true;
+    }else if(delta_p >= THRESHOLD_P_STORAGE_LOW){
+      SP_state.as_field.tpms_state = STATE_STATIONARY;
+      bChangeMode = true;
+      NormalMode_Counter=0;
+      MonitoringMode_Counter=0;
+    }
+
+  break;
+
+
+
+
+
+
+  case STATE_STATIONARY:
+
+
+	  /*************************************************
+	   *
+	   * Normal mode
+	   *
+	   * out:
+	   * 1. Pressure < 3?�PSI for 10 mins (back to Standby)
+	   * 2. Pressure >=80 PSIG (First priority)
+	   * 3. delta P < 5PSIG for 15mins
+	   *
+	   *************************************************/
+    #if defined(DQA_TEST)
+	    delta_p=32;
+    #endif
+
+	if(SP_state.as_field.action_state == AS_TRIGGER){
+	        //TmpSt = SP_state.as_field.tpms_state;
+	       // SP_state.as_field.tpms_state = STATE_TRIGGER;
+	      SP_state.as_field.action_state =AS_TRIGGER;
+	     // bChangeMode = true;
+	}else if(delta_p>= THRESHOLD_30_PSIG)
+	{
+		// TFA  delta P > 30 PSIG
+      SP_state.as_field.tpms_state = STATE_STATIONARY_TFA;
+      SP_state.as_field.action_state = AS_ENTRY_TFA;
+      bChangeMode = true;
+		NormalMode_Counter=0;
+		MonitoringMode_Counter=0;
+    }
+	else if(measured.pvt.pressure>=THRESHOLD_80_PSIG)
+	{
+		 // Pressure > 80PSIG
+		SP_state.as_field.tpms_state = STATE_MONITORING;
+          bChangeMode = true;
+		NormalMode_Counter=0;
+		MonitoringMode_Counter=0;
+	}else if(measured.pvt.pressure < RANGE_P_STATIONARY_TO_STORAGE)
+    {
+    	NormalMode_Counter++;
+
+        if(NormalMode_Counter>=STATIONARY_TO_STORAGE_10MIN_TIMEOUT)
+        {
+    		//1. Pressure < 3?�PSIG for 10 mins (back to Standby)
+      SP_state.as_field.tpms_state = STATE_STORAGE;
+      bChangeMode = true;
+    	    MonitoringMode_Counter=0;
+	        NormalMode_Counter=0;
+    }
+    }else if(delta_p < RANGE_DELTA_P_MONITORING)
+    {
+    	NormalMode_Counter++;
+
+    	if(NormalMode_Counter>=THRESHOLD_P_NORMAL_TO_MONITORING_15MIN_TIMEOUT)
+    	{
+    	    //1.Delta P < 5?�PSI for 15 mins (go to Monitoring)
+         SP_state.as_field.tpms_state = STATE_MONITORING;
+         bChangeMode = true;
+
+    		        MonitoringMode_Counter=0;
+    		        NormalMode_Counter=0;
+      }
+
+    }else
+    {
+    	// reset timer
+    	MonitoringMode_Counter=0;
+    	NormalMode_Counter=0;
+    }
+
+
+    break;
+
+
+  case STATE_MONITORING:
+
+	  /******************************************
+	   *
+	   * Monitoring mode
+	   * 1. Pressure < 60 PSIG (Priority 1)
+	   * 2. Delta P > 4.5PSIG for 15 mins
+	   *
+	   ******************************************/
+    #if defined(DQA_TEST)
+	    delta_p=33;
+    #endif
+
+	if(SP_state.as_field.action_state == AS_TRIGGER){
+	    //TmpSt = SP_state.as_field.tpms_state;
+	    //SP_state.as_field.tpms_state = STATE_TRIGGER;
+	    SP_state.as_field.action_state =AS_TRIGGER;
+     // bChangeMode = true;
+	}else if(delta_p>= THRESHOLD_30_PSIG)
+    {
+		// TFA  delta P > 30 PSIG
+		SP_state.as_field.tpms_state = STATE_MONITORING_TFA;
+      SP_state.as_field.action_state = AS_ENTRY_TFA;
+      bChangeMode = true;
+		NormalMode_Counter=0;
+		MonitoringMode_Counter=0;
+    }
+	else if(measured.pvt.pressure<THRESHOLD_60_PSIG)
+    {
+    	// Pressure < 60PSIG back to Normal  mode.
+    	SP_state.as_field.tpms_state = STATE_STATIONARY;
+      bChangeMode = true;
+        MonitoringMode_Counter=0;
+        NormalMode_Counter=0;
+
+    }else if(delta_p >THRESHOLD_4_POINT_5_PSIG)
+    {
+    	MonitoringMode_Counter++;
+
+    	if(MonitoringMode_Counter>=THRESHOLD_P_MONITORING_TO_NORMAL_TIMEOUT)
+    	{
+    	    		//1.Delta P > 4.5?�PSI for 15 mins (back to Normal mode )
+    	    		SP_state.as_field.tpms_state = STATE_STATIONARY;
+          bChangeMode = true;
+    	    	    MonitoringMode_Counter=0;
+    		        NormalMode_Counter=0;
+        }
+    }else
+    {
+	    // reset timer
+    	// delta P > 4.5 PISG  must keep for 15 mins continuously.
+    	MonitoringMode_Counter=0;
+    	NormalMode_Counter=0;
+      }
+
+    break;
+
+
+#if 0
+  case STATE_STATIONARY_TFA:
+  case STATE_MONITORING_TFA:
+      SP_state.as_field.action_state = AS_ENTRY_TFA;
+  SP_measured_rec.pressure = measured.pvt.pressure;
+      bChangeMode = true;
+     break;
+#endif
+
+  default :
+    break;
+  }
+  if( bChangeMode ){
+    SP_state.as_field.action_state |= AS_STATE_CHANGE;
+
+#if defined(SG_ENABLE_AUTO_ENTRY_STORAGE_MODE)
+    SP_state.as_field.Reserved_spmem_bits = 0;
+#endif
+  }
+} 
+
+
+//-------------------------------------------------------
+//  Date     : 2024/03/
+//  BLE      : V.000F
+//  SDK      : 1.10.6
+//  
+//-------------------------------------------------------
+
+		
+		). Upgrade SDK from 1.10.3 to 1.10.9
+		
+	2024/06/13
+		1. 修正壓力上限值必須修正PRESSURE_RANGE_LOW，並增加SG_ENABLE_MEASURE_CHK_LIMIT_P開啟判斷。
+				measurements.c
+				(Line:270)
+				+	#if defined( SG_ENABLE_MEASURE_CHK_LIMIT_P )
+						if( get_pressgre_range() == PRESSURE_RANGE_100_1400_KPA ) {
+				-			if( measured.pvt.pressure >= PRESSURE_RANGE_HIGH_TRUCK ) {
+				+			if( measured.pvt.pressure > (PRESSURE_RANGE_HIGH_TRUCK-PRESSURE_RANGE_LOW) ) {
+								measured.pvt.pressure = PKG_PRESSURE_OVERFLOW;
+							}
+						}
+						else {
+				-			if( measured.pvt.pressure >= PRESSURE_RANGE_HIGH ) {
+				+			if( measured.pvt.pressure > (PRESSURE_RANGE_HIGH-PRESSURE_RANGE_LOW) ) {
+								measured.pvt.pressure = PKG_PRESSURE_OVERFLOW;
+							}
+						}
+				+	#endif	// defined( SG_ENABLE_MEASURE_CHK_LIMIT_P )
+						
+		2. 修正系統5碼卡車版壓力與溫度廣播封包問題。
+					
+		
+	2024/05/13
+		1. Customization BSE-18T for Hendrickson
+				Add #define SG_ENABLE_CUST 指定特定客戶設定
+				). 尚有Stationary -> Storage timeout未定
+				). ADV封包未定
+				
+		2. Fixed Wake up後處理時間影響累計時間不準確，
+				5秒喚醒det PVT，增加到5.1秒
+				3分鐘ADV時間，增加到3分4秒
+
+
+//-------------------------------------------------------
+//  Date     : 2024/03/20
+//  BLE      : V.000F
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	2024/04/09
+		1. BSI-37採用2024/03/20修改後，一樣出現不定時Trigger訊號，實驗發現是手機無線充電盤會影響，導致重複觸發Trigger。
+		
+'Bug list---S'
+	2024/03/18
+	). 發現57266623燒錄V0B_20240222版本，出現Storage Mode發生頻繁Trigger 現象，頻率大約5秒。
+'Bug list---E'
+
+	2024/03/20
+	1. 修改sg_lf.c變更RX config跟BSI-15一致，以確定是否還會不定時出現trigger訊號。
+	
+	2024/03/18
+	1.Add Temperature range check.
+		measurements.c(Line:254)
+		+		// Check limit
+		+		if( measured.pvt.temperature < (TEMPERATURE_RANGE_LOW+PKG_TEMPERATURE_OFFSET) ){
+		+			measured.pvt.temperature = (TEMPERATURE_RANGE_LOW+PKG_TEMPERATURE_OFFSET);
+		+		}
+		+		else if( measured.pvt.temperature > (TEMPERATURE_RANGE_HIGH+PKG_TEMPERATURE_OFFSET) ){
+		+			measured.pvt.temperature = (TEMPERATURE_RANGE_HIGH+PKG_TEMPERATURE_OFFSET);
+		+		}
+
+
+//-------------------------------------------------------
+//  Date     : 2024/02/29
+//  BLE      : V.000E
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	2024/02/22
+	1. Fixed TT03 trigger無法喚醒(MANCHESTER)
+
+'Bug list---S'
+	2024/02/22
+	). TT03 trigger無法喚醒(MANCHESTER)
+	2024/02/19
+	). 當TPMS翻轉固定AZ < 0時，WAL左/右會無法定義出來，只有AZ為正時才定得出來，
+			影響型號BSI-17, BSE-18T 。
+'Bug list---E'	
+
+	2024/02/19
+	1. Fixed BES-18T沒壓力時還持續發送SPI封包
+	2. Fixed 壓力<200kpa時Trigger後未恢復為Storage mode.
+
+//-------------------------------------------------------
+//  Date     : 2024/02/16
+//  BLE      : V.000D
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+'Bug list---S'
+	2024/02/17
+	1. BES-18T沒壓力時還持續發送SPI封包
+	2. 沒壓力時Trigger後未恢復為Storage mode.
+'Bug list---E'	
+
+	2024/02/16
+	1. Motion detection using Z axis change to ∆(X/Z) 2 axis for BES-18T.
+
+//-------------------------------------------------------
+//  Date     : 2024/01/31
+//  BLE      : V.000C
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	2024/01/31
+	1. 持續修正 MLX91805誤發Trigger訊號。
+	
+
+//-------------------------------------------------------
+//  Date     : 2024/01/26
+//  BLE      : V.000B
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	2024/01/26
+	1. 修改卡車版定時廣播由180s -> 90s。(Bridgestone only)
+	2. MLX91805(BSI-17)的LF較敏感，容易誤發Trigger訊號，將THRESHOLD_LF_COUNT_MAX由3增加至15，以修正Trigger誤發問題。
+
+
+//-------------------------------------------------------
+//  Date     : 2024/01/15
+//  BLE      : V.000A
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	2024/01/15
+	1. Fixed 2024/01/11 Normal Drive Mode時5秒發一筆ADV問題。
+	
+	2024/01/14
+	1. Add dbg_sp_cnt() for debug counter.
+	
+'Bug list---S'
+	2024/01/11
+	1. 上轉轉機測試V.0009版本，發現Normal Drive Mode時5秒發一筆ADV。
+	SOL:復原之前修正至2023/12/26版本，只修改Main主程式結束前先清除SP_lf_count數值。
+'Bug list---E'		
+	
+//-------------------------------------------------------
+//  Date     : 2024/01/04
+//  BLE      : V.0009
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	1. 修正'Bug list': 2023/12/21持續發生Trigger訊號
+		2024/01/02 (V08)
+			1.頻繁重新發送SPI封包可能原因
+				a.watchdog作用
+				b.頻繁重複開機
+					可能原因get_wakeup_time回傳為0，增加檢測若為0則使用預設值5秒
+		2024/01/03 (V09)
+			檢查log發現OTA後都正常，大約9小時候開始發生持續Trigger訊號，推斷是timer溢位(int16 大於32768等於9.1小時)，
+			檢查程式內容發現只有發送SPI才會重置SP_timer_wakeup_totalTime。
+		2024/01/04 (V09)
+			1.修改Timer函式WakeupTimer_Restart()改為WakeupTimer_Init()，一樣出錯。
+			2.Main主程式結束前先清除SP_lf_count數值，測試中。
+		2024/01/05
+			隔天顯示正常。
+		
+
+//-------------------------------------------------------
+//  Date     : 2023/12/26
+//  BLE      : V.0008
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	2024/01/02
+	1.2023/12/26修改尚存2023/12/21持續發生Trigger訊號issue，增加其他預防機制。
+	
+	2023/12/26
+	1. Add SG_ENABLE_NEW_MEASURE_REC flag for save SP_MEM size.
+			5+4 Bytes	->	6 Bytes
+			
+			
+//-------------------------------------------------------
+//  Date     : 2023/12/25
+//  BLE      : V.0007
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	2023/12/25
+	1. SP_drive_mode_report_period_spi變更回uint8_t, 增加倍數參數DEFAULT_REPORT_PERIOD_STEP_SEC。
+
+
+'Bug list---S'
+	2023/12/21
+	1. BSI-37轉轉機運行過後，持續發生Trigger訊號而一直發送廣播，非下轉轉就發生，有的隔天才發生。
+			a. OTA原版本，重複更新還是持續發生Trigger訊號
+			b. OTA至連線板後恢復正常，再OTA回廣播版扔然正常，加壓再恢復都正常。
+	2. BSE-18T ID:06619也發生同上問題。
+	3. BSE-18T ID:06646發生同上問題，OTA更新BSE-18T V07 ->V08失敗，更新BSI-15也失敗，
+			連線發送Reboot(03 80 01 57)再重燒BSI-15 OTA才成功，再燒回BSE-18T又發生上述問題。
+	4. 2023/12/25 假日測試兩日14顆有8顆發生同上問題。
+	Solution:
+		2023/12/25
+		a. 對比2023/12/01 source code備份，可能是變更SP_drive_mode_report_period_spi為uint16_t導致記憶體覆寫到SP_lf_count
+			 修改SP_drive_mode_report_period_spi為uint8_t,持續發生Trigger現象由8顆(2顆無法OTA)-2減少為1顆。
+'Bug list---E'
+			 
+
+//-------------------------------------------------------
+//  Date     : 2023/12/08
+//  BLE      : V.0006
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	2023/12/08
+	1. 為了支援卡車report period延長到5分鐘，變更SP_drive_mode_report_period_spi為uint8->uint16。
+	2. Fixed卡車5分鐘會出現兩次SPI/廣播
+	3. 變更Folder名稱BSI15-BC >> BSIxx-SGA_mems
+
+	2023/12/01
+	1. 新增TEST_ENABLE_USER_REPORT_PERIOD_SEC，為了BSI-3701卡車實測縮短時間。
+
+	2023/11/03
+	1. Modified SPEED_t structure.
+	
+	
+//-------------------------------------------------------
+//  Date     : 2023/09/19
+//  BLE      : V.0005
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	2023/09/21
+	1. G值ACC_Z_MOTION_THRESHOLD_HIGH 85 -> 50
+	2. G值採用絕對值，避免安裝方向影響
+
+	2023/09/20
+	1. Modified drive mode report period time unit (x5).
+
+	2023/09/19
+	1. Supported user / auto pressure range.
+	2. Supported drive mode report period customization.
+
+
+//-------------------------------------------------------
+//  Date     : 2023/08/28
+//  BLE      : V.0004
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+	2023/08/28
+	1. 當Trigger壓力為0時，強制進入Storage模式。
+	2. Discrease THRESHOLD_LF_COUNT_MAX 15 -> 3。
+	3. 修正TFA模式下，持續壓力變化>=15kPa，未持續發送廣播。
+
+	2023/08/25
+	1. Add test flag for default status. '#define TEST_ENABLE_DEFAULT_STATE'
+
+
+//-------------------------------------------------------
+//  Date     : 2023/07/26
+//  BLE      : V.0003
+//  SDK      : 1.10.3
+//-------------------------------------------------------
+
+	2023/07/26
+	1. Fixed direction verify issue in Learn mode。
+
+	2023/07/25
+	1. Fixed issue : Learn mode未每10秒發送定位資訊。
+	2. Interim -> stationary 讓定位重設
+
+	2023/07/21
+	0. Add DEFAULT_OFFSET_PRESSURE, DEFAULT_OFFSET_ACC_X (Simulation for EVB)
+	1. state切換時，SPI收到的Acc_Z未更新為最新
+	2. State switch
+		Statoinary		->	Learn (OK)
+							Learn			->	Drive (OK)
+												Drive			->	Drive Interim (OK)
+		Statoinary		<----------------------------------------	Drive Interim (OK)
+
+
+
+							Learn			->	Learn Interim
+							Learn			<-	Learn Interim
+												Learn Interim	->	Drive Interim
+		Statoinary		<---------------------	Learn Interim												
+		Statoinary		<----------------------------------------	Drive Interim
+
+
+	2023/07/20
+	1. LFRX supported manchester coded，同時支援LF與manchester 
+		REF:D:\Users\iantsai\Documents\IAN\SW\Melexis\redmine\20210219\MLX91804_SW_Library_1_10_3\MLX91804_SW_Library_1_10_3\examples\application_example
+
+		LF command structure
+		------------------------------------------------------------------------------------------
+		9 bits 					2 bytes 		4 fixed bytes 				1 byte
+		------------------------------------------------------------------------------------------
+		Synchronization field	Wakeup_ID:		Command ID 					Command Code
+		------------------------------------------------------------------------------------------
+		BMW 3 Series(G20)		0x257F			0x80050190					NONE
+		Sysgration				0x257c			0x880301 - 0x88c00a			NONE
+		------------------------------------------------------------------------------------------
+	
+	2023/07/13
+	1.修正快速洩壓模式切換
+	2.增加state變更時，發SPI訊息。
+
+	2023/07/06
+	1.修正壓力回報值，當大於100必須先減100再回傳。
+
+	2023/07/05
+	1.Fixed Trigger過後，BLE 無法發送SPI命令喚醒Sensor。
+	2.Trigger必須等待50ms再進行取樣，避免壓降影響取樣精度。
+
+	2023/06/26
+	1.Add pressure range detection
+
+	2023/06/17
+	1.新增SPI封包格式(PKG_TYPE_TX_NEW, PKG_TYPE_TX_NEW_INFO)
+
+	2023/06/16		
+	1.BLE與sensor透過SPI新增EXT_CMD_XXX命令，提供模擬驗證。
+	2.Learn mode -> Drive mode (>=9 min)
+	3.快速洩壓偵測.
+	4.Supported SPI debug.
+	
+	2023/04/28
+	1.Trigger OK
+	2.快速洩壓偵測寫好 - 待測
+
+
+//-------------------------------------------------------
+//  Date     : 2023/03/30
+//  BLE      : V.0026
+//  SDK      : 1.10.3
+//  File     : BSI15_Sensor_V0026_20230330.hex
+//-------------------------------------------------------
+
+	2023/03/30
+	1.Melexis Add code 'VDIG_SHORT=1' from 5D_CRC-66806_2023-03-29.pdf
+
+	2023/03/20
+	2.調適SPI timing
+			MISO : 17.8 ms -> 	5.8 ms						8.7ms -> 4.7ms(data only)
+			MOSI : 37 ms   ->  23 ms (tatal)
+
+	2023/03/14
+	1.Enabled CRC table
+
+	2023/03/13
+	1.SPI data transfer verify
+			Add #define SG_ENABLE_SPI_RX_VERIFY
+
+//-------------------------------------------------------
+//  Date     : 2023/01/04
+//  Version  : V.0025
+//  SDK      : 1.10.3
+//  File     : BSI15_FW_Sensor_v0025_20221230.hex
+//-------------------------------------------------------
+	1.Oracle最終版本。
+
+	BSI15_FW_Sensor_SPITEST_20220926_always10s.hex	固定10s會SPI發送, 以及LF trigger和BLE wakeup也會發送
+	BSI15_FW_Sensor_SPITEST_20220902.hex		sensor休眠固定5秒丟MOSI 3.5ms high
+	gpio_spi_5s.hex					固定5秒丟MOSI
+
+
+	BSI15_FW_Sensor_v0017_20221011.hex		V.03 ~ V.05 release版本
+	BSI15_FW_Sensor_v0019_20221114.hex		SPI CLK由50us增加到60us
+	BSI15_FW_Sensor_v001b_20221116.hex		SPI CLK由50us增加到65us
+	BSI15_FW_Sensor_v001e_20221211.hex		SPI irq release version
+
+	BSI15_FW_Sensor_v001f_20221219.hex		SPI採取GPIO並加入handshake
+	BSI15_FW_Sensor_v0020_20221226.hex		CLK 70us -> 100us
+	BSI15_FW_Sensor_v0021_20221228.hex		增加EM4 RFsense喚醒BLE通知Sensor傳送trigger資料
+	BSI15_FW_Sensor_v0022_20221229.hex		CLK->70us, trigger will back to stationary mode
+	BSI15_FW_Sensor_v0023_20221230.hex		MOSI timeout 350ms -> 500ms
+	BSI15_FW_Sensor_v0024_20221230.hex		MOSI timeout 500ms -> 900ms
+	BSI15_FW_Sensor_v0025_20221230.hex		MOSI timeout 復原350ms，發送封包前多發出1ms脈衝當作wakeup信號。
